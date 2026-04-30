@@ -5,68 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BELL WELL</title>
 
-<!-- フォント -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Cormorant+Garamond:wght@300&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body{
   margin:0;
   background:#050505;
   color:#fff;
-  font-family:'Noto Sans JP', sans-serif;
+  font-family:'Noto Serif JP', serif;
 }
 
-/* ロゴ */
-.logo{
-  text-align:center;
-  margin-top:60px;
-}
-
-.logo-main{
-  font-family:'Playfair Display', serif;
-  font-size:44px;
-  letter-spacing:16px;
-  font-weight:300;
-}
-
-.logo-sub{
-  font-family:'Cormorant Garamond', serif;
-  font-size:12px;
-  letter-spacing:4px;
-  margin-top:10px;
-  opacity:.7;
-}
-
-/* ヒーロー */
+/* TOP */
 .hero{
-  height:80vh;
+  min-height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.7)),
+    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.72)),
     url("IMG_2945.jpeg") center/cover no-repeat;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:0 20px;
+  padding:0 22px 90px;
+  box-sizing:border-box;
+}
+
+.logo-main{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+  letter-spacing:15px;
+  font-weight:400;
+  margin-bottom:12px;
+}
+
+.logo-sub{
+  font-family:'Cormorant Garamond', serif;
+  font-size:13px;
+  letter-spacing:5px;
+  opacity:.75;
+  margin-bottom:70px;
 }
 
 .catch{
-  margin-top:20px;
-  font-size:14px;
-  line-height:2;
-  opacity:.9;
+  font-size:17px;
+  line-height:2.2;
+  letter-spacing:1px;
+  text-shadow:0 2px 18px rgba(0,0,0,.5);
 }
 
-/* カード */
+.scroll{
+  position:absolute;
+  bottom:95px;
+  font-size:11px;
+  letter-spacing:3px;
+  opacity:.6;
+}
+
+/* MESSAGE */
+.message{
+  padding:70px 26px;
+  text-align:center;
+  line-height:2.2;
+  font-size:15px;
+  opacity:.86;
+}
+
+/* MENU */
 .menu{
-  padding:40px 20px 100px;
+  padding:20px 18px 120px;
 }
 
 .card{
   position:relative;
-  margin-bottom:20px;
-  height:220px;
+  height:260px;
+  margin-bottom:26px;
   overflow:hidden;
 }
 
@@ -74,23 +86,37 @@ body{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.65);
+  filter:brightness(.62);
+  transition:.5s;
 }
 
 .card-title{
   position:absolute;
-  bottom:20px;
-  left:20px;
-  font-size:22px;
-  letter-spacing:4px;
+  left:24px;
+  bottom:34px;
+  font-family:'Playfair Display', serif;
+  font-size:30px;
+  letter-spacing:5px;
 }
 
 .card-sub{
   position:absolute;
-  bottom:50px;
-  left:20px;
+  left:24px;
+  bottom:76px;
+  font-family:'Cormorant Garamond', serif;
+  font-size:13px;
+  letter-spacing:4px;
+  opacity:.8;
+}
+
+.card-text{
+  position:absolute;
+  left:24px;
+  right:24px;
+  bottom:16px;
   font-size:12px;
-  opacity:.7;
+  opacity:.75;
+  line-height:1.7;
 }
 
 .card a{
@@ -98,7 +124,35 @@ body{
   inset:0;
 }
 
-/* LINE固定 */
+/* CTA */
+.cta{
+  padding:60px 24px 120px;
+  text-align:center;
+  background:#0b0b0b;
+}
+
+.cta h2{
+  font-family:'Playfair Display', serif;
+  letter-spacing:4px;
+  font-weight:400;
+}
+
+.cta p{
+  line-height:2;
+  opacity:.75;
+}
+
+.btn{
+  display:block;
+  margin:28px auto 0;
+  max-width:340px;
+  padding:16px;
+  border:1px solid rgba(255,255,255,.7);
+  color:#fff;
+  text-decoration:none;
+  letter-spacing:2px;
+}
+
 .fixed-line{
   position:fixed;
   bottom:16px;
@@ -114,65 +168,94 @@ body{
   text-decoration:none;
   font-weight:bold;
   z-index:9999;
+  box-shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
-/* フッター */
 footer{
   text-align:center;
-  padding:40px 0 100px;
+  padding:40px 0 110px;
   opacity:.4;
   letter-spacing:4px;
+}
+
+@media(min-width:768px){
+  .logo-main{
+    font-size:72px;
+  }
+  .menu{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+  }
+  .card{
+    height:420px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- ロゴ -->
-<div class="logo">
-  <div class="logo-main">BELL WELL</div>
-  <div class="logo-sub">HAIR MAKE & PHOTO PRODUCE</div>
-</div>
-
-<!-- ヒーロー -->
 <section class="hero">
-  <p class="catch">
+  <div class="logo-main">BELL WELL</div>
+  <div class="logo-sub">HAIR MAKE PRODUCED PHOTO WEDDING</div>
+
+  <div class="catch">
     写真を撮るだけではなく、<br>
     “史上最高の自分”に出会う一日を。
-  </p>
+  </div>
+
+  <div class="scroll">SCROLL</div>
 </section>
 
-<!-- メニュー -->
+<section class="message">
+  ヘアメイクがプロデュースする、<br>
+  フォトウェディング・成人式・七五三。<br><br>
+  その日だけの空気感、表情、想いまで。<br>
+  大切な記念日を、上質に美しく残します。
+</section>
+
 <section class="menu">
 
   <div class="card">
-    <img src="IMG_2945.jpeg">
-    <div class="card-sub">Photo Wedding</div>
+    <img src="IMG_2948.jpeg">
+    <div class="card-sub">PHOTO WEDDING</div>
     <div class="card-title">BRIDAL</div>
+    <div class="card-text">ドレス・和装・ロケーション撮影</div>
     <a href="bridal.html"></a>
   </div>
 
   <div class="card">
-    <img src="IMG_2957.jpeg">
-    <div class="card-sub">Coming of Age</div>
-    <div class="card-title">成人式</div>
+    <img src="IMG_2958.jpeg">
+    <div class="card-sub">COMING OF AGE</div>
+    <div class="card-title">SEIJIN</div>
+    <div class="card-text">成人式前撮り・ロケーション撮影</div>
     <a href="seijin.html"></a>
   </div>
 
   <div class="card">
-    <img src="IMG_2963.jpeg">
-    <div class="card-sub">753 Photo</div>
-    <div class="card-title">七五三</div>
+    <img src="IMG_2965.jpeg">
+    <div class="card-sub">753 PHOTO</div>
+    <div class="card-title">753</div>
+    <div class="card-text">七五三・家族写真・記念撮影</div>
     <a href="753.html"></a>
   </div>
 
+</section>
+
+<section class="cta">
+  <h2>CONTACT</h2>
+  <p>
+    撮影内容・日程・料金について、<br>
+    まずはLINEからお気軽にご相談ください。
+  </p>
+  <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで相談する</a>
 </section>
 
 <footer>
   BELL WELL
 </footer>
 
-<!-- LINE -->
 <a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
 LINEで予約・相談
 </a>
