@@ -3,134 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRIDAL</title>
+<title>BRIDAL | BELL WELL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body{
-  margin:0;
-  background:#000;
-  color:#fff;
-  font-family:sans-serif;
-}
-
-.section{
-  padding:30px;
-}
-
-h1{
-  text-align:center;
-  margin-bottom:20px;
-  letter-spacing:4px;
-}
-
-/* 画像 */
-img{
-  width:100%;
-  margin-bottom:10px;
-}
-
-/* 説明 */
-.text{
-  line-height:2;
-  opacity:.8;
-  margin-bottom:20px;
-}
-
-/* 料金 */
-.price{
-  border:1px solid rgba(255,255,255,.2);
-  padding:20px;
-  margin-bottom:15px;
-}
-
-/* 流れ */
-.flow{
-  line-height:2;
-  opacity:.7;
-  margin-top:20px;
-}
-
-/* ボタン */
-.btn{
-  display:block;
-  text-align:center;
-  border:1px solid #fff;
-  padding:15px;
-  margin:30px 0;
-  color:#fff;
-  text-decoration:none;
-}
-
-/* LINE固定 */
-.fixed-line{
-  position:fixed;
-  bottom:20px;
-  left:50%;
-  transform:translateX(-50%);
-  width:85%;
-  max-width:400px;
-  background:#06C755;
-  padding:16px;
-  border-radius:999px;
-  text-align:center;
-  color:#fff;
-  text-decoration:none;
-  font-weight:bold;
-}
+body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:'Noto Serif JP',serif;}
+.hero{min-height:70vh;background:linear-gradient(rgba(246,242,235,.25),rgba(246,242,235,.85)),url("IMG_2948.jpeg") center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 24px;}
+h1{font-family:'Playfair Display',serif;font-size:46px;letter-spacing:10px;font-weight:400;}
+.sub{letter-spacing:4px;font-size:13px;}
+.section{padding:55px 24px;}
+.title{text-align:center;font-family:'Playfair Display',serif;letter-spacing:5px;font-size:28px;margin-bottom:25px;}
+.text{text-align:center;line-height:2.1;}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;}
+.grid img{width:100%;display:block;}
+.price-card{border:1px solid #c8b7a7;padding:22px;margin-bottom:18px;background:#fffaf4;}
+.price{font-size:20px;margin-bottom:10px;}
+.flow{text-align:center;line-height:2.2;}
+.btn{display:block;text-align:center;border:1px solid #8a6b55;color:#8a6b55;text-decoration:none;padding:16px;margin:14px auto;max-width:340px;}
+.fixed-line{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);width:86%;max-width:420px;background:#8a6b55;color:#fff;text-align:center;padding:16px 0;border-radius:999px;text-decoration:none;font-weight:bold;}
+footer{text-align:center;padding:40px 0 110px;opacity:.5;}
 </style>
 </head>
 
 <body>
 
-<div class="section">
+<section class="hero">
+  <div>
+    <div class="sub">PHOTO WEDDING</div>
+    <h1>BRIDAL</h1>
+  </div>
+</section>
 
-<h1>BRIDAL</h1>
+<section class="section">
+  <div class="title">CONCEPT</div>
+  <p class="text">
+    ヘアメイクがプロデュースするフォトウェディング。<br>
+    ドレス・和装・ロケーション撮影まで、<br>
+    おふたりらしい一日を上質に美しく残します。
+  </p>
+</section>
 
-<!-- 画像 -->
-<img src="IMG_2945.jpeg">
-<img src="IMG_2946.jpeg">
-<img src="IMG_2947.jpeg">
-<img src="IMG_2948.jpeg">
+<section class="section">
+  <div class="title">GALLERY</div>
+  <div class="grid">
+    <img src="IMG_2945.jpeg">
+    <img src="IMG_2946.jpeg">
+    <img src="IMG_2947.jpeg">
+    <img src="IMG_2948.jpeg">
+  </div>
+</section>
 
-<!-- 説明 -->
-<p class="text">
-ヘアメイクがプロデュースするフォトウェディング。<br>
-一人ひとりに似合うスタイルを見極め、<br>
-「今までで一番好きな自分」をカタチにします。
-</p>
+<section class="section">
+  <div class="title">PRICE</div>
 
-<!-- 料金 -->
-<div class="price">
-持ち込み衣装プラン ¥98,000〜<br>
-ヘアメイク / 撮影 / データ全渡し
-</div>
+  <div class="price-card">
+    <div class="price">持ち込み衣装プラン ¥98,000〜</div>
+    <p>新婦ヘアメイク / スタイリストアテンド / カメラマン撮影 / データ全渡し</p>
+  </div>
 
-<div class="price">
-ドレスプラン ¥250,000〜<br>
-衣装 / ヘアメイク / 撮影込み
-</div>
+  <div class="price-card">
+    <div class="price">ドレスコーディネートプラン ¥250,000〜</div>
+    <p>ドレス・タキシード / 衣装小物 / ヘアメイク / ロケーション撮影</p>
+  </div>
 
-<div class="price">
-和装プラン ¥297,000〜
-</div>
+  <div class="price-card">
+    <div class="price">和装ロケーションプラン ¥297,000〜</div>
+    <p>白無垢・打掛 / 着付け / お支度 / 撮影データ</p>
+  </div>
+</section>
 
-<!-- 流れ -->
-<p class="flow">
-① LINEでお問い合わせ<br>
-② カウンセリング・日程決定<br>
-③ ヘアメイク・撮影<br>
-④ データお渡し
-</p>
+<section class="section">
+  <div class="title">FLOW</div>
+  <p class="flow">
+    ① LINEでお問い合わせ<br>
+    ② カウンセリング・日程決定<br>
+    ③ 衣装・ヘアメイクお支度<br>
+    ④ ロケーション撮影<br>
+    ⑤ 撮影データお渡し
+  </p>
+</section>
 
-<!-- ボタン -->
-<a href="index.html" class="btn">TOPへ戻る</a>
+<section class="section">
+  <div class="title">CONTACT</div>
+  <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで相談する</a>
+  <a href="index.html" class="btn">TOPへ戻る</a>
+</section>
 
-</div>
+<footer>BELL WELL</footer>
 
-<!-- LINE -->
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
-LINEで予約・相談
-</a>
+<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">LINEで予約・相談</a>
 
 </body>
 </html>
