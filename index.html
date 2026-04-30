@@ -8,175 +8,111 @@
 <style>
 body{
   margin:0;
-  font-family:'Helvetica Neue',serif;
   background:#0d0d0d;
   color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
 }
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:22px 28px;
-  background:rgba(0,0,0,.55);
-  z-index:10;
-}
-header h1{
-  margin:0;
-  font-size:28px;
-  font-weight:300;
+
+h1{
+  text-align:center;
+  padding:40px 0 10px;
   letter-spacing:8px;
-}
-.hero{
-  height:100vh;
-  background:
-  linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.55)),
-  url("https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2933.jpeg") center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-}
-.hero h2{
-  font-size:42px;
   font-weight:300;
-  letter-spacing:5px;
-  line-height:1.6;
 }
-.section{
-  padding:90px 18px;
+
+.sub{
   text-align:center;
+  opacity:.6;
+  margin-bottom:40px;
 }
-.section h3{
-  font-size:30px;
-  letter-spacing:6px;
-  margin-bottom:18px;
+
+.section{
+  padding:30px 15px;
 }
-.section p{
-  line-height:2;
-  color:#ddd;
+
+.title{
+  letter-spacing:4px;
+  margin-bottom:20px;
+  font-size:18px;
 }
-.btns{
-  display:flex;
-  gap:14px;
-  justify-content:center;
-  flex-wrap:wrap;
-  margin-top:30px;
-}
-.btn{
-  color:#fff;
-  border:1px solid #fff;
-  text-decoration:none;
-  padding:14px 34px;
-  letter-spacing:2px;
-}
+
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:18px;
-  margin-top:40px;
+  grid-template-columns:1fr;
+  gap:20px;
 }
-.grid img{
+
+img{
   width:100%;
-  height:390px;
-  object-fit:cover;
+  display:block;
+  border-radius:2px;
 }
-.wide img{
-  height:520px;
+
+@media(min-width:768px){
+  .grid{
+    grid-template-columns:1fr 1fr;
+  }
 }
+
+@media(min-width:1024px){
+  .grid{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+}
+
 footer{
   text-align:center;
-  padding:50px;
-  background:#000;
-  letter-spacing:4px;
+  padding:50px 0;
+  opacity:.5;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
-  <h1>BELL WELL</h1>
-</header>
+<h1>BELL WELL</h1>
+<p class="sub">for your special day</p>
 
-<section class="hero">
-  <h2>FOR YOUR<br>SPECIAL DAY</h2>
-</section>
-
-<section class="section">
-  <h3>CONCEPT</h3>
-  <p>
-    ヘアメイクが創る、特別な一日。<br>
-    外見だけでなく、内面から輝く美しさを。<br>
-    あなた史上、最高の瞬間を。
-  </p>
-  <div class="btns">
-    <a href="#bridal" class="btn">BRIDAL</a>
-    <a href="#seijin" class="btn">SEIJIN</a>
-    <a href="#couple" class="btn">COUPLE</a>
-  </div>
-</section>
-
-<section class="section wide" id="bridal">
-  <h3>BRIDAL</h3>
-  <p>上質で、記憶に残るフォトウェディング。</p>
+<!-- BRIDAL -->
+<div class="section">
+  <div class="title">BRIDAL</div>
   <div class="grid">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2933.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2932.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2945.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2946.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2947.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2948.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2949.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2950.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2951.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2952.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2953.jpeg">
+    <img src="IMG_2945.jpeg">
+    <img src="IMG_2946.jpeg">
+    <img src="IMG_2947.jpeg">
+    <img src="IMG_2948.jpeg">
+    <img src="IMG_2949.jpeg">
+    <img src="IMG_2950.jpeg">
+    <img src="IMG_2951.jpeg">
   </div>
-</section>
+</div>
 
-<section class="section" id="seijin">
-  <h3>SEIJIN</h3>
-  <p>二十歳の美しさを、今らしく上品に。</p>
+<!-- 成人式 -->
+<div class="section">
+  <div class="title">SEIJIN</div>
   <div class="grid">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2931.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2934.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2957.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2958.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2959.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2960.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2961.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2962.jpeg">
+    <img src="IMG_2957.jpeg">
+    <img src="IMG_2958.jpeg">
+    <img src="IMG_2959.jpeg">
+    <img src="IMG_2960.jpeg">
+    <img src="IMG_2961.jpeg">
+    <img src="IMG_2962.jpeg">
   </div>
-</section>
+</div>
 
-<section class="section" id="couple">
-  <h3>COUPLE / FAMILY</h3>
-  <p>大切な人との時間を、写真に残す。</p>
+<!-- FAMILY -->
+<div class="section">
+  <div class="title">FAMILY</div>
   <div class="grid">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2935.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2938.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2963.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2964.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2965.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2966.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2967.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2968.jpeg">
+    <img src="IMG_2963.jpeg">
+    <img src="IMG_2964.jpeg">
+    <img src="IMG_2965.jpeg">
+    <img src="IMG_2966.jpeg">
+    <img src="IMG_2967.jpeg">
+    <img src="IMG_2968.jpeg">
   </div>
-</section>
-
-<section class="section">
-  <h3>GALLERY</h3>
-  <div class="grid">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2936.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2937.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2939.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2940.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2941.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2942.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2943.jpeg">
-    <img src="https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2944.jpeg">
-  </div>
-</section>
+</div>
 
 <footer>
   BELL WELL
