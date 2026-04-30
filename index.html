@@ -27,7 +27,7 @@ h1{
 }
 
 .section{
-  padding:30px 15px;
+  padding:40px 15px;
 }
 
 .title{
@@ -45,19 +45,30 @@ h1{
 img{
   width:100%;
   display:block;
-  border-radius:2px;
 }
 
 @media(min-width:768px){
-  .grid{
-    grid-template-columns:1fr 1fr;
-  }
+  .grid{grid-template-columns:1fr 1fr;}
 }
 
 @media(min-width:1024px){
-  .grid{
-    grid-template-columns:1fr 1fr 1fr;
-  }
+  .grid{grid-template-columns:1fr 1fr 1fr;}
+}
+
+.price-box{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:block;
+  text-align:center;
+  border:1px solid #fff;
+  padding:15px;
+  margin:10px 20px;
+  text-decoration:none;
+  color:#fff;
+  letter-spacing:2px;
 }
 
 footer{
@@ -82,13 +93,10 @@ footer{
     <img src="IMG_2946.jpeg">
     <img src="IMG_2947.jpeg">
     <img src="IMG_2948.jpeg">
-    <img src="IMG_2949.jpeg">
-    <img src="IMG_2950.jpeg">
-    <img src="IMG_2951.jpeg">
   </div>
 </div>
 
-<!-- 成人式 -->
+<!-- SEIJIN -->
 <div class="section">
   <div class="title">SEIJIN</div>
   <div class="grid">
@@ -96,8 +104,6 @@ footer{
     <img src="IMG_2958.jpeg">
     <img src="IMG_2959.jpeg">
     <img src="IMG_2960.jpeg">
-    <img src="IMG_2961.jpeg">
-    <img src="IMG_2962.jpeg">
   </div>
 </div>
 
@@ -109,17 +115,39 @@ footer{
     <img src="IMG_2964.jpeg">
     <img src="IMG_2965.jpeg">
     <img src="IMG_2966.jpeg">
-    <img src="IMG_2967.jpeg">
-    <img src="IMG_2968.jpeg">
   </div>
 </div>
-<!-- CONTACT -->
+
+<!-- PRICE -->
+<div class="section">
+  <div class="title">PRICE</div>
+
+  <div class="price-box">
+    <h3>BRIDAL ¥33,000〜</h3>
+    <p>ヘアメイク＋撮影</p>
+  </div>
+
+  <div class="price-box">
+    <h3>SEIJIN ¥33,000〜</h3>
+    <p>ヘアメイク＋撮影</p>
+  </div>
+
+  <div class="price-box">
+    <h3>COUPLE ¥22,000〜</h3>
+    <p>撮影＋データ</p>
+  </div>
+
+  <p style="text-align:center;opacity:.6;">詳細はお問い合わせください</p>
+</div>
+
+<!-- CONTACT（これが絶対出る） -->
 <div class="section">
   <div class="title">CONTACT</div>
 
   <a href="tel:08039446775" class="btn">電話で問い合わせ</a>
   <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで予約</a>
 </div>
+
 <footer>
   BELL WELL
 </footer>
