@@ -10,8 +10,8 @@
 <style>
 body{
   margin:0;
-  background:#050505;
-  color:#fff;
+  background:#f6f2eb;
+  color:#3e2f27;
   font-family:'Noto Serif JP', serif;
 }
 
@@ -19,7 +19,7 @@ body{
 .hero{
   min-height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.72)),
+    linear-gradient(rgba(246,242,235,.4),rgba(246,242,235,.85)),
     url("IMG_2945.jpeg") center/cover no-repeat;
   display:flex;
   flex-direction:column;
@@ -27,38 +27,26 @@ body{
   align-items:center;
   text-align:center;
   padding:0 22px 90px;
-  box-sizing:border-box;
 }
 
 .logo-main{
   font-family:'Playfair Display', serif;
   font-size:48px;
-  letter-spacing:15px;
-  font-weight:400;
-  margin-bottom:12px;
+  letter-spacing:14px;
+  font-weight:500;
 }
 
 .logo-sub{
   font-family:'Cormorant Garamond', serif;
   font-size:13px;
   letter-spacing:5px;
-  opacity:.75;
-  margin-bottom:70px;
+  margin-bottom:60px;
+  opacity:.7;
 }
 
 .catch{
   font-size:17px;
   line-height:2.2;
-  letter-spacing:1px;
-  text-shadow:0 2px 18px rgba(0,0,0,.5);
-}
-
-.scroll{
-  position:absolute;
-  bottom:95px;
-  font-size:11px;
-  letter-spacing:3px;
-  opacity:.6;
 }
 
 /* MESSAGE */
@@ -67,7 +55,6 @@ body{
   text-align:center;
   line-height:2.2;
   font-size:15px;
-  opacity:.86;
 }
 
 /* MENU */
@@ -86,8 +73,7 @@ body{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.62);
-  transition:.5s;
+  filter:brightness(.75);
 }
 
 .card-title{
@@ -97,6 +83,7 @@ body{
   font-family:'Playfair Display', serif;
   font-size:30px;
   letter-spacing:5px;
+  color:#fff;
 }
 
 .card-sub{
@@ -106,7 +93,7 @@ body{
   font-family:'Cormorant Garamond', serif;
   font-size:13px;
   letter-spacing:4px;
-  opacity:.8;
+  color:#fff;
 }
 
 .card-text{
@@ -115,31 +102,14 @@ body{
   right:24px;
   bottom:16px;
   font-size:12px;
-  opacity:.75;
-  line-height:1.7;
-}
-
-.card a{
-  position:absolute;
-  inset:0;
+  color:#fff;
 }
 
 /* CTA */
 .cta{
   padding:60px 24px 120px;
   text-align:center;
-  background:#0b0b0b;
-}
-
-.cta h2{
-  font-family:'Playfair Display', serif;
-  letter-spacing:4px;
-  font-weight:400;
-}
-
-.cta p{
-  line-height:2;
-  opacity:.75;
+  background:#ebe4da;
 }
 
 .btn{
@@ -147,12 +117,13 @@ body{
   margin:28px auto 0;
   max-width:340px;
   padding:16px;
-  border:1px solid rgba(255,255,255,.7);
-  color:#fff;
+  border:1px solid #8a6b55;
+  color:#8a6b55;
   text-decoration:none;
   letter-spacing:2px;
 }
 
+/* LINE */
 .fixed-line{
   position:fixed;
   bottom:16px;
@@ -160,36 +131,19 @@ body{
   transform:translateX(-50%);
   width:86%;
   max-width:420px;
-  background:#06C755;
+  background:#8a6b55;
   color:#fff;
   text-align:center;
   padding:16px 0;
   border-radius:999px;
   text-decoration:none;
   font-weight:bold;
-  z-index:9999;
-  box-shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
 footer{
   text-align:center;
   padding:40px 0 110px;
   opacity:.4;
-  letter-spacing:4px;
-}
-
-@media(min-width:768px){
-  .logo-main{
-    font-size:72px;
-  }
-  .menu{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-  }
-  .card{
-    height:420px;
-  }
 }
 </style>
 </head>
@@ -204,14 +158,11 @@ footer{
     写真を撮るだけではなく、<br>
     “史上最高の自分”に出会う一日を。
   </div>
-
-  <div class="scroll">SCROLL</div>
 </section>
 
 <section class="message">
   ヘアメイクがプロデュースする、<br>
   フォトウェディング・成人式・七五三。<br><br>
-  その日だけの空気感、表情、想いまで。<br>
   大切な記念日を、上質に美しく残します。
 </section>
 
@@ -237,7 +188,7 @@ footer{
     <img src="IMG_2965.jpeg">
     <div class="card-sub">753 PHOTO</div>
     <div class="card-title">753</div>
-    <div class="card-text">七五三・家族写真・記念撮影</div>
+    <div class="card-text">七五三・家族写真</div>
     <a href="753.html"></a>
   </div>
 
@@ -246,8 +197,8 @@ footer{
 <section class="cta">
   <h2>CONTACT</h2>
   <p>
-    撮影内容・日程・料金について、<br>
-    まずはLINEからお気軽にご相談ください。
+    撮影内容・日程・料金について<br>
+    お気軽にご相談ください。
   </p>
   <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで相談する</a>
 </section>
