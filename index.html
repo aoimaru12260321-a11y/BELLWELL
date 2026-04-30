@@ -23,14 +23,13 @@ h1{
 .sub{
   text-align:center;
   opacity:.6;
-  margin-bottom:20px;
 }
 
 .top-text{
   text-align:center;
   line-height:2;
-  opacity:.7;
-  padding:0 20px 30px;
+  opacity:.8;
+  padding:20px;
 }
 
 .section{
@@ -38,10 +37,10 @@ h1{
 }
 
 .title{
-  letter-spacing:4px;
-  margin-bottom:20px;
-  font-size:20px;
   text-align:center;
+  letter-spacing:4px;
+  margin-bottom:25px;
+  font-size:20px;
 }
 
 .grid{
@@ -57,13 +56,25 @@ img{
 
 .price-card{
   border:1px solid rgba(255,255,255,.2);
-  padding:25px;
-  margin-bottom:20px;
+  padding:20px;
+  margin-bottom:15px;
 }
 
 .price{
   font-size:20px;
   margin-bottom:10px;
+}
+
+.text{
+  opacity:.7;
+  line-height:2;
+  text-align:center;
+}
+
+.flow{
+  text-align:center;
+  line-height:2;
+  opacity:.7;
 }
 
 .btn{
@@ -98,30 +109,48 @@ footer{
   padding:50px 0;
   opacity:.5;
 }
-</style>
 
+@media(min-width:768px){
+  .grid{grid-template-columns:1fr 1fr;}
+}
+@media(min-width:1024px){
+  .grid{grid-template-columns:1fr 1fr 1fr;}
+}
+</style>
 </head>
 
 <body>
 
 <h1>BELL WELL</h1>
-
 <p class="sub">Photo Wedding / Bridal / Seijin</p>
 
 <p class="top-text">
 ヘアメイクがプロデュースするフォトウェディング。<br>
-成人式・カップルフォト・ブライダルまで、<br>
+成人式・カップル・ブライダルまで<br>
 あなた史上最高の一日をカタチに。
 </p>
 
-<!-- BRIDAL -->
+<!-- ABOUT -->
 <div class="section">
-  <div class="title">BRIDAL</div>
+  <div class="title">ABOUT</div>
+  <p class="text">
+  ただ写真を撮るだけではなく、<br>
+  「似合う」「可愛い」を最大限に引き出す。<br><br>
+  ヘアメイク・撮影・空気感までトータルでプロデュースし、<br>
+  今までで一番好きな自分を残します。
+  </p>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <div class="title">GALLERY</div>
   <div class="grid">
     <img src="IMG_2945.jpeg">
     <img src="IMG_2946.jpeg">
     <img src="IMG_2947.jpeg">
     <img src="IMG_2948.jpeg">
+    <img src="IMG_2957.jpeg">
+    <img src="IMG_2958.jpeg">
   </div>
 </div>
 
@@ -131,18 +160,39 @@ footer{
 
   <div class="price-card">
     <div class="price">持ち込み衣装プラン ¥98,000〜</div>
-    <p>ヘアメイク / 撮影 / データ全渡し</p>
+    <p class="text">ヘアメイク・撮影・データ全渡し</p>
   </div>
 
   <div class="price-card">
     <div class="price">ドレスプラン ¥250,000〜</div>
-    <p>衣装・ヘアメイク・撮影込み</p>
+    <p class="text">衣装・ヘアメイク・撮影込み</p>
   </div>
 
   <div class="price-card">
     <div class="price">和装プラン ¥297,000〜</div>
   </div>
 
+</div>
+
+<!-- FLOW -->
+<div class="section">
+  <div class="title">FLOW</div>
+  <p class="flow">
+  ① LINEでお問い合わせ<br>
+  ② カウンセリング・日程決定<br>
+  ③ ヘアメイク・撮影<br>
+  ④ データお渡し
+  </p>
+</div>
+
+<!-- VOICE -->
+<div class="section">
+  <div class="title">VOICE</div>
+  <p class="text">
+  「今までで一番可愛かったです」<br>
+  「最初は緊張したけど楽しかった」<br>
+  「お願いして本当に良かった」
+  </p>
 </div>
 
 <!-- CONTACT -->
