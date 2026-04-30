@@ -6,26 +6,88 @@
 <title>BELLWELL</title>
 
 <style>
-body{margin:0;font-family:sans-serif;text-align:center;}
+body{
+  margin:0;
+  font-family:"Helvetica Neue", sans-serif;
+  text-align:center;
+  background:#f7f3ef;
+  color:#2b211b;
+}
 
 .hero{
   height:90vh;
-  background:url("https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2937.jpeg") center/cover;
+  background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)),
+    url("https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2937.jpeg") center/cover;
   color:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
   flex-direction:column;
+  padding:0 20px;
+}
+
+.hero h1{
+  font-size:32px;
+  line-height:1.5;
+  letter-spacing:2px;
+  margin:0;
+}
+
+.hero p{
+  font-size:14px;
+  letter-spacing:1px;
+  margin-top:16px;
+}
+
+section{
+  padding:48px 22px;
+}
+
+h2{
+  font-size:22px;
+  letter-spacing:2px;
+  margin-bottom:18px;
+}
+
+p{
+  line-height:1.9;
+  font-size:15px;
 }
 
 .btn{
   display:block;
-  margin:20px auto;
-  padding:15px;
-  background:#000;
+  margin:16px auto;
+  padding:16px;
+  background:#2b211b;
   color:#fff;
   text-decoration:none;
-  width:80%;
+  width:82%;
+  max-width:360px;
+  border-radius:999px;
+  letter-spacing:1px;
+  font-weight:bold;
+}
+
+.btn.light{
+  background:#fff;
+  color:#2b211b;
+  border:1px solid #2b211b;
+}
+
+.menu{
+  background:#fff;
+  margin:20px;
+  padding:28px 18px;
+  border-radius:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.footer{
+  background:#2b211b;
+  color:#fff;
+  padding:32px 20px;
+  font-size:13px;
 }
 </style>
 </head>
@@ -33,11 +95,34 @@ body{margin:0;font-family:sans-serif;text-align:center;}
 <body>
 
 <div class="hero">
-<h1>一生に一度を、ちゃんと残す。</h1>
+  <h1>一生に一度の瞬間を、<br>最高のカタチで残す。</h1>
+  <p>BELLWELL PHOTO SERVICE</p>
 </div>
 
-<a href="seijin.html" class="btn">成人式前撮りはこちら</a>
-<a href="couple.html" class="btn">カップル前撮りはこちら</a>
+<section>
+  <h2>BELLWELL</h2>
+  <p>
+    ヘアメイクが監修するフォトサービス。<br>
+    成人式前撮り、カップルフォト、ブライダルフォトまで、<br>
+    大切な一日を美しく残します。
+  </p>
+</section>
+
+<div class="menu">
+  <h2>撮影メニュー</h2>
+  <a href="seijin.html" class="btn">成人式前撮り</a>
+  <a href="couple.html" class="btn light">カップル前撮り</a>
+</div>
+
+<section>
+  <h2>ご相談・ご予約</h2>
+  <p>まずは相談だけでもお気軽にお問い合わせください。</p>
+  <a href="tel:08039446775" class="btn">電話で問い合わせる</a>
+</section>
+
+<div class="footer">
+  © BELLWELL
+</div>
 
 </body>
 </html>
