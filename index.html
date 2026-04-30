@@ -23,17 +23,25 @@ h1{
 .sub{
   text-align:center;
   opacity:.6;
-  margin-bottom:40px;
+  margin-bottom:20px;
+}
+
+.top-text{
+  text-align:center;
+  line-height:2;
+  opacity:.7;
+  padding:0 20px 30px;
 }
 
 .section{
-  padding:40px 15px;
+  padding:50px 20px;
 }
 
 .title{
   letter-spacing:4px;
   margin-bottom:20px;
-  font-size:18px;
+  font-size:20px;
+  text-align:center;
 }
 
 .grid{
@@ -47,17 +55,15 @@ img{
   display:block;
 }
 
-@media(min-width:768px){
-  .grid{grid-template-columns:1fr 1fr;}
+.price-card{
+  border:1px solid rgba(255,255,255,.2);
+  padding:25px;
+  margin-bottom:20px;
 }
 
-@media(min-width:1024px){
-  .grid{grid-template-columns:1fr 1fr 1fr;}
-}
-
-.price-box{
-  text-align:center;
-  margin-bottom:30px;
+.price{
+  font-size:20px;
+  margin-bottom:10px;
 }
 
 .btn{
@@ -68,7 +74,6 @@ img{
   margin:10px 20px;
   text-decoration:none;
   color:#fff;
-  letter-spacing:2px;
 }
 
 .fixed-line{
@@ -85,9 +90,7 @@ img{
   border-radius:999px;
   text-decoration:none;
   font-weight:bold;
-  letter-spacing:2px;
   z-index:9999;
-  box-shadow:0 8px 25px rgba(0,0,0,.35);
 }
 
 footer{
@@ -102,7 +105,14 @@ footer{
 <body>
 
 <h1>BELL WELL</h1>
-<p class="sub">for your special day</p>
+
+<p class="sub">Photo Wedding / Bridal / Seijin</p>
+
+<p class="top-text">
+ヘアメイクがプロデュースするフォトウェディング。<br>
+成人式・カップルフォト・ブライダルまで、<br>
+あなた史上最高の一日をカタチに。
+</p>
 
 <!-- BRIDAL -->
 <div class="section">
@@ -115,48 +125,24 @@ footer{
   </div>
 </div>
 
-<!-- SEIJIN -->
-<div class="section">
-  <div class="title">SEIJIN</div>
-  <div class="grid">
-    <img src="IMG_2957.jpeg">
-    <img src="IMG_2958.jpeg">
-    <img src="IMG_2959.jpeg">
-    <img src="IMG_2960.jpeg">
-  </div>
-</div>
-
-<!-- FAMILY -->
-<div class="section">
-  <div class="title">FAMILY</div>
-  <div class="grid">
-    <img src="IMG_2963.jpeg">
-    <img src="IMG_2964.jpeg">
-    <img src="IMG_2965.jpeg">
-    <img src="IMG_2966.jpeg">
-  </div>
-</div>
-
 <!-- PRICE -->
 <div class="section">
   <div class="title">PRICE</div>
 
-  <div class="price-box">
-    <h3>BRIDAL ¥33,000〜</h3>
-    <p>ヘアメイク＋撮影</p>
+  <div class="price-card">
+    <div class="price">持ち込み衣装プラン ¥98,000〜</div>
+    <p>ヘアメイク / 撮影 / データ全渡し</p>
   </div>
 
-  <div class="price-box">
-    <h3>SEIJIN ¥33,000〜</h3>
-    <p>ヘアメイク＋撮影</p>
+  <div class="price-card">
+    <div class="price">ドレスプラン ¥250,000〜</div>
+    <p>衣装・ヘアメイク・撮影込み</p>
   </div>
 
-  <div class="price-box">
-    <h3>COUPLE ¥22,000〜</h3>
-    <p>撮影＋データ</p>
+  <div class="price-card">
+    <div class="price">和装プラン ¥297,000〜</div>
   </div>
 
-  <p style="text-align:center;opacity:.6;">詳細はお問い合わせください</p>
 </div>
 
 <!-- CONTACT -->
@@ -171,7 +157,7 @@ footer{
   BELL WELL
 </footer>
 
-<!-- 固定LINEボタン -->
+<!-- 固定LINE -->
 <a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
   LINEで予約・相談
 </a>
