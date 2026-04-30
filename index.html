@@ -10,111 +10,42 @@ body{
   margin:0;
   background:#0d0d0d;
   color:#fff;
-  font-family:'Helvetica Neue',sans-serif;
+  font-family:sans-serif;
+  text-align:center;
 }
 
 h1{
-  text-align:center;
-  padding:40px 0 10px;
+  padding:60px 0 20px;
   letter-spacing:8px;
   font-weight:300;
 }
 
-.sub{
-  text-align:center;
+p{
   opacity:.6;
-}
-
-.top-text{
-  text-align:center;
-  line-height:2;
-  opacity:.8;
-  padding:20px;
-}
-
-.section{
-  padding:50px 20px;
-}
-
-.title{
-  text-align:center;
-  letter-spacing:4px;
-  margin-bottom:25px;
-  font-size:20px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:20px;
-}
-
-img{
-  width:100%;
-  display:block;
-}
-
-.price-card{
-  border:1px solid rgba(255,255,255,.2);
-  padding:20px;
-  margin-bottom:15px;
-}
-
-.price{
-  font-size:20px;
-  margin-bottom:10px;
-}
-
-.text{
-  opacity:.7;
-  line-height:2;
-  text-align:center;
-}
-
-.flow{
-  text-align:center;
-  line-height:2;
-  opacity:.7;
 }
 
 .btn{
   display:block;
-  text-align:center;
+  margin:20px auto;
+  padding:18px;
+  width:80%;
+  max-width:320px;
   border:1px solid #fff;
-  padding:15px;
-  margin:10px 20px;
-  text-decoration:none;
   color:#fff;
+  text-decoration:none;
 }
 
 .fixed-line{
   position:fixed;
-  bottom:16px;
+  bottom:20px;
   left:50%;
   transform:translateX(-50%);
-  width:86%;
-  max-width:420px;
+  width:85%;
   background:#06C755;
-  color:#fff;
-  text-align:center;
-  padding:16px 0;
+  padding:15px;
   border-radius:999px;
   text-decoration:none;
-  font-weight:bold;
-  z-index:9999;
-}
-
-footer{
-  text-align:center;
-  padding:50px 0;
-  opacity:.5;
-}
-
-@media(min-width:768px){
-  .grid{grid-template-columns:1fr 1fr;}
-}
-@media(min-width:1024px){
-  .grid{grid-template-columns:1fr 1fr 1fr;}
+  color:#fff;
 }
 </style>
 </head>
@@ -122,92 +53,12 @@ footer{
 <body>
 
 <h1>BELL WELL</h1>
-<p class="sub">Photo Wedding / Bridal / Seijin</p>
+<p>Photo Wedding / Seijin / 753</p>
 
-<p class="top-text">
-ヘアメイクがプロデュースするフォトウェディング。<br>
-成人式・カップル・ブライダルまで<br>
-あなた史上最高の一日をカタチに。
-</p>
+<a href="bridal.html" class="btn">BRIDAL</a>
+<a href="seijin.html" class="btn">成人式</a>
+<a href="753.html" class="btn">七五三</a>
 
-<!-- ABOUT -->
-<div class="section">
-  <div class="title">ABOUT</div>
-  <p class="text">
-  ただ写真を撮るだけではなく、<br>
-  「似合う」「可愛い」を最大限に引き出す。<br><br>
-  ヘアメイク・撮影・空気感までトータルでプロデュースし、<br>
-  今までで一番好きな自分を残します。
-  </p>
-</div>
-
-<!-- GALLERY -->
-<div class="section">
-  <div class="title">GALLERY</div>
-  <div class="grid">
-    <img src="IMG_2945.jpeg">
-    <img src="IMG_2946.jpeg">
-    <img src="IMG_2947.jpeg">
-    <img src="IMG_2948.jpeg">
-    <img src="IMG_2957.jpeg">
-    <img src="IMG_2958.jpeg">
-  </div>
-</div>
-
-<!-- PRICE -->
-<div class="section">
-  <div class="title">PRICE</div>
-
-  <div class="price-card">
-    <div class="price">持ち込み衣装プラン ¥98,000〜</div>
-    <p class="text">ヘアメイク・撮影・データ全渡し</p>
-  </div>
-
-  <div class="price-card">
-    <div class="price">ドレスプラン ¥250,000〜</div>
-    <p class="text">衣装・ヘアメイク・撮影込み</p>
-  </div>
-
-  <div class="price-card">
-    <div class="price">和装プラン ¥297,000〜</div>
-  </div>
-
-</div>
-
-<!-- FLOW -->
-<div class="section">
-  <div class="title">FLOW</div>
-  <p class="flow">
-  ① LINEでお問い合わせ<br>
-  ② カウンセリング・日程決定<br>
-  ③ ヘアメイク・撮影<br>
-  ④ データお渡し
-  </p>
-</div>
-
-<!-- VOICE -->
-<div class="section">
-  <div class="title">VOICE</div>
-  <p class="text">
-  「今までで一番可愛かったです」<br>
-  「最初は緊張したけど楽しかった」<br>
-  「お願いして本当に良かった」
-  </p>
-</div>
-
-<!-- CONTACT -->
-<div class="section">
-  <div class="title">CONTACT</div>
-
-  <a href="tel:08039446775" class="btn">電話で問い合わせ</a>
-  <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで予約</a>
-</div>
-
-<footer>
-  BELL WELL
-</footer>
-
-<!-- 固定LINE -->
 <a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
   LINEで予約・相談
 </a>
