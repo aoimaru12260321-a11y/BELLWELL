@@ -5,48 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BELL WELL</title>
 
+<!-- フォント -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Cormorant+Garamond:wght@300&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
 <style>
 body{
   margin:0;
   background:#050505;
   color:#fff;
-  font-family:'Helvetica Neue',sans-serif;
+  font-family:'Noto Sans JP', sans-serif;
 }
 
+/* ロゴ */
+.logo{
+  text-align:center;
+  margin-top:60px;
+}
+
+.logo-main{
+  font-family:'Playfair Display', serif;
+  font-size:44px;
+  letter-spacing:16px;
+  font-weight:300;
+}
+
+.logo-sub{
+  font-family:'Cormorant Garamond', serif;
+  font-size:12px;
+  letter-spacing:4px;
+  margin-top:10px;
+  opacity:.7;
+}
+
+/* ヒーロー */
 .hero{
-  height:100vh;
+  height:80vh;
   background:
-    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.7)),
     url("IMG_2945.jpeg") center/cover no-repeat;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:0 24px;
-}
-
-h1{
-  font-size:42px;
-  letter-spacing:10px;
-  font-weight:300;
-  margin:0 0 20px;
+  padding:0 20px;
 }
 
 .catch{
-  font-size:15px;
+  margin-top:20px;
+  font-size:14px;
   line-height:2;
   opacity:.9;
 }
 
+/* カード */
 .menu{
-  padding:45px 20px 100px;
+  padding:40px 20px 100px;
 }
 
 .card{
   position:relative;
-  margin-bottom:22px;
-  height:230px;
+  margin-bottom:20px;
+  height:220px;
   overflow:hidden;
 }
 
@@ -59,18 +79,18 @@ h1{
 
 .card-title{
   position:absolute;
-  left:24px;
-  bottom:24px;
-  font-size:24px;
+  bottom:20px;
+  left:20px;
+  font-size:22px;
   letter-spacing:4px;
 }
 
 .card-sub{
   position:absolute;
-  left:24px;
-  bottom:58px;
-  font-size:13px;
-  opacity:.75;
+  bottom:50px;
+  left:20px;
+  font-size:12px;
+  opacity:.7;
 }
 
 .card a{
@@ -78,13 +98,7 @@ h1{
   inset:0;
 }
 
-.message{
-  padding:50px 24px;
-  text-align:center;
-  line-height:2;
-  opacity:.8;
-}
-
+/* LINE固定 */
 .fixed-line{
   position:fixed;
   bottom:16px;
@@ -100,13 +114,13 @@ h1{
   text-decoration:none;
   font-weight:bold;
   z-index:9999;
-  box-shadow:0 8px 25px rgba(0,0,0,.4);
 }
 
+/* フッター */
 footer{
   text-align:center;
   padding:40px 0 100px;
-  opacity:.45;
+  opacity:.4;
   letter-spacing:4px;
 }
 </style>
@@ -114,21 +128,21 @@ footer{
 
 <body>
 
+<!-- ロゴ -->
+<div class="logo">
+  <div class="logo-main">BELL WELL</div>
+  <div class="logo-sub">HAIR MAKE & PHOTO PRODUCE</div>
+</div>
+
+<!-- ヒーロー -->
 <section class="hero">
-  <h1>BELL WELL</h1>
   <p class="catch">
-    Hairmake produced photo service<br>
     写真を撮るだけではなく、<br>
     “史上最高の自分”に出会う一日を。
   </p>
 </section>
 
-<section class="message">
-  ヘアメイクがプロデュースする<br>
-  フォトウェディング・成人式・七五三。<br>
-  大切な記念日を、上質に美しく残します。
-</section>
-
+<!-- メニュー -->
 <section class="menu">
 
   <div class="card">
@@ -158,8 +172,9 @@ footer{
   BELL WELL
 </footer>
 
+<!-- LINE -->
 <a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
-  LINEで予約・相談
+LINEで予約・相談
 </a>
 
 </body>
