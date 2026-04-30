@@ -8,56 +8,155 @@
 <style>
 body{
   margin:0;
-  background:#0d0d0d;
+  background:#050505;
   color:#fff;
-  font-family:sans-serif;
+  font-family:'Helvetica Neue',sans-serif;
+}
+
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),
+    url("IMG_2945.jpeg") center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
+  padding:0 24px;
 }
 
 h1{
-  padding:60px 0 20px;
-  letter-spacing:8px;
+  font-size:42px;
+  letter-spacing:10px;
   font-weight:300;
+  margin:0 0 20px;
 }
 
-p{
-  opacity:.6;
+.catch{
+  font-size:15px;
+  line-height:2;
+  opacity:.9;
 }
 
-.btn{
-  display:block;
-  margin:20px auto;
-  padding:18px;
-  width:80%;
-  max-width:320px;
-  border:1px solid #fff;
-  color:#fff;
-  text-decoration:none;
+.menu{
+  padding:45px 20px 100px;
+}
+
+.card{
+  position:relative;
+  margin-bottom:22px;
+  height:230px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.65);
+}
+
+.card-title{
+  position:absolute;
+  left:24px;
+  bottom:24px;
+  font-size:24px;
+  letter-spacing:4px;
+}
+
+.card-sub{
+  position:absolute;
+  left:24px;
+  bottom:58px;
+  font-size:13px;
+  opacity:.75;
+}
+
+.card a{
+  position:absolute;
+  inset:0;
+}
+
+.message{
+  padding:50px 24px;
+  text-align:center;
+  line-height:2;
+  opacity:.8;
 }
 
 .fixed-line{
   position:fixed;
-  bottom:20px;
+  bottom:16px;
   left:50%;
   transform:translateX(-50%);
-  width:85%;
+  width:86%;
+  max-width:420px;
   background:#06C755;
-  padding:15px;
+  color:#fff;
+  text-align:center;
+  padding:16px 0;
   border-radius:999px;
   text-decoration:none;
-  color:#fff;
+  font-weight:bold;
+  z-index:9999;
+  box-shadow:0 8px 25px rgba(0,0,0,.4);
+}
+
+footer{
+  text-align:center;
+  padding:40px 0 100px;
+  opacity:.45;
+  letter-spacing:4px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>BELL WELL</h1>
-<p>Photo Wedding / Seijin / 753</p>
+<section class="hero">
+  <h1>BELL WELL</h1>
+  <p class="catch">
+    Hairmake produced photo service<br>
+    写真を撮るだけではなく、<br>
+    “史上最高の自分”に出会う一日を。
+  </p>
+</section>
 
-<a href="bridal.html" class="btn">BRIDAL</a>
-<a href="seijin.html" class="btn">成人式</a>
-<a href="753.html" class="btn">七五三</a>
+<section class="message">
+  ヘアメイクがプロデュースする<br>
+  フォトウェディング・成人式・七五三。<br>
+  大切な記念日を、上質に美しく残します。
+</section>
+
+<section class="menu">
+
+  <div class="card">
+    <img src="IMG_2945.jpeg">
+    <div class="card-sub">Photo Wedding</div>
+    <div class="card-title">BRIDAL</div>
+    <a href="bridal.html"></a>
+  </div>
+
+  <div class="card">
+    <img src="IMG_2957.jpeg">
+    <div class="card-sub">Coming of Age</div>
+    <div class="card-title">成人式</div>
+    <a href="seijin.html"></a>
+  </div>
+
+  <div class="card">
+    <img src="IMG_2963.jpeg">
+    <div class="card-sub">753 Photo</div>
+    <div class="card-title">七五三</div>
+    <a href="753.html"></a>
+  </div>
+
+</section>
+
+<footer>
+  BELL WELL
+</footer>
 
 <a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
   LINEで予約・相談
