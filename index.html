@@ -9,13 +9,24 @@
 body{
   margin:0;
   font-family:"Helvetica Neue", sans-serif;
-  text-align:center;
   background:#f7f3ef;
   color:#2b211b;
+  text-align:center;
+}
+
+.header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:16px 0;
+  background:rgba(255,255,255,0.85);
+  z-index:10;
+  letter-spacing:3px;
+  font-weight:bold;
 }
 
 .hero{
-  height:90vh;
+  height:95vh;
   background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)),
     url("https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2937.jpeg") center/cover;
@@ -24,49 +35,72 @@ body{
   align-items:center;
   justify-content:center;
   flex-direction:column;
-  padding:0 20px;
+  padding:0 24px;
 }
 
 .hero h1{
-  font-size:32px;
-  line-height:1.5;
+  font-size:31px;
+  line-height:1.55;
   letter-spacing:2px;
   margin:0;
 }
 
 .hero p{
-  font-size:14px;
-  letter-spacing:1px;
-  margin-top:16px;
+  font-size:13px;
+  letter-spacing:2px;
+  margin-top:18px;
 }
 
 section{
-  padding:48px 22px;
+  padding:56px 22px;
 }
 
 h2{
   font-size:22px;
-  letter-spacing:2px;
-  margin-bottom:18px;
+  letter-spacing:3px;
+  margin-bottom:20px;
 }
 
 p{
-  line-height:1.9;
   font-size:15px;
+  line-height:1.9;
+}
+
+.lead{
+  background:#fff;
+}
+
+.menu-card{
+  background:#fff;
+  margin:18px auto;
+  padding:28px 20px;
+  max-width:420px;
+  border-radius:20px;
+  box-shadow:0 8px 28px rgba(0,0,0,0.08);
+}
+
+.menu-card h3{
+  margin-top:0;
+  letter-spacing:2px;
+}
+
+.price{
+  font-size:13px;
+  color:#7a6a5f;
 }
 
 .btn{
   display:block;
   margin:16px auto;
   padding:16px;
-  background:#2b211b;
-  color:#fff;
-  text-decoration:none;
   width:82%;
   max-width:360px;
   border-radius:999px;
-  letter-spacing:1px;
+  background:#2b211b;
+  color:#fff;
+  text-decoration:none;
   font-weight:bold;
+  letter-spacing:1px;
 }
 
 .btn.light{
@@ -75,49 +109,124 @@ p{
   border:1px solid #2b211b;
 }
 
-.menu{
+.reason{
+  background:#efe7df;
+}
+
+.reason-box{
   background:#fff;
-  margin:20px;
-  padding:28px 18px;
-  border-radius:18px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  margin:14px auto;
+  padding:22px 18px;
+  max-width:420px;
+  border-radius:16px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:0 20px 56px;
+}
+
+.photo{
+  height:170px;
+  background:
+    linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+    url("https://raw.githubusercontent.com/aoimaru12260321-a11y/BELLWELL/main/IMG_2937.jpeg") center/cover;
+  border-radius:14px;
+}
+
+.contact{
+  background:#fff;
 }
 
 .footer{
   background:#2b211b;
   color:#fff;
-  padding:32px 20px;
+  padding:34px 20px;
   font-size:13px;
+  letter-spacing:1px;
 }
 </style>
 </head>
 
 <body>
 
+<div class="header">BELLWELL</div>
+
 <div class="hero">
   <h1>一生に一度の瞬間を、<br>最高のカタチで残す。</h1>
-  <p>BELLWELL PHOTO SERVICE</p>
+  <p>PHOTO WEDDING / SEIJIN / COUPLE</p>
 </div>
 
-<section>
-  <h2>BELLWELL</h2>
+<section class="lead">
+  <h2>Concept</h2>
   <p>
-    ヘアメイクが監修するフォトサービス。<br>
-    成人式前撮り、カップルフォト、ブライダルフォトまで、<br>
-    大切な一日を美しく残します。
+    BELLWELLは、ヘアメイクが監修する<br>
+    フォトサービスです。<br><br>
+    ただ写真を撮るだけではなく、<br>
+    その日いちばん美しい姿を引き出し、<br>
+    大切な記念日を心に残る一枚に。
   </p>
 </section>
 
-<div class="menu">
-  <h2>撮影メニュー</h2>
-  <a href="seijin.html" class="btn">成人式前撮り</a>
-  <a href="couple.html" class="btn light">カップル前撮り</a>
-</div>
+<section>
+  <h2>Menu</h2>
+
+  <div class="menu-card">
+    <h3>成人式前撮り</h3>
+    <p>振袖姿を、上品に美しく。<br>ヘアメイクから撮影までサポートします。</p>
+    <p class="price">Seijin Photo</p>
+    <a href="seijin.html" class="btn">詳しく見る</a>
+  </div>
+
+  <div class="menu-card">
+    <h3>カップル前撮り</h3>
+    <p>おふたりの自然な空気感を、<br>写真に残します。</p>
+    <p class="price">Couple Photo</p>
+    <a href="couple.html" class="btn light">詳しく見る</a>
+  </div>
+</section>
+
+<section class="reason">
+  <h2>Why BELLWELL</h2>
+
+  <div class="reason-box">
+    <h3>01 ヘアメイク監修</h3>
+    <p>写真に残る美しさを考えた、似合わせヘアメイク。</p>
+  </div>
+
+  <div class="reason-box">
+    <h3>02 初めてでも安心</h3>
+    <p>ポーズや表情もスタッフが丁寧にサポートします。</p>
+  </div>
+
+  <div class="reason-box">
+    <h3>03 特別な一日を演出</h3>
+    <p>記念日を、より華やかで心に残る時間に。</p>
+  </div>
+</section>
 
 <section>
-  <h2>ご相談・ご予約</h2>
-  <p>まずは相談だけでもお気軽にお問い合わせください。</p>
+  <h2>Gallery</h2>
+</section>
+
+<div class="gallery">
+  <div class="photo"></div>
+  <div class="photo"></div>
+  <div class="photo"></div>
+  <div class="photo"></div>
+</div>
+
+<section class="contact">
+  <h2>Reserve</h2>
+  <p>
+    ご相談だけでもお気軽にお問い合わせください。<br>
+    撮影内容や衣装についてもご案内いたします。
+  </p>
+
   <a href="tel:08039446775" class="btn">電話で問い合わせる</a>
+  <a href="index.html" class="btn light">トップへ戻る</a>
 </section>
 
 <div class="footer">
