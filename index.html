@@ -33,7 +33,6 @@ body{
   font-family:'Playfair Display', serif;
   font-size:48px;
   letter-spacing:14px;
-  font-weight:500;
 }
 
 .logo-sub{
@@ -41,7 +40,6 @@ body{
   font-size:13px;
   letter-spacing:5px;
   margin-bottom:60px;
-  opacity:.7;
 }
 
 .catch{
@@ -54,7 +52,6 @@ body{
   padding:70px 26px;
   text-align:center;
   line-height:2.2;
-  font-size:15px;
 }
 
 /* MENU */
@@ -64,9 +61,12 @@ body{
 
 .card{
   position:relative;
+  display:block;
   height:260px;
   margin-bottom:26px;
   overflow:hidden;
+  text-decoration:none;
+  color:#fff;
 }
 
 .card img{
@@ -83,7 +83,6 @@ body{
   font-family:'Playfair Display', serif;
   font-size:30px;
   letter-spacing:5px;
-  color:#fff;
 }
 
 .card-sub{
@@ -93,16 +92,13 @@ body{
   font-family:'Cormorant Garamond', serif;
   font-size:13px;
   letter-spacing:4px;
-  color:#fff;
 }
 
 .card-text{
   position:absolute;
   left:24px;
-  right:24px;
-  bottom:16px;
+  bottom:10px;
   font-size:12px;
-  color:#fff;
 }
 
 /* CTA */
@@ -140,6 +136,7 @@ body{
   font-weight:bold;
 }
 
+/* FOOTER */
 footer{
   text-align:center;
   padding:40px 0 110px;
@@ -162,44 +159,37 @@ footer{
 
 <section class="message">
   ヘアメイクがプロデュースする、<br>
-  フォトウェディング・成人式・七五三。<br><br>
-  大切な記念日を、上質に美しく残します。
+  フォトウェディング・成人式・七五三。
 </section>
 
+<!-- 🔥 ここがリンク修正 -->
 <section class="menu">
 
-  <div class="card">
+  <a href="bridal.html" class="card">
     <img src="IMG_2948.jpeg">
     <div class="card-sub">PHOTO WEDDING</div>
     <div class="card-title">BRIDAL</div>
     <div class="card-text">ドレス・和装・ロケーション撮影</div>
-    <a href="bridal.html"></a>
-  </div>
+  </a>
 
-  <div class="card">
+  <a href="seijin.html" class="card">
     <img src="IMG_2958.jpeg">
     <div class="card-sub">COMING OF AGE</div>
     <div class="card-title">SEIJIN</div>
-    <div class="card-text">成人式前撮り・ロケーション撮影</div>
-    <a href="seijin.html"></a>
-  </div>
+    <div class="card-text">成人式前撮り</div>
+  </a>
 
-  <div class="card">
+  <a href="753.html" class="card">
     <img src="IMG_2965.jpeg">
     <div class="card-sub">753 PHOTO</div>
     <div class="card-title">753</div>
     <div class="card-text">七五三・家族写真</div>
-    <a href="753.html"></a>
-  </div>
+  </a>
 
 </section>
 
 <section class="cta">
   <h2>CONTACT</h2>
-  <p>
-    撮影内容・日程・料金について<br>
-    お気軽にご相談ください。
-  </p>
   <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで相談する</a>
 </section>
 
