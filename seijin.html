@@ -3,167 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>成人式 | BELL WELL</title>
+<title>SEIJIN | BELL WELL</title>
 
 <style>
-body{
-  margin:0;
-  font-family: 'Noto Serif JP', serif;
-  background:#f7f3ef;
-  color:#3e2f26;
-}
-
-.header{
-  text-align:center;
-  padding:30px 20px;
-}
-
-.header h1{
-  font-size:28px;
-  letter-spacing:4px;
-}
-
-.header p{
-  font-size:12px;
-  letter-spacing:2px;
-  color:#8a6f5a;
-}
+body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
 
 .hero{
-  width:100%;
-  height:320px;
-  background:url("IMG_3085.png") center/cover no-repeat;
+  min-height:80vh;
+  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.6)),
+  url("IMG_3093.png") center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;
 }
 
-.section{
-  padding:40px 20px;
-}
+.hero h1{font-size:42px;letter-spacing:8px;}
+.hero p{line-height:2;margin-top:10px;}
 
-.section h2{
-  font-size:18px;
-  margin-bottom:20px;
-  letter-spacing:2px;
-}
+.section{padding:60px 20px;}
+.title{text-align:center;font-size:26px;margin-bottom:25px;}
 
-.price-box{
-  background:#fff;
-  padding:20px;
-  margin-bottom:20px;
-  border-radius:10px;
-}
+.text{text-align:center;line-height:2;}
 
-.price{
-  font-size:20px;
-  color:#6b4f3f;
-  margin-bottom:10px;
-}
-
-.gallery{
-  padding:40px 20px;
-  text-align:center;
-}
-
-.gallery-grid{
+.grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:10px;
+  gap:12px;
 }
 
-.gallery-grid img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-  border-radius:8px;
+.grid img{
+  width:100%;height:260px;object-fit:cover;border-radius:8px;
 }
 
-.flow{
-  background:#fff;
-  padding:20px;
-  border-radius:10px;
-  line-height:1.8;
+.box{
+  background:#fff;padding:20px;margin-bottom:15px;border-radius:8px;
 }
 
-.line-btn{
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  right:20px;
-  background:#8a6b55;
-  color:#fff;
-  text-align:center;
-  padding:15px;
-  border-radius:50px;
-  font-weight:bold;
-  text-decoration:none;
+.line{
+  position:fixed;bottom:20px;left:20px;right:20px;
+  background:#8a6b55;color:#fff;text-align:center;
+  padding:15px;border-radius:50px;text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-  <h1>SEIJIN</h1>
-  <p>成人式フォトプラン</p>
+<section class="hero">
+<div>
+<h1>SEIJIN</h1>
+<p>一生に一度の、最高に美しい瞬間を。</p>
 </div>
+</section>
 
-<div class="hero"></div>
+<section class="section">
+<div class="title">CONCEPT</div>
+<p class="text">
+成人式は一生に一度。<br>
+その瞬間を“自分史上最高”の姿で残します。
+</p>
+</section>
 
-<div class="section">
-  <h2>CONCEPT</h2>
-  <p>
-  一生に一度の成人式。<br>
-  “今の自分を一番美しく残す”特別な1日をプロデュースします。
-  </p>
+<section class="section">
+<div class="title">GALLERY</div>
+<div class="grid">
+<img src="IMG_3085.png">
+<img src="IMG_3086.png">
+<img src="IMG_3087.png">
+<img src="IMG_3088.png">
+<img src="IMG_3089.png">
+<img src="IMG_3091.png">
+<img src="IMG_3092.png">
+<img src="IMG_3093.png">
+<img src="IMG_3094.png">
 </div>
+</section>
 
-<div class="section">
-  <h2>PLAN</h2>
+<section class="section">
+<div class="title">PLAN</div>
 
-  <div class="price-box">
-    <div class="price">¥33,000</div>
-    前撮りプラン（ヘア・着付け・撮影）
-  </div>
+<div class="box">¥33,000〜 前撮りプラン</div>
+<div class="box">¥88,000〜 ロケーション撮影</div>
+<div class="box">¥110,000〜 当日＋前撮り</div>
 
-  <div class="price-box">
-    <div class="price">¥88,000</div>
-    ロケーション撮影
-  </div>
+</section>
 
-  <div class="price-box">
-    <div class="price">¥110,000</div>
-    前撮り＋成人式当日
-  </div>
-</div>
+<section class="section">
+<div class="title">FLOW</div>
+<p class="text">
+① LINE相談<br>
+② カウンセリング<br>
+③ ヘアメイク・着付け<br>
+④ 撮影<br>
+⑤ データお渡し
+</p>
+</section>
 
-<div class="gallery">
-  <h2>GALLERY</h2>
-
-  <div class="gallery-grid">
-    <img src="IMG_3085.png">
-    <img src="IMG_3086.png">
-    <img src="IMG_3087.png">
-    <img src="IMG_3088.png">
-    <img src="IMG_3089.png">
-    <img src="IMG_3091.png">
-    <img src="IMG_3092.png">
-    <img src="IMG_3093.png">
-    <img src="IMG_3094.png">
-  </div>
-</div>
-
-<div class="section">
-  <h2>FLOW</h2>
-  <div class="flow">
-    ① ご来店<br>
-    ② ヘアメイク・着付け<br>
-    ③ 撮影<br>
-    ④ データお渡し
-  </div>
-</div>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="line-btn">
-LINEで予約・相談
-</a>
+<a href="https://line.me/R/ti/p/@944xywjv" class="line">LINEで予約・相談</a>
 
 </body>
 </html>
