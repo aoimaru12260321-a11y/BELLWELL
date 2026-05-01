@@ -3,96 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEIJIN | BELL WELL</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<title>成人式 | BELL WELL</title>
 
 <style>
-body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:'Noto Serif JP',serif;}
-.hero{min-height:70vh;background:linear-gradient(rgba(246,242,235,.25),rgba(246,242,235,.85)),url("IMG_2958.jpeg") center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 24px;}
-h1{font-family:'Playfair Display',serif;font-size:46px;letter-spacing:8px;font-weight:400;}
-.sub{letter-spacing:4px;font-size:13px;}
-.section{padding:55px 24px;}
-.title{text-align:center;font-family:'Playfair Display',serif;letter-spacing:5px;font-size:28px;margin-bottom:25px;}
-.text{text-align:center;line-height:2.1;}
-.grid{display:grid;grid-template-columns:1fr;gap:18px;}
-.grid img{width:100%;display:block;}
-.price-card{border:1px solid #c8b7a7;padding:22px;margin-bottom:18px;background:#fffaf4;}
-.price{font-size:20px;margin-bottom:10px;}
-.flow{text-align:center;line-height:2.2;}
-.btn{display:block;text-align:center;border:1px solid #8a6b55;color:#8a6b55;text-decoration:none;padding:16px;margin:14px auto;max-width:340px;}
-.fixed-line{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);width:86%;max-width:420px;background:#8a6b55;color:#fff;text-align:center;padding:16px 0;border-radius:999px;text-decoration:none;font-weight:bold;}
-footer{text-align:center;padding:40px 0 110px;opacity:.5;}
+body{
+  margin:0;
+  font-family: 'Helvetica Neue', serif;
+  background:#f7f3ef;
+  color:#3e2f26;
+}
+
+/* ヘッダー */
+.header{
+  text-align:center;
+  padding:30px 20px;
+}
+
+.header h1{
+  font-size:28px;
+  letter-spacing:4px;
+  margin-bottom:10px;
+}
+
+.header p{
+  font-size:12px;
+  letter-spacing:2px;
+  color:#8a6f5a;
+}
+
+/* ヒーロー画像 */
+.hero{
+  width:100%;
+  height:300px;
+  background:url("images/seijin/IMG_3085.png") center/cover;
+}
+
+/* セクション */
+.section{
+  padding:40px 20px;
+}
+
+.section h2{
+  font-size:18px;
+  margin-bottom:20px;
+  letter-spacing:2px;
+}
+
+/* 料金 */
+.price-box{
+  background:#fff;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:10px;
+}
+
+.price-box h3{
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+.price{
+  font-size:20px;
+  margin-bottom:10px;
+  color:#6b4f3f;
+}
+
+/* ギャラリー */
+.gallery{
+  padding:40px 20px;
+  text-align:center;
+}
+
+.gallery h2{
+  margin-bottom:20px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* スケジュール */
+.flow{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  line-height:1.8;
+}
+
+/* LINEボタン */
+.line-btn{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  right:20px;
+  background:#06C755;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <div>
-    <div class="sub">COMING OF AGE PHOTO</div>
-    <h1>SEIJIN</h1>
-  </div>
-</section>
+<!-- ヘッダー -->
+<div class="header">
+  <h1>SEIJIN</h1>
+  <p>成人式フォトプラン</p>
+</div>
 
-<section class="section">
-  <div class="title">CONCEPT</div>
-  <p class="text">
-    一生に一度の成人式。<br>
-    振袖姿をより美しく見せるヘアメイクと着付けで、<br>
-    今しかない二十歳の瞬間を上品に残します。
+<!-- メイン画像 -->
+<div class="hero"></div>
+
+<!-- 説明 -->
+<div class="section">
+  <h2>CONCEPT</h2>
+  <p>
+  一生に一度の成人式。<br>
+  ただ写真を撮るだけではなく、<br>
+  “今の自分を一番美しく残す”ための特別な1日をプロデュースします。
   </p>
-</section>
+</div>
 
-<section class="section">
-  <div class="title">GALLERY</div>
-  <div class="grid">
-    <img src="IMG_2957.jpeg">
-    <img src="IMG_2958.jpeg">
-    <img src="IMG_2959.jpeg">
-    <img src="IMG_2960.jpeg">
-  </div>
-</section>
+<!-- 料金 -->
+<div class="section">
+  <h2>PLAN</h2>
 
-<section class="section">
-  <div class="title">PRICE</div>
-
-  <div class="price-card">
-    <div class="price">成人式前撮り Plan ¥33,000</div>
-    <p>ヘアセット / 振袖着付け / スタジオ撮影 / 撮影データ</p>
+  <div class="price-box">
+    <h3>前撮りPlan</h3>
+    <div class="price">¥33,000</div>
+    ヘアセット / 着付け / スタジオ撮影 / データ
   </div>
 
-  <div class="price-card">
-    <div class="price">ロケーション撮影 Plan ¥88,000</div>
-    <p>ヘアセット / 振袖着付け / ロケーション撮影 / 撮影データ</p>
+  <div class="price-box">
+    <h3>ロケーション撮影Plan</h3>
+    <div class="price">¥88,000</div>
+    ヘアセット / 着付け / ロケ撮影 / データ（約4時間）
   </div>
 
-  <div class="price-card">
-    <div class="price">ロケーション撮影＋成人式 Plan ¥110,000</div>
-    <p>前撮り撮影と成人式当日のお支度を含むプラン</p>
+  <div class="price-box">
+    <h3>前撮り＋成人式当日</h3>
+    <div class="price">¥66,000</div>
+    ヘアセット / 着付け / 撮影
   </div>
-</section>
 
-<section class="section">
-  <div class="title">FLOW</div>
-  <p class="flow">
-    ① LINEでお問い合わせ<br>
-    ② 日程・撮影内容のご相談<br>
-    ③ ヘアセット・振袖着付け<br>
-    ④ 撮影<br>
-    ⑤ 撮影データお渡し
-  </p>
-</section>
+</div>
 
-<section class="section">
-  <div class="title">CONTACT</div>
-  <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで相談する</a>
-  <a href="index.html" class="btn">TOPへ戻る</a>
-</section>
+<!-- ギャラリー -->
+<div class="gallery">
+  <h2>GALLERY</h2>
 
-<footer>BELL WELL</footer>
+  <div class="gallery-grid">
+    <img src="images/seijin/IMG_3085.png">
+    <img src="images/seijin/IMG_3086.png">
+    <img src="images/seijin/IMG_3087.png">
+    <img src="images/seijin/IMG_3088.png">
+    <img src="images/seijin/IMG_3089.png">
+    <img src="images/seijin/IMG_3091.png">
+    <img src="images/seijin/IMG_3092.png">
+    <img src="images/seijin/IMG_3093.png">
+    <img src="images/seijin/IMG_3094.png">
+  </div>
+</div>
 
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">LINEで予約・相談</a>
+<!-- スケジュール -->
+<div class="section">
+  <h2>FLOW</h2>
+
+  <div class="flow">
+    ① ご来店・カウンセリング<br>
+    ② ヘアメイク・着付け<br>
+    ③ 撮影（スタジオ or ロケ）<br>
+    ④ データお渡し
+  </div>
+</div>
+
+<!-- LINE -->
+<a href="https://line.me/R/ti/p/@944xywjv" class="line-btn">
+LINEで予約・相談
+</a>
 
 </body>
 </html>
