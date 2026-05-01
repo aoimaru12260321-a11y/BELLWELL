@@ -15,7 +15,9 @@ body{
 
 .hero{
   height:100vh;
-  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url("IMG_3057.jpeg") center/cover;
+  background:
+    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.5)),
+    url("IMG_3057.jpeg") center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -24,58 +26,146 @@ body{
 }
 
 .logo{
-  font-size:36px;
-  letter-spacing:8px;
+  font-size:42px;
+  letter-spacing:10px;
 }
 
 .catch{
-  margin-top:20px;
+  margin-top:25px;
+  line-height:2;
+  font-size:18px;
+}
+
+.section{
+  padding:70px 20px;
+}
+
+.title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:35px;
+  letter-spacing:4px;
+}
+
+.text{
+  text-align:center;
   line-height:2;
 }
 
-.section{padding:60px 20px;}
-.title{text-align:center;font-size:26px;margin-bottom:30px;}
-.text{text-align:center;line-height:2;}
-
 .menu{
   display:grid;
-  gap:15px;
+  gap:22px;
 }
 
 .menu a{
+  position:relative;
   display:block;
-  background:#000;
+  height:260px;
   color:#fff;
-  padding:80px 20px;
-  text-align:left;
   text-decoration:none;
+  overflow:hidden;
+  border-radius:14px;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.menu a::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  transition:transform .8s ease;
+}
+
+.menu a::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.55));
+}
+
+.menu a:hover::before{
+  transform:scale(1.08);
+}
+
+.menu a:nth-child(1)::before{
+  background-image:url("IMG_3069.jpeg");
+}
+
+.menu a:nth-child(2)::before{
+  background-image:url("IMG_3092.jpeg");
+}
+
+.menu a:nth-child(3)::before{
+  background-image:url("IMG_3041.jpeg");
+}
+
+.menu-content{
+  position:absolute;
+  z-index:2;
+  left:24px;
+  bottom:24px;
+}
+
+.menu-sub{
+  font-size:12px;
+  letter-spacing:4px;
+  margin-bottom:8px;
+}
+
+.menu-title{
+  font-size:32px;
+  letter-spacing:4px;
+}
+
+.menu-text{
+  margin-top:8px;
+  font-size:13px;
 }
 
 .box{
-  background:#fff;
-  padding:20px;
-  border-radius:10px;
-  margin-bottom:15px;
-  line-height:1.8;
+  background:#fffaf4;
+  padding:24px;
+  border-radius:14px;
+  margin-bottom:18px;
+  line-height:1.9;
+  border:1px solid #d8c8b8;
 }
 
 .btn{
   display:block;
-  margin:20px auto;
-  padding:15px;
-  width:80%;
+  margin:25px auto;
+  padding:16px;
+  width:82%;
+  max-width:420px;
   text-align:center;
   background:#9b7b63;
   color:#fff;
-  border-radius:30px;
+  border-radius:999px;
   text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+
+.fixed-line{
+  position:fixed;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  width:86%;
+  max-width:420px;
+  background:#9b7b63;
+  color:#fff;
+  text-align:center;
+  padding:16px 0;
+  border-radius:999px;
+  text-decoration:none;
+  z-index:999;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
   <div>
     <div class="logo">BELL WELL</div>
@@ -86,48 +176,65 @@ body{
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="section">
   <div class="title">ABOUT</div>
   <p class="text">
-    BELL WELLはヘアメイクがプロデュースする<br>
-    フォトサービスです。
+    BELL WELLは、ヘアメイクがプロデュースする<br>
+    フォトウェディング・成人式・七五三の撮影サービスです。<br><br>
+    写真を残すだけではなく、<br>
+    その人らしい美しさを引き出し、<br>
+    心まで満たされる一日をプロデュースします。
   </p>
 </section>
 
-<!-- SERVICE -->
 <section class="section">
   <div class="title">SERVICE</div>
 
   <div class="menu">
-    <a href="bridal.html">BRIDAL</a>
-    <a href="seijin.html">成人式</a>
-    <a href="753.html">七五三</a>
+    <a href="bridal.html">
+      <div class="menu-content">
+        <div class="menu-sub">PHOTO WEDDING</div>
+        <div class="menu-title">BRIDAL</div>
+        <div class="menu-text">フォトウェディング・ドレス・和装撮影</div>
+      </div>
+    </a>
+
+    <a href="seijin.html">
+      <div class="menu-content">
+        <div class="menu-sub">COMING OF AGE</div>
+        <div class="menu-title">成人式</div>
+        <div class="menu-text">成人式前撮り・当日お支度</div>
+      </div>
+    </a>
+
+    <a href="753.html">
+      <div class="menu-content">
+        <div class="menu-sub">SHICHIGOSAN PHOTO</div>
+        <div class="menu-title">七五三</div>
+        <div class="menu-text">七五三・家族写真・記念撮影</div>
+      </div>
+    </a>
   </div>
 </section>
 
-<!-- ★追加① -->
 <section class="section">
   <div class="title">選ばれる理由</div>
 
   <div class="box">
-    BELL WELLが大切にしているのは、<br>
-    ただ写真を残すことではなく、<br>
+    BELL WELLが大切にしているのは、ただ写真を残すことではなく、
     その人らしい美しさを引き出すこと。
   </div>
 
   <div class="box">
-    ヘアメイク・着付け・撮影まで一日を通してサポートし、<br>
+    ヘアメイク・着付け・撮影まで一日を通してサポートし、
     初めての撮影でも安心してお任せいただけます。
   </div>
 </section>
 
-<!-- FLOW強化 -->
 <section class="section">
   <div class="title">FLOW</div>
-
   <div class="box">
-    ① LINEで相談<br>
+    ① LINE相談<br>
     ② 日程・内容決定<br>
     ③ お支度<br>
     ④ 撮影<br>
@@ -135,10 +242,8 @@ body{
   </div>
 </section>
 
-<!-- ★追加② -->
 <section class="section">
   <div class="title">MESSAGE</div>
-
   <div class="box">
     「どのプランが合うかわからない」<br>
     「まずは相談だけしたい」<br><br>
@@ -146,8 +251,11 @@ body{
   </div>
 </section>
 
-<!-- CONTACT -->
 <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+LINEで予約・相談
+</a>
+
+<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
 LINEで予約・相談
 </a>
 
