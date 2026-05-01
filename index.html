@@ -10,41 +10,58 @@
 <style>
 body{
   margin:0;
-  background:#f6f2eb;
-  color:#3e2f27;
+  background:#f7f3ef;
+  color:#3e2f26;
   font-family:'Noto Serif JP', serif;
 }
 
-/* TOP */
+/* TOP HERO */
 .hero{
   min-height:100vh;
   background:
-    linear-gradient(rgba(246,242,235,.4),rgba(246,242,235,.85)),
-    url("IMG_2945.jpeg") center/cover no-repeat;
+    linear-gradient(rgba(30,20,15,.15),rgba(30,20,15,.65)),
+    url("IMG_2948.jpeg") center/cover no-repeat;
   display:flex;
-  flex-direction:column;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
   text-align:center;
-  padding:0 22px 90px;
+  padding:30px 22px 100px;
+  box-sizing:border-box;
+  color:#fff;
 }
 
-.logo-main{
+.logo{
   font-family:'Playfair Display', serif;
-  font-size:48px;
+  font-size:50px;
   letter-spacing:14px;
+  font-weight:400;
+  margin-bottom:18px;
 }
 
 .logo-sub{
   font-family:'Cormorant Garamond', serif;
   font-size:13px;
   letter-spacing:5px;
-  margin-bottom:60px;
+  margin-bottom:55px;
+  opacity:.85;
 }
 
 .catch{
-  font-size:17px;
-  line-height:2.2;
+  font-size:18px;
+  line-height:2.1;
+  letter-spacing:1px;
+  text-shadow:0 2px 20px rgba(0,0,0,.45);
+}
+
+.hero-btn{
+  display:block;
+  margin:42px auto 0;
+  max-width:300px;
+  padding:15px 20px;
+  border:1px solid rgba(255,255,255,.85);
+  color:#fff;
+  text-decoration:none;
+  letter-spacing:2px;
 }
 
 /* MESSAGE */
@@ -52,11 +69,20 @@ body{
   padding:70px 26px;
   text-align:center;
   line-height:2.2;
+  font-size:15px;
 }
 
 /* MENU */
 .menu{
-  padding:20px 18px 120px;
+  padding:20px 18px 100px;
+}
+
+.menu-title{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:28px;
+  letter-spacing:5px;
+  margin-bottom:32px;
 }
 
 .card{
@@ -67,51 +93,80 @@ body{
   overflow:hidden;
   text-decoration:none;
   color:#fff;
+  border-radius:2px;
 }
 
 .card img{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.75);
-}
-
-.card-title{
-  position:absolute;
-  left:24px;
-  bottom:34px;
-  font-family:'Playfair Display', serif;
-  font-size:30px;
-  letter-spacing:5px;
+  filter:brightness(.72);
 }
 
 .card-sub{
   position:absolute;
   left:24px;
-  bottom:76px;
+  bottom:82px;
   font-family:'Cormorant Garamond', serif;
   font-size:13px;
   letter-spacing:4px;
 }
 
+.card-title{
+  position:absolute;
+  left:24px;
+  bottom:36px;
+  font-family:'Playfair Display', serif;
+  font-size:32px;
+  letter-spacing:6px;
+}
+
 .card-text{
   position:absolute;
   left:24px;
-  bottom:10px;
+  bottom:14px;
   font-size:12px;
 }
 
-/* CTA */
-.cta{
-  padding:60px 24px 120px;
+/* REASON */
+.reason{
+  padding:65px 26px;
+  background:#eee6dd;
   text-align:center;
-  background:#ebe4da;
+}
+
+.reason h2{
+  font-family:'Playfair Display', serif;
+  letter-spacing:4px;
+  font-weight:400;
+}
+
+.reason p{
+  line-height:2;
+  font-size:14px;
+}
+
+/* CONTACT */
+.contact{
+  padding:65px 24px 130px;
+  text-align:center;
+}
+
+.contact h2{
+  font-family:'Playfair Display', serif;
+  letter-spacing:4px;
+  font-weight:400;
+}
+
+.contact p{
+  line-height:2;
+  font-size:14px;
 }
 
 .btn{
   display:block;
-  margin:28px auto 0;
   max-width:340px;
+  margin:26px auto 0;
   padding:16px;
   border:1px solid #8a6b55;
   color:#8a6b55;
@@ -119,7 +174,7 @@ body{
   letter-spacing:2px;
 }
 
-/* LINE */
+/* FIXED LINE */
 .fixed-line{
   position:fixed;
   bottom:16px;
@@ -134,13 +189,35 @@ body{
   border-radius:999px;
   text-decoration:none;
   font-weight:bold;
+  z-index:9999;
+  box-shadow:0 8px 28px rgba(0,0,0,.25);
 }
 
-/* FOOTER */
 footer{
   text-align:center;
   padding:40px 0 110px;
-  opacity:.4;
+  opacity:.45;
+  letter-spacing:4px;
+}
+
+@media(min-width:768px){
+  .logo{
+    font-size:76px;
+  }
+
+  .menu{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+  }
+
+  .menu-title{
+    grid-column:1 / -1;
+  }
+
+  .card{
+    height:420px;
+  }
 }
 </style>
 </head>
@@ -148,22 +225,29 @@ footer{
 <body>
 
 <section class="hero">
-  <div class="logo-main">BELL WELL</div>
-  <div class="logo-sub">HAIR MAKE PRODUCED PHOTO WEDDING</div>
+  <div>
+    <div class="logo">BELL WELL</div>
+    <div class="logo-sub">HAIR MAKE PRODUCED PHOTO SERVICE</div>
 
-  <div class="catch">
-    写真を撮るだけではなく、<br>
-    “史上最高の自分”に出会う一日を。
+    <div class="catch">
+      写真を撮るだけではなく、<br>
+      “史上最高の自分”に出会う一日を。
+    </div>
+
+    <a href="bridal.html" class="hero-btn">PHOTO WEDDING</a>
   </div>
 </section>
 
 <section class="message">
-  ヘアメイクがプロデュースする、<br>
-  フォトウェディング・成人式・七五三。
+  BELL WELLは、ヘアメイクがプロデュースする<br>
+  フォトウェディング・成人式・七五三の撮影サービスです。<br><br>
+  大切な記念日を、ただ残すだけではなく、<br>
+  心まで満たされる一日としてプロデュースします。
 </section>
 
-<!-- 🔥 ここがリンク修正 -->
 <section class="menu">
+
+  <div class="menu-title">SERVICE</div>
 
   <a href="bridal.html" class="card">
     <img src="IMG_2948.jpeg">
@@ -173,14 +257,14 @@ footer{
   </a>
 
   <a href="seijin.html" class="card">
-    <img src="IMG_2958.jpeg">
+    <img src="IMG_3093.png">
     <div class="card-sub">COMING OF AGE</div>
     <div class="card-title">SEIJIN</div>
-    <div class="card-text">成人式前撮り</div>
+    <div class="card-text">成人式前撮り・当日お支度</div>
   </a>
 
   <a href="753.html" class="card">
-    <img src="IMG_2965.jpeg">
+    <img src="IMG_3106.png">
     <div class="card-sub">753 PHOTO</div>
     <div class="card-title">753</div>
     <div class="card-text">七五三・家族写真</div>
@@ -188,8 +272,22 @@ footer{
 
 </section>
 
-<section class="cta">
+<section class="reason">
+  <h2>WHY BELL WELL</h2>
+  <p>
+    ヘアメイクを大切にするからこそ、<br>
+    写真に写る表情や姿勢まで美しく整います。<br><br>
+    経験豊富なスタッフが、衣装・ヘアメイク・撮影まで<br>
+    一日を丁寧にサポートいたします。
+  </p>
+</section>
+
+<section class="contact">
   <h2>CONTACT</h2>
+  <p>
+    撮影内容・日程・料金について、<br>
+    まずはLINEからお気軽にご相談ください。
+  </p>
   <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで相談する</a>
 </section>
 
