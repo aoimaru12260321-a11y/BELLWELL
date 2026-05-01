@@ -5,110 +5,99 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BELL WELL</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body{
   margin:0;
-  background:#f7f3ef;
-  color:#3e2f26;
-  font-family:'Noto Serif JP', serif;
+  background:#f6f2eb;
+  color:#3e2f27;
+  font-family:'Noto Serif JP',serif;
 }
 
-/* TOP HERO */
 .hero{
   min-height:100vh;
   background:
-    linear-gradient(rgba(30,20,15,.15),rgba(30,20,15,.65)),
-    url("IMG_2948.jpeg") center/cover no-repeat;
+    linear-gradient(rgba(30,20,15,.15),rgba(30,20,15,.62)),
+    url("IMG_3117.png") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:30px 22px 100px;
-  box-sizing:border-box;
   color:#fff;
+  padding:24px;
 }
 
 .logo{
-  font-family:'Playfair Display', serif;
-  font-size:50px;
-  letter-spacing:14px;
+  font-family:'Playfair Display',serif;
+  font-size:52px;
+  letter-spacing:12px;
   font-weight:400;
-  margin-bottom:18px;
 }
 
-.logo-sub{
-  font-family:'Cormorant Garamond', serif;
-  font-size:13px;
-  letter-spacing:5px;
-  margin-bottom:55px;
-  opacity:.85;
+.sub{
+  margin-top:16px;
+  letter-spacing:4px;
+  font-size:12px;
 }
 
 .catch{
-  font-size:18px;
-  line-height:2.1;
-  letter-spacing:1px;
-  text-shadow:0 2px 20px rgba(0,0,0,.45);
+  margin-top:55px;
+  line-height:2;
+  font-size:17px;
 }
 
 .hero-btn{
-  display:block;
-  margin:42px auto 0;
-  max-width:300px;
-  padding:15px 20px;
-  border:1px solid rgba(255,255,255,.85);
+  display:inline-block;
+  margin-top:32px;
+  padding:14px 28px;
+  border:1px solid #fff;
   color:#fff;
   text-decoration:none;
   letter-spacing:2px;
 }
 
-/* MESSAGE */
-.message{
-  padding:70px 26px;
+.section{
+  padding:65px 22px;
+}
+
+.title{
   text-align:center;
-  line-height:2.2;
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+  letter-spacing:5px;
+  margin-bottom:30px;
+}
+
+.text{
+  text-align:center;
+  line-height:2.1;
   font-size:15px;
 }
 
-/* MENU */
-.menu{
-  padding:20px 18px 100px;
-}
-
-.menu-title{
-  text-align:center;
-  font-family:'Playfair Display', serif;
-  font-size:28px;
-  letter-spacing:5px;
-  margin-bottom:32px;
-}
-
-.card{
+.menu-card{
   position:relative;
   display:block;
-  height:260px;
-  margin-bottom:26px;
+  height:280px;
+  margin-bottom:24px;
   overflow:hidden;
+  border-radius:6px;
   text-decoration:none;
   color:#fff;
-  border-radius:2px;
 }
 
-.card img{
+.menu-card img{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.72);
+  filter:brightness(.7);
 }
 
 .card-sub{
   position:absolute;
   left:24px;
-  bottom:82px;
-  font-family:'Cormorant Garamond', serif;
-  font-size:13px;
+  bottom:78px;
+  font-size:12px;
   letter-spacing:4px;
 }
 
@@ -116,9 +105,9 @@ body{
   position:absolute;
   left:24px;
   bottom:36px;
-  font-family:'Playfair Display', serif;
+  font-family:'Playfair Display',serif;
   font-size:32px;
-  letter-spacing:6px;
+  letter-spacing:5px;
 }
 
 .card-text{
@@ -128,53 +117,30 @@ body{
   font-size:12px;
 }
 
-/* REASON */
 .reason{
-  padding:65px 26px;
   background:#eee6dd;
-  text-align:center;
 }
 
-.reason h2{
-  font-family:'Playfair Display', serif;
-  letter-spacing:4px;
-  font-weight:400;
-}
-
-.reason p{
+.reason-box{
+  background:#fffaf4;
+  border:1px solid #d3c2b3;
+  padding:22px;
+  margin-bottom:18px;
   line-height:2;
-  font-size:14px;
-}
-
-/* CONTACT */
-.contact{
-  padding:65px 24px 130px;
-  text-align:center;
-}
-
-.contact h2{
-  font-family:'Playfair Display', serif;
-  letter-spacing:4px;
-  font-weight:400;
-}
-
-.contact p{
-  line-height:2;
-  font-size:14px;
 }
 
 .btn{
   display:block;
   max-width:340px;
-  margin:26px auto 0;
+  margin:16px auto;
   padding:16px;
   border:1px solid #8a6b55;
   color:#8a6b55;
+  text-align:center;
   text-decoration:none;
   letter-spacing:2px;
 }
 
-/* FIXED LINE */
 .fixed-line{
   position:fixed;
   bottom:16px;
@@ -190,34 +156,13 @@ body{
   text-decoration:none;
   font-weight:bold;
   z-index:9999;
-  box-shadow:0 8px 28px rgba(0,0,0,.25);
 }
 
 footer{
   text-align:center;
   padding:40px 0 110px;
-  opacity:.45;
+  opacity:.5;
   letter-spacing:4px;
-}
-
-@media(min-width:768px){
-  .logo{
-    font-size:76px;
-  }
-
-  .menu{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-  }
-
-  .menu-title{
-    grid-column:1 / -1;
-  }
-
-  .card{
-    height:420px;
-  }
 }
 </style>
 </head>
@@ -227,43 +172,47 @@ footer{
 <section class="hero">
   <div>
     <div class="logo">BELL WELL</div>
-    <div class="logo-sub">HAIR MAKE PRODUCED PHOTO SERVICE</div>
+    <div class="sub">HAIR MAKE PRODUCED PHOTO SERVICE</div>
 
     <div class="catch">
-      写真を撮るだけではなく、<br>
-      “史上最高の自分”に出会う一日を。
+      ただ撮るだけじゃない。<br>
+      人生で一番美しい瞬間を残す。
     </div>
 
-    <a href="bridal.html" class="hero-btn">PHOTO WEDDING</a>
+    <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">LINEで相談する</a>
   </div>
 </section>
 
-<section class="message">
-  BELL WELLは、ヘアメイクがプロデュースする<br>
-  フォトウェディング・成人式・七五三の撮影サービスです。<br><br>
-  大切な記念日を、ただ残すだけではなく、<br>
-  心まで満たされる一日としてプロデュースします。
+<section class="section">
+  <div class="title">ABOUT</div>
+  <p class="text">
+    BELL WELLは、ヘアメイクがプロデュースする<br>
+    フォトウェディング・成人式・七五三の撮影サービスです。<br><br>
+    写真を残すだけではなく、<br>
+    その人らしい美しさを引き出し、<br>
+    心まで満たされる一日をプロデュースします。
+  </p>
 </section>
 
-<section class="menu">
+<section class="section">
 
-  <div class="menu-title">SERVICE</div>
+  <div class="title">SERVICE</div>
 
-  <a href="bridal.html" class="card">
-    <img src="IMG_2948.jpeg">
+  <a href="bridal.html" class="menu-card">
+    <img src="IMG_3117.png">
     <div class="card-sub">PHOTO WEDDING</div>
     <div class="card-title">BRIDAL</div>
     <div class="card-text">ドレス・和装・ロケーション撮影</div>
   </a>
 
-  <a href="seijin.html" class="card">
+  <a href="seijin.html" class="menu-card">
     <img src="IMG_3093.png">
     <div class="card-sub">COMING OF AGE</div>
     <div class="card-title">SEIJIN</div>
     <div class="card-text">成人式前撮り・当日お支度</div>
   </a>
 
-  <a href="753.html" class="card">
+  <a href="753.html" class="menu-card">
     <img src="IMG_3106.png">
     <div class="card-sub">753 PHOTO</div>
     <div class="card-title">753</div>
@@ -272,28 +221,48 @@ footer{
 
 </section>
 
-<section class="reason">
-  <h2>WHY BELL WELL</h2>
-  <p>
-    ヘアメイクを大切にするからこそ、<br>
-    写真に写る表情や姿勢まで美しく整います。<br><br>
-    経験豊富なスタッフが、衣装・ヘアメイク・撮影まで<br>
-    一日を丁寧にサポートいたします。
+<section class="section reason">
+  <div class="title">WHY BELL WELL</div>
+
+  <div class="reason-box">
+    <strong>01 ヘアメイクを大切にした撮影</strong><br>
+    写真に写る美しさは、撮影前のお支度で大きく変わります。
+  </div>
+
+  <div class="reason-box">
+    <strong>02 初めてでも安心</strong><br>
+    表情・ポーズ・撮影中の空気感まで丁寧にサポートします。
+  </div>
+
+  <div class="reason-box">
+    <strong>03 大切な一日をトータルプロデュース</strong><br>
+    衣装・ヘアメイク・撮影まで、一日を通して美しく残します。
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">FLOW</div>
+  <p class="text">
+    ① LINEで相談<br>
+    ② 内容・日程のご相談<br>
+    ③ ヘアメイク・お支度<br>
+    ④ 撮影<br>
+    ⑤ データお渡し
   </p>
 </section>
 
-<section class="contact">
-  <h2>CONTACT</h2>
-  <p>
-    撮影内容・日程・料金について、<br>
-    まずはLINEからお気軽にご相談ください。
+<section class="section">
+  <div class="title">CONTACT</div>
+  <p class="text">
+    撮影内容や料金について、<br>
+    まずはお気軽にご相談ください。
   </p>
+
   <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで相談する</a>
+  <a href="tel:08039446775" class="btn">電話で問い合わせる</a>
 </section>
 
-<footer>
-  BELL WELL
-</footer>
+<footer>BELL WELL</footer>
 
 <a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
 LINEで予約・相談
