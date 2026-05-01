@@ -5,233 +5,124 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BELL WELL</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body{
   margin:0;
+  padding:0;
   background:#f6f2eb;
-  color:#3e2f27;
-  font-family:'Noto Serif JP',serif;
+  font-family:'Noto Serif JP', serif;
 }
 
-/* 🔥 HERO（階段写真） */
-  .hero{
-  min-height:100vh;
-  background:
-    linear-gradient(rgba(246,242,235,.18), rgba(246,242,235,.55)),
-    url("IMG_3113.png") center center / cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  padding:20px;
-}
-.
-
-.logo{
-  font-family:'Playfair Display',serif;
-  font-size:52px;
-  letter-spacing:12px;
-}
-
-.sub{
-  margin-top:10px;
-  font-size:12px;
-  letter-spacing:4px;
-}
-
-.catch{
-  margin-top:50px;
-  font-size:17px;
-  line-height:2;
-}
-
-.hero-btn{
-  display:inline-block;
-  margin-top:30px;
-  padding:14px 28px;
-  border:1px solid #fff;
-  color:#fff;
-  text-decoration:none;
-}
-
-/* SECTION */
-.section{
-  padding:60px 20px;
-}
-
-.title{
-  text-align:center;
-  font-size:26px;
-  margin-bottom:30px;
-  font-family:'Playfair Display',serif;
-}
-
-.text{
-  text-align:center;
-  line-height:2;
-}
-
-/* MENU */
-.menu-card{
+/* 🔥 全画面ヒーロー */
+.hero{
   position:relative;
-  display:block;
-  height:260px;
-  margin-bottom:20px;
-  border-radius:6px;
+  width:100%;
+  height:100vh;
   overflow:hidden;
-  text-decoration:none;
-  color:#fff;
 }
 
-.menu-card img{
+/* 🔥 画像を完全フルスクリーン */
+.hero img{
+  position:absolute;
+  top:0;
+  left:0;
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.7);
 }
 
-.card-title{
+/* 🔥 透けフィルター */
+.hero::before{
+  content:"";
   position:absolute;
-  bottom:20px;
-  left:20px;
-  font-size:28px;
+  width:100%;
+  height:100%;
+  background:rgba(246,242,235,0.4);
+  top:0;
+  left:0;
 }
 
-/* WHY */
-.reason{
-  background:#eee6dd;
-}
-
-.reason-box{
-  background:#fff;
-  padding:18px;
-  margin-bottom:15px;
-  border-radius:6px;
-  line-height:2;
-}
-
-/* BTN */
-.btn{
-  display:block;
-  margin:20px auto;
-  padding:15px;
-  border:1px solid #8a6b55;
-  color:#8a6b55;
-  text-align:center;
-  text-decoration:none;
-  width:80%;
-}
-
-/* LINE固定 */
-.fixed-line{
-  position:fixed;
-  bottom:15px;
-  left:50%;
-  transform:translateX(-50%);
-  width:85%;
-  background:#8a6b55;
+/* 🔥 テキスト中央 */
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   color:#fff;
   text-align:center;
-  padding:15px;
-  border-radius:50px;
+  padding:20px;
+}
+
+h1{
+  font-size:40px;
+  letter-spacing:8px;
+  margin:0;
+}
+
+.sub{
+  letter-spacing:4px;
+  font-size:14px;
+  margin-top:10px;
+}
+
+.catch{
+  margin-top:40px;
+  font-size:18px;
+  line-height:1.8;
+}
+
+/* 🔥 ボタン */
+.btn{
+  margin-top:40px;
+  padding:14px 40px;
+  border:1px solid #fff;
+  color:#fff;
   text-decoration:none;
+  font-size:14px;
+}
+
+/* 下固定ボタン */
+.fixed-btn{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  right:20px;
+  background:#9b7b63;
+  color:#fff;
+  text-align:center;
+  padding:16px;
+  border-radius:40px;
+  text-decoration:none;
+  font-size:16px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
-  <div>
-    <div class="logo">BELL WELL</div>
+  <!-- ここ画像パス -->
+  <img src="IMG_3113.png">
+
+  <div class="hero-content">
+    <h1>BELL WELL</h1>
     <div class="sub">PHOTO SERVICE</div>
 
     <div class="catch">
       ただ撮るだけじゃない。<br>
-      人生で一番美しい瞬間を残す。
+      「選ばれる1枚」を残す。
     </div>
 
-    <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">
-      LINEで相談する
-    </a>
+    <a href="#" class="btn">LINEで無料相談する</a>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="section">
-  <div class="title">ABOUT</div>
-  <p class="text">
-    ヘアメイクがプロデュースする撮影サービス。<br>
-    一人ひとりの魅力を最大限に引き出し、<br>
-    “自分史上最高”を残します。
-  </p>
-</section>
-
-<!-- SERVICE -->
-<section class="section">
-
-  <div class="title">SERVICE</div>
-
-  <a href="bridal.html" class="menu-card">
-    <img src="IMG_3113.png">
-    <div class="card-title">BRIDAL</div>
-  </a>
-
-  <a href="seijin.html" class="menu-card">
-    <img src="IMG_3093.png">
-    <div class="card-title">SEIJIN</div>
-  </a>
-
-  <a href="753.html" class="menu-card">
-    <img src="IMG_3106.png">
-    <div class="card-title">753</div>
-  </a>
-
-</section>
-
-<!-- WHY -->
-<section class="section reason">
-
-  <div class="title">WHY BELL WELL</div>
-
-  <div class="reason-box">
-    ヘアメイクを重視した撮影で仕上がりが変わる
-  </div>
-
-  <div class="reason-box">
-    初めてでも安心のサポート体制
-  </div>
-
-  <div class="reason-box">
-    一日をトータルでプロデュース
-  </div>
-
-</section>
-
-<!-- FLOW -->
-<section class="section">
-  <div class="title">FLOW</div>
-  <p class="text">
-    LINE相談 → カウンセリング → お支度 → 撮影 → データ納品
-  </p>
-</section>
-
-<!-- CONTACT -->
-<section class="section">
-  <div class="title">CONTACT</div>
-
-  <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
-    LINEで相談
-  </a>
-</section>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
-LINEで予約・相談
-</a>
+<a href="#" class="fixed-btn">LINEで予約・相談</a>
 
 </body>
 </html>
