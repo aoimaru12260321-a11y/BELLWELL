@@ -54,6 +54,15 @@ body{
   cursor:pointer;
 }
 
+/* ボックス */
+.box{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:15px;
+  line-height:1.8;
+}
+
 /* ボタン */
 .home-btn,.btn{
   display:block;
@@ -73,6 +82,25 @@ body{
 .btn{
   background:#9b7b63;
   color:#fff;
+}
+
+/* Q&A */
+.qa{
+  background:#fff;
+  border:1px solid #d3c2b3;
+  border-radius:10px;
+  margin-bottom:12px;
+  padding:16px;
+}
+
+.qa summary{
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.qa p{
+  margin-top:12px;
+  color:#5f5148;
 }
 
 /* lightbox */
@@ -104,15 +132,12 @@ body{
 
 <body>
 
-<!-- ロゴ -->
 <a href="index.html" class="logo">BELL WELL</a>
 
-<!-- HERO -->
 <section class="hero">
   <h1>BRIDAL</h1>
 </section>
 
-<!-- CONCEPT -->
 <section class="section">
   <div class="title">CONCEPT</div>
   <p class="text">
@@ -121,28 +146,71 @@ body{
   </p>
 </section>
 
-<!-- GALLERY -->
 <section class="section">
   <div class="title">GALLERY</div>
-
   <div class="grid">
-
     <img src="IMG_3069.jpeg">
     <img src="IMG_3077.jpeg">
-
     <img src="IMG_3057.jpeg">
     <img src="IMG_2945.jpeg">
-
     <img src="IMG_3051.jpeg">
     <img src="IMG_3052.jpeg">
-
     <img src="IMG_3062.jpeg">
     <img src="IMG_3056.jpeg">
-
   </div>
 </section>
 
-<!-- ボタン -->
+<!-- 後悔させない導線 -->
+<section class="section">
+  <div class="title">後悔しないために</div>
+
+  <div class="box">
+    フォトウェディングでは「思っていたより費用が高くなった」
+    「イメージと違った」などの後悔の声も少なくありません。
+  </div>
+
+  <div class="box">
+    BELL WELLでは事前にしっかりとご希望やご予算を共有し、
+    納得した状態で当日を迎えていただけるようサポートします。
+  </div>
+</section>
+
+<!-- Q&A -->
+<section class="section">
+  <div class="title">Q&A</div>
+
+  <details class="qa">
+    <summary>料金はどれくらい追加でかかりますか？</summary>
+    <p>衣装・データ・撮影日などにより追加料金が発生する場合がありますが、事前に総額の目安をご説明します。</p>
+  </details>
+
+  <details class="qa">
+    <summary>全データはもらえますか？</summary>
+    <p>プランによって異なります。ご希望に合わせてご提案可能です。</p>
+  </details>
+
+  <details class="qa">
+    <summary>衣装は選べますか？</summary>
+    <p>事前にご相談いただき、イメージに合う衣装をご提案します。</p>
+  </details>
+
+  <details class="qa">
+    <summary>ヘアメイクが不安です</summary>
+    <p>参考画像の共有でイメージをすり合わせながら進めます。</p>
+  </details>
+
+  <details class="qa">
+    <summary>後悔しないために必要なことは？</summary>
+    <p>イメージ写真（指示書）の共有がおすすめです。</p>
+  </details>
+
+  <details class="qa">
+    <summary>当日のサポートはありますか？</summary>
+    <p>ヘアメイクや衣装の調整を行いながら撮影をサポートします。</p>
+  </details>
+
+</section>
+
 <a href="index.html" class="home-btn">トップページへ戻る</a>
 <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで予約・相談</a>
 
