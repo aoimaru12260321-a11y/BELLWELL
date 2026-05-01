@@ -3,221 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRIDAL | BELL WELL</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<title>BELLWELL BRIDAL</title>
 
 <style>
-body{
-  margin:0;
-  background:#f6f2eb;
-  color:#3e2f27;
-  font-family:'Noto Serif JP',serif;
+body {
+  margin: 0;
+  font-family: serif;
+  background: #f8f6f3;
 }
 
-/* HERO */
-.hero{
-  min-height:85vh;
-  background:
-    linear-gradient(rgba(30,20,15,.2),rgba(30,20,15,.6)),
-    url("IMG_3117.png") center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  padding:0 20px;
+/* タイトル */
+.gallery {
+  padding: 40px 20px;
 }
 
-.hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:48px;
-  letter-spacing:10px;
+.gallery h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
 }
 
-.hero p{
-  margin-top:15px;
-  line-height:2;
-  font-size:16px;
+/* グリッド */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
-.hero-btn{
-  display:inline-block;
-  margin-top:30px;
-  padding:14px 28px;
-  border:1px solid #fff;
-  color:#fff;
-  text-decoration:none;
-  letter-spacing:2px;
+/* 画像 */
+.grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 
-/* SECTION */
-.section{
-  padding:60px 20px;
-}
-
-.title{
-  text-align:center;
-  font-family:'Playfair Display',serif;
-  font-size:26px;
-  letter-spacing:5px;
-  margin-bottom:30px;
-}
-
-/* POINT */
-.point{
-  margin-bottom:30px;
-  line-height:2;
-}
-
-/* GALLERY */
-.gallery-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-}
-
-.gallery-grid img{
-  width:100%;
-  border-radius:6px;
-}
-
-/* PRICE */
-.price-card{
-  background:#fff;
-  padding:20px;
-  margin-bottom:15px;
-  border-radius:8px;
-}
-
-.price{
-  font-size:20px;
-  color:#8a6b55;
-}
-
-/* LINE */
-.fixed-line{
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  right:20px;
-  background:#8a6b55;
-  color:#fff;
-  text-align:center;
-  padding:15px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
+/* ホバー */
+.grid img:hover {
+  transform: scale(1.05);
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div>
-    <h1>BRIDAL</h1>
-    <p>
-      写真を撮るだけではなく、<br>
-      “史上最高の自分”に出会う一日を。
-    </p>
-    <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">LINEで相談</a>
-  </div>
-</section>
+<section class="gallery">
+  <h2>GALLERY</h2>
 
-<!-- 共感 -->
-<section class="section">
-  <div class="title">こんなお悩みありませんか？</div>
+  <div class="grid">
 
-  <div class="point">
-    ・結婚式はしないけど写真は残したい<br>
-    ・自然でおしゃれな写真を撮りたい<br>
-    ・ヘアメイクもちゃんとこだわりたい
-  </div>
+    <img src="IMG_3055.jpeg">
+    <img src="IMG_3056.jpeg">
+    <img src="IMG_3057.jpeg">
+    <img src="IMG_3062.jpeg">
+    <img src="IMG_3066.jpeg">
+    <img src="IMG_3067.jpeg">
+    <img src="IMG_3068.jpeg">
+    <img src="IMG_3069.jpeg">
+    <img src="IMG_3071.jpeg">
+    <img src="IMG_3075.png">
 
-  <div class="point">
-    その想い、すべて叶えます。
-  </div>
-</section>
-
-<!-- 強み -->
-<section class="section">
-  <div class="title">BELL WELLの強み</div>
-
-  <div class="point">
-    ■ ヘアメイクが主役の撮影<br>
-    → 写真の仕上がりが圧倒的に違う
-  </div>
-
-  <div class="point">
-    ■ 経験豊富なスタッフ<br>
-    → 初めてでも安心して任せられる
-  </div>
-
-  <div class="point">
-    ■ ロケーション提案力<br>
-    → 鹿児島の魅力を最大限に引き出す
-  </div>
-</section>
-
-<!-- ギャラリー -->
-<section class="section">
-  <div class="title">GALLERY</div>
-
-  <div class="gallery-grid">
-
-    <img src="IMG_3117.png">
-    <img src="IMG_3120.png">
-
-    <img src="IMG_3113.png">
-    <img src="IMG_3118.png">
-
-    <img src="IMG_3116.png">
-    <img src="IMG_3115.png">
-
-    <img src="IMG_3114.png">
-    <img src="IMG_3119.png">
-
-    <img src="IMG_2957.jpeg">
-    <img src="IMG_2958.jpeg">
-    <img src="IMG_2959.jpeg">
-    <img src="IMG_2960.jpeg">
-    <img src="IMG_2961.jpeg">
-    <img src="IMG_2962.jpeg">
+    <img src="IMG_3077.jpeg">
+    <img src="IMG_3078.jpeg">
+    <img src="IMG_3079.jpeg">
+    <img src="IMG_3080.jpeg">
+    <img src="IMG_3082.jpeg">
+    <img src="IMG_3083.jpeg">
 
   </div>
 </section>
-
-<!-- 料金 -->
-<section class="section">
-  <div class="title">PLAN</div>
-
-  <div class="price-card">
-    <div class="price">¥98,000〜</div>
-    持ち込み衣装プラン
-  </div>
-
-  <div class="price-card">
-    <div class="price">¥250,000〜</div>
-    衣装付きプラン
-  </div>
-
-  <div class="price-card">
-    <div class="price">¥265,000〜</div>
-    インポートドレス
-  </div>
-
-  <div class="price-card">
-    <div class="price">¥297,000〜</div>
-    和装プラン
-  </div>
-
-</section>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
-LINEで予約・相談
-</a>
 
 </body>
 </html>
