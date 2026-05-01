@@ -3,26 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>BRIDAL | BELL WELL</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:'Noto Serif JP',serif;}
-.hero{min-height:70vh;background:linear-gradient(rgba(246,242,235,.25),rgba(246,242,235,.85)),url("IMG_2948.jpeg") center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 24px;}
-h1{font-family:'Playfair Display',serif;font-size:46px;letter-spacing:10px;font-weight:400;}
-.sub{letter-spacing:4px;font-size:13px;}
-.section{padding:55px 24px;}
-.title{text-align:center;font-family:'Playfair Display',serif;letter-spacing:5px;font-size:28px;margin-bottom:25px;}
-.text{text-align:center;line-height:2.1;}
-.grid{display:grid;grid-template-columns:1fr;gap:18px;}
-.grid img{width:100%;display:block;}
-.price-card{border:1px solid #c8b7a7;padding:22px;margin-bottom:18px;background:#fffaf4;}
-.price{font-size:20px;margin-bottom:10px;}
-.flow{text-align:center;line-height:2.2;}
-.btn{display:block;text-align:center;border:1px solid #8a6b55;color:#8a6b55;text-decoration:none;padding:16px;margin:14px auto;max-width:340px;}
-.fixed-line{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);width:86%;max-width:420px;background:#8a6b55;color:#fff;text-align:center;padding:16px 0;border-radius:999px;text-decoration:none;font-weight:bold;}
-footer{text-align:center;padding:40px 0 110px;opacity:.5;}
+body{
+  margin:0;
+  background:#f6f2eb;
+  color:#3e2f27;
+  font-family:'Noto Serif JP',serif;
+}
+
+.hero{
+  min-height:75vh;
+  background:
+    linear-gradient(rgba(246,242,235,.2),rgba(246,242,235,.88)),
+    url("images/bridal/IMG_2957.jpeg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 24px;
+}
+
+.logo{
+  font-family:'Playfair Display',serif;
+  font-size:18px;
+  letter-spacing:6px;
+  margin-bottom:40px;
+}
+
+.sub{
+  font-family:'Cormorant Garamond',serif;
+  letter-spacing:5px;
+  font-size:13px;
+}
+
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:48px;
+  letter-spacing:10px;
+  font-weight:400;
+  margin:12px 0;
+}
+
+.catch{
+  line-height:2;
+  font-size:15px;
+  margin-top:20px;
+}
+
+.section{
+  padding:58px 24px;
+}
+
+.title{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  letter-spacing:5px;
+  font-size:28px;
+  margin-bottom:28px;
+}
+
+.text{
+  text-align:center;
+  line-height:2.1;
+  font-size:15px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+}
+
+.gallery-grid img{
+  width:100%;
+  display:block;
+  border-radius:4px;
+}
+
+.price-card{
+  border:1px solid #c8b7a7;
+  background:#fffaf4;
+  padding:24px;
+  margin-bottom:20px;
+}
+
+.price-card h3{
+  margin:0 0 10px;
+  font-size:18px;
+}
+
+.price{
+  font-size:22px;
+  color:#8a6b55;
+  margin-bottom:12px;
+}
+
+.price-card p{
+  line-height:1.9;
+  margin:0;
+  font-size:14px;
+}
+
+.note{
+  font-size:12px;
+  line-height:1.8;
+  opacity:.75;
+  margin-top:18px;
+}
+
+.flow{
+  background:#fffaf4;
+  border:1px solid #c8b7a7;
+  padding:24px;
+  line-height:2.2;
+}
+
+.btn{
+  display:block;
+  text-align:center;
+  border:1px solid #8a6b55;
+  color:#8a6b55;
+  text-decoration:none;
+  padding:16px;
+  margin:14px auto;
+  max-width:340px;
+  letter-spacing:2px;
+}
+
+.fixed-line{
+  position:fixed;
+  bottom:16px;
+  left:50%;
+  transform:translateX(-50%);
+  width:86%;
+  max-width:420px;
+  background:#8a6b55;
+  color:#fff;
+  text-align:center;
+  padding:16px 0;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:bold;
+  z-index:9999;
+}
+
+footer{
+  text-align:center;
+  padding:40px 0 110px;
+  opacity:.5;
+  letter-spacing:4px;
+}
+
+@media(min-width:768px){
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
 </style>
 </head>
 
@@ -30,8 +171,13 @@ footer{text-align:center;padding:40px 0 110px;opacity:.5;}
 
 <section class="hero">
   <div>
+    <div class="logo">BELL WELL</div>
     <div class="sub">PHOTO WEDDING</div>
     <h1>BRIDAL</h1>
+    <p class="catch">
+      写真を撮るだけではなく、<br>
+      おふたりの想いまで美しく残す一日を。
+    </p>
   </div>
 </section>
 
@@ -40,47 +186,87 @@ footer{text-align:center;padding:40px 0 110px;opacity:.5;}
   <p class="text">
     ヘアメイクがプロデュースするフォトウェディング。<br>
     ドレス・和装・ロケーション撮影まで、<br>
-    おふたりらしい一日を上質に美しく残します。
+    おふたりらしい世界観を大切に、上質に美しく残します。
   </p>
 </section>
 
 <section class="section">
   <div class="title">GALLERY</div>
-  <div class="grid">
-    <img src="IMG_2945.jpeg">
-    <img src="IMG_2946.jpeg">
-    <img src="IMG_2947.jpeg">
-    <img src="IMG_2948.jpeg">
+
+  <div class="gallery-grid">
+    <img src="images/bridal/IMG_2957.jpeg">
+    <img src="images/bridal/IMG_2958.jpeg">
+    <img src="images/bridal/IMG_2959.jpeg">
+    <img src="images/bridal/IMG_2960.jpeg">
+    <img src="images/bridal/IMG_2961.jpeg">
+    <img src="images/bridal/IMG_2962.jpeg">
   </div>
 </section>
 
 <section class="section">
-  <div class="title">PRICE</div>
+  <div class="title">PLAN</div>
 
   <div class="price-card">
-    <div class="price">持ち込み衣装プラン ¥98,000〜</div>
-    <p>新婦ヘアメイク / スタイリストアテンド / カメラマン撮影 / データ全渡し</p>
+    <h3>お持ち込み衣装フォトプラン</h3>
+    <div class="price">¥98,000〜</div>
+    <p>
+      新婦ヘアメイク / スタイリストアテンド / カメラマン撮影 / プロデュース料 / 撮影データ全渡し
+    </p>
+    <div class="note">
+      ※ロケ地が市外の場合は追加 ¥22,000<br>
+      ※土日祝日は追加 ¥22,000
+    </div>
   </div>
 
   <div class="price-card">
-    <div class="price">ドレスコーディネートプラン ¥250,000〜</div>
-    <p>ドレス・タキシード / 衣装小物 / ヘアメイク / ロケーション撮影</p>
+    <h3>お衣装コーディネートプラン</h3>
+    <div class="price">¥250,000〜</div>
+    <p>
+      ウェディングドレス or カラードレス / タキシード / 衣装小物 / 新婦ヘアメイク / フィッティング / ロケーション撮影2カ所まで / 撮影データ
+    </p>
+    <div class="note">
+      ※お選びいただける衣装には規定がございます。<br>
+      ※ロケ地が市外の場合・土日祝日は追加料金がございます。
+    </div>
   </div>
 
   <div class="price-card">
-    <div class="price">和装ロケーションプラン ¥297,000〜</div>
-    <p>白無垢・打掛 / 着付け / お支度 / 撮影データ</p>
+    <h3>特別なドレスでのロケーションフォトプラン</h3>
+    <div class="price">¥265,000〜</div>
+    <p>
+      インポートドレスや海外から輸入した格式高いドレスをお選びいただけるプラン。<br>
+      ドレス / お支度 / フィッティング / ロケーション撮影 / 撮影データ全渡し
+    </p>
+  </div>
+
+  <div class="price-card">
+    <h3>白無垢・打掛ロケーションフォトプラン</h3>
+    <div class="price">¥297,000〜</div>
+    <p>
+      白無垢 / 打掛 / お着付け / お支度 / ロケーション撮影 / 撮影データ全渡し
+    </p>
   </div>
 </section>
 
 <section class="section">
   <div class="title">FLOW</div>
-  <p class="flow">
+  <div class="flow">
     ① LINEでお問い合わせ<br>
-    ② カウンセリング・日程決定<br>
-    ③ 衣装・ヘアメイクお支度<br>
-    ④ ロケーション撮影<br>
-    ⑤ 撮影データお渡し
+    ② 撮影内容・日程のご相談<br>
+    ③ 衣装・ヘアメイクイメージ確認<br>
+    ④ お支度・フィッティング<br>
+    ⑤ ロケーション撮影<br>
+    ⑥ 撮影データお渡し
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">MESSAGE</div>
+  <p class="text">
+    数々のブライダルシーンで経験を重ねてきたスタッフが、<br>
+    ヘアメイク・衣装・撮影まで丁寧にサポートいたします。<br><br>
+    まずは「相談だけ」でも大丈夫です。<br>
+    おふたりに合ったプランをご提案いたします。
   </p>
 </section>
 
@@ -92,7 +278,9 @@ footer{text-align:center;padding:40px 0 110px;opacity:.5;}
 
 <footer>BELL WELL</footer>
 
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">LINEで予約・相談</a>
+<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
+LINEで予約・相談
+</a>
 
 </body>
 </html>
