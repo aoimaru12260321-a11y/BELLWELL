@@ -17,40 +17,64 @@ body{
 
 /* HERO */
 .hero{
-  min-height:75vh;
+  min-height:85vh;
   background:
-    linear-gradient(rgba(246,242,235,.2),rgba(246,242,235,.85)),
-    url("IMG_2957.jpeg") center/cover no-repeat;
+    linear-gradient(rgba(30,20,15,.2),rgba(30,20,15,.6)),
+    url("IMG_3117.png") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:0 24px;
+  color:#fff;
+  padding:0 20px;
 }
 
-h1{
+.hero h1{
   font-family:'Playfair Display',serif;
-  font-size:42px;
+  font-size:48px;
   letter-spacing:10px;
 }
 
+.hero p{
+  margin-top:15px;
+  line-height:2;
+  font-size:16px;
+}
+
+.hero-btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 28px;
+  border:1px solid #fff;
+  color:#fff;
+  text-decoration:none;
+  letter-spacing:2px;
+}
+
+/* SECTION */
 .section{
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
 .title{
   text-align:center;
   font-family:'Playfair Display',serif;
-  letter-spacing:5px;
   font-size:26px;
-  margin-bottom:25px;
+  letter-spacing:5px;
+  margin-bottom:30px;
+}
+
+/* POINT */
+.point{
+  margin-bottom:30px;
+  line-height:2;
 }
 
 /* GALLERY */
 .gallery-grid{
   display:grid;
-  grid-template-columns:1fr;
-  gap:16px;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
 }
 
 .gallery-grid img{
@@ -90,29 +114,88 @@ h1{
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
-  <h1>BRIDAL</h1>
+  <div>
+    <h1>BRIDAL</h1>
+    <p>
+      写真を撮るだけではなく、<br>
+      “史上最高の自分”に出会う一日を。
+    </p>
+    <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">LINEで相談</a>
+  </div>
 </section>
 
+<!-- 共感 -->
+<section class="section">
+  <div class="title">こんなお悩みありませんか？</div>
+
+  <div class="point">
+    ・結婚式はしないけど写真は残したい<br>
+    ・自然でおしゃれな写真を撮りたい<br>
+    ・ヘアメイクもちゃんとこだわりたい
+  </div>
+
+  <div class="point">
+    その想い、すべて叶えます。
+  </div>
+</section>
+
+<!-- 強み -->
+<section class="section">
+  <div class="title">BELL WELLの強み</div>
+
+  <div class="point">
+    ■ ヘアメイクが主役の撮影<br>
+    → 写真の仕上がりが圧倒的に違う
+  </div>
+
+  <div class="point">
+    ■ 経験豊富なスタッフ<br>
+    → 初めてでも安心して任せられる
+  </div>
+
+  <div class="point">
+    ■ ロケーション提案力<br>
+    → 鹿児島の魅力を最大限に引き出す
+  </div>
+</section>
+
+<!-- ギャラリー -->
 <section class="section">
   <div class="title">GALLERY</div>
 
   <div class="gallery-grid">
+
+    <img src="IMG_3117.png">
+    <img src="IMG_3120.png">
+
+    <img src="IMG_3113.png">
+    <img src="IMG_3118.png">
+
+    <img src="IMG_3116.png">
+    <img src="IMG_3115.png">
+
+    <img src="IMG_3114.png">
+    <img src="IMG_3119.png">
+
     <img src="IMG_2957.jpeg">
     <img src="IMG_2958.jpeg">
     <img src="IMG_2959.jpeg">
     <img src="IMG_2960.jpeg">
     <img src="IMG_2961.jpeg">
     <img src="IMG_2962.jpeg">
+
   </div>
 </section>
 
+<!-- 料金 -->
 <section class="section">
   <div class="title">PLAN</div>
 
   <div class="price-card">
     <div class="price">¥98,000〜</div>
-    持ち込み衣装フォトプラン
+    持ち込み衣装プラン
   </div>
 
   <div class="price-card">
@@ -122,7 +205,7 @@ h1{
 
   <div class="price-card">
     <div class="price">¥265,000〜</div>
-    インポートドレスプラン
+    インポートドレス
   </div>
 
   <div class="price-card">
