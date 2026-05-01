@@ -3,26 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEIJIN | BELL WELL</title>
+<title>成人式 | BELL WELL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
-
-.hero{
-  min-height:80vh;
-  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.6)),
-  url("IMG_3093.png") center/cover no-repeat;
-  display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;
+body{
+  margin:0;
+  background:#f6f2eb;
+  color:#3e2f27;
+  font-family:'Noto Serif JP',serif;
 }
 
-.hero h1{font-size:42px;letter-spacing:8px;}
-.hero p{line-height:2;margin-top:10px;}
+/* HERO */
+.hero{
+  min-height:80vh;
+  background:
+  linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5)),
+  url("IMG_3093.png") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
 
-.section{padding:60px 20px;}
-.title{text-align:center;font-size:26px;margin-bottom:25px;}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  letter-spacing:8px;
+}
 
-.text{text-align:center;line-height:2;}
+/* SECTION */
+.section{
+  padding:60px 20px;
+}
 
+.title{
+  text-align:center;
+  font-size:26px;
+  margin-bottom:30px;
+}
+
+.text{
+  text-align:center;
+  line-height:2;
+}
+
+/* GALLERY */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -30,74 +58,67 @@ body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
 }
 
 .grid img{
-  width:100%;height:260px;object-fit:cover;border-radius:8px;
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:10px;
 }
 
-.box{
-  background:#fff;padding:20px;margin-bottom:15px;border-radius:8px;
-}
-
-.line{
-  position:fixed;bottom:20px;left:20px;right:20px;
-  background:#8a6b55;color:#fff;text-align:center;
-  padding:15px;border-radius:50px;text-decoration:none;
+/* BUTTON */
+.btn{
+  display:block;
+  margin:40px auto;
+  padding:15px;
+  background:#9b7b63;
+  color:#fff;
+  text-align:center;
+  border-radius:30px;
+  width:80%;
+  text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
-<div>
-<h1>SEIJIN</h1>
-<p>一生に一度の、最高に美しい瞬間を。</p>
-</div>
+  <h1>成人式</h1>
 </section>
 
+<!-- CONCEPT -->
 <section class="section">
-<div class="title">CONCEPT</div>
-<p class="text">
-成人式は一生に一度。<br>
-その瞬間を“自分史上最高”の姿で残します。
-</p>
+  <div class="title">CONCEPT</div>
+  <p class="text">
+    一生に一度の成人式を、<br>
+    自分史上最高の美しさで残す。<br><br>
+    ヘアメイク・着付け・撮影すべてを通して、<br>
+    あなたの魅力を最大限に引き出します。
+  </p>
 </section>
 
+<!-- GALLERY -->
 <section class="section">
-<div class="title">GALLERY</div>
-<div class="grid">
-<img src="IMG_3085.png">
-<img src="IMG_3086.png">
-<img src="IMG_3087.png">
-<img src="IMG_3088.png">
-<img src="IMG_3089.png">
-<img src="IMG_3091.png">
-<img src="IMG_3092.png">
-<img src="IMG_3093.png">
-<img src="IMG_3094.png">
-</div>
+  <div class="title">GALLERY</div>
+
+  <div class="grid">
+
+    <img src="IMG_3093.png">
+    <img src="IMG_2967.jpeg"> <!-- 追加 -->
+
+    <img src="IMG_3088.png">
+    <img src="IMG_3091.png">
+
+    <img src="IMG_3087.png">
+    <img src="IMG_3092.png">
+
+  </div>
 </section>
 
-<section class="section">
-<div class="title">PLAN</div>
-
-<div class="box">¥33,000〜 前撮りプラン</div>
-<div class="box">¥88,000〜 ロケーション撮影</div>
-<div class="box">¥110,000〜 当日＋前撮り</div>
-
-</section>
-
-<section class="section">
-<div class="title">FLOW</div>
-<p class="text">
-① LINE相談<br>
-② カウンセリング<br>
-③ ヘアメイク・着付け<br>
-④ 撮影<br>
-⑤ データお渡し
-</p>
-</section>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="line">LINEで予約・相談</a>
+<!-- CONTACT -->
+<a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+LINEで予約・相談
+</a>
 
 </body>
 </html>
