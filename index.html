@@ -15,9 +15,7 @@ body{
 
 .hero{
   height:100vh;
-  background:
-    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.5)),
-    url("IMG_3057.jpeg") center/cover;
+  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url("IMG_3057.jpeg") center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -25,86 +23,42 @@ body{
   color:#fff;
 }
 
-.logo{
-  font-size:42px;
-  letter-spacing:10px;
-}
+.logo{font-size:42px;letter-spacing:10px;}
+.catch{margin-top:25px;line-height:2;font-size:18px;}
 
-.catch{
-  margin-top:25px;
-  line-height:2;
-  font-size:18px;
-}
-
-.section{
-  padding:70px 20px;
-}
-
-.title{
-  text-align:center;
-  font-size:28px;
-  margin-bottom:35px;
-  letter-spacing:4px;
-}
-
-.text{
-  text-align:center;
-  line-height:2;
-}
+.section{padding:70px 20px;}
+.title{text-align:center;font-size:28px;margin-bottom:35px;letter-spacing:4px;}
+.text{text-align:center;line-height:2;}
 
 .menu{
   display:grid;
   gap:22px;
 }
 
-.menu a{
+.menu-card{
   position:relative;
   display:block;
   height:260px;
-  color:#fff;
-  text-decoration:none;
   overflow:hidden;
   border-radius:14px;
+  text-decoration:none;
+  color:#fff;
   box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 
-.menu a::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-size:cover;
-  background-position:center;
-  transition:transform .8s ease;
-}
-
-.menu a::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.55));
-}
-
-.menu a:hover::before{
-  transform:scale(1.08);
-}
-
-.menu a:nth-child(1)::before{
-  background-image:url("IMG_3069.jpeg");
-}
-
-.menu a:nth-child(2)::before{
-  background-image:url("IMG_3092.jpeg");
-}
-
-.menu a:nth-child(3)::before{
-  background-image:url("IMG_3041.jpeg");
+.menu-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:brightness(.65);
 }
 
 .menu-content{
   position:absolute;
-  z-index:2;
   left:24px;
   bottom:24px;
+  z-index:2;
 }
 
 .menu-sub{
@@ -134,7 +88,7 @@ body{
 
 .btn{
   display:block;
-  margin:25px auto;
+  margin:25px auto 100px;
   padding:16px;
   width:82%;
   max-width:420px;
@@ -143,23 +97,6 @@ body{
   color:#fff;
   border-radius:999px;
   text-decoration:none;
-  box-shadow:0 8px 20px rgba(0,0,0,.18);
-}
-
-.fixed-line{
-  position:fixed;
-  bottom:18px;
-  left:50%;
-  transform:translateX(-50%);
-  width:86%;
-  max-width:420px;
-  background:#9b7b63;
-  color:#fff;
-  text-align:center;
-  padding:16px 0;
-  border-radius:999px;
-  text-decoration:none;
-  z-index:999;
 }
 </style>
 </head>
@@ -191,7 +128,8 @@ body{
   <div class="title">SERVICE</div>
 
   <div class="menu">
-    <a href="bridal.html">
+    <a href="bridal.html" class="menu-card">
+      <img src="IMG_3069.jpeg">
       <div class="menu-content">
         <div class="menu-sub">PHOTO WEDDING</div>
         <div class="menu-title">BRIDAL</div>
@@ -199,7 +137,8 @@ body{
       </div>
     </a>
 
-    <a href="seijin.html">
+    <a href="seijin.html" class="menu-card">
+      <img src="IMG_3092.jpeg">
       <div class="menu-content">
         <div class="menu-sub">COMING OF AGE</div>
         <div class="menu-title">成人式</div>
@@ -207,7 +146,8 @@ body{
       </div>
     </a>
 
-    <a href="753.html">
+    <a href="753.html" class="menu-card">
+      <img src="IMG_3041.jpeg">
       <div class="menu-content">
         <div class="menu-sub">SHICHIGOSAN PHOTO</div>
         <div class="menu-title">七五三</div>
@@ -252,10 +192,6 @@ body{
 </section>
 
 <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
-LINEで予約・相談
-</a>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
 LINEで予約・相談
 </a>
 
