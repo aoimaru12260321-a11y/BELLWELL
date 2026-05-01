@@ -3,26 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>753 | BELL WELL</title>
+<title>七五三 | BELL WELL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
-
-.hero{
-  min-height:80vh;
-  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.6)),
-  url("IMG_3106.png") center/cover no-repeat;
-  display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;
+body{
+  margin:0;
+  background:#f6f2eb;
+  color:#3e2f27;
+  font-family:'Noto Serif JP',serif;
 }
 
-.hero h1{font-size:42px;letter-spacing:8px;}
-.hero p{line-height:2;margin-top:10px;}
+/* HERO */
+.hero{
+  min-height:80vh;
+  background:
+  linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5)),
+  url("IMG_3106.png") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
 
-.section{padding:60px 20px;}
-.title{text-align:center;font-size:26px;margin-bottom:25px;}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  letter-spacing:8px;
+}
 
-.text{text-align:center;line-height:2;}
+/* SECTION */
+.section{
+  padding:60px 20px;
+}
 
+.title{
+  text-align:center;
+  font-size:26px;
+  margin-bottom:30px;
+}
+
+.text{
+  text-align:center;
+  line-height:2;
+}
+
+/* GALLERY */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -30,71 +58,67 @@ body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
 }
 
 .grid img{
-  width:100%;height:260px;object-fit:cover;border-radius:8px;
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:10px;
 }
 
-.box{
-  background:#fff;padding:20px;margin-bottom:15px;border-radius:8px;
-}
-
-.line{
-  position:fixed;bottom:20px;left:20px;right:20px;
-  background:#8a6b55;color:#fff;text-align:center;
-  padding:15px;border-radius:50px;text-decoration:none;
+/* BUTTON */
+.btn{
+  display:block;
+  margin:40px auto;
+  padding:15px;
+  background:#9b7b63;
+  color:#fff;
+  text-align:center;
+  border-radius:30px;
+  width:80%;
+  text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
-<div>
-<h1>753</h1>
-<p>大切な成長の一瞬を、未来に残す。</p>
-</div>
+  <h1>七五三</h1>
 </section>
 
+<!-- CONCEPT -->
 <section class="section">
-<div class="title">CONCEPT</div>
-<p class="text">
-お子様の大切な節目を、<br>
-ご家族の想いとともに美しく残します。
-</p>
+  <div class="title">CONCEPT</div>
+  <p class="text">
+    お子様の大切な成長の節目を、<br>
+    美しく、そして思い出として残す。<br><br>
+    ご家族にとって特別な一日を、<br>
+    心を込めてプロデュースします。
+  </p>
 </section>
 
+<!-- GALLERY -->
 <section class="section">
-<div class="title">GALLERY</div>
-<div class="grid">
-<img src="IMG_3106.png">
-<img src="IMG_3105.png">
-<img src="IMG_3107.png">
-<img src="IMG_2963.jpeg">
-<img src="IMG_2964.jpeg">
-<img src="IMG_2965.jpeg">
-<img src="IMG_2966.jpeg">
-</div>
+  <div class="title">GALLERY</div>
+
+  <div class="grid">
+
+    <img src="IMG_2967.jpeg"> <!-- ここ移動 -->
+    <img src="IMG_3106.png">
+
+    <img src="IMG_3105.png">
+    <img src="IMG_3107.png">
+
+    <img src="IMG_2963.jpeg">
+    <img src="IMG_2964.jpeg">
+
+  </div>
 </section>
 
-<section class="section">
-<div class="title">PLAN</div>
-
-<div class="box">¥33,000〜 撮影のみ</div>
-<div class="box">¥55,000〜 着付け＋撮影</div>
-
-</section>
-
-<section class="section">
-<div class="title">FLOW</div>
-<p class="text">
-① LINE相談<br>
-② 日程決定<br>
-③ お支度<br>
-④ 撮影<br>
-⑤ データお渡し
-</p>
-</section>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="line">LINEで予約・相談</a>
+<!-- CONTACT -->
+<a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+LINEで予約・相談
+</a>
 
 </body>
 </html>
