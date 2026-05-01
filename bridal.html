@@ -3,154 +3,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BELLWELL</title>
+<title>BRIDAL | BELL WELL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: serif;
-  background: #f8f6f3;
+body{
+  margin:0;
+  background:#f6f2eb;
+  color:#3e2f27;
+  font-family:'Noto Serif JP',serif;
 }
 
-/* ヒーロー */
-.hero {
-  height: 70vh;
-  background: url("IMG_3078.jpeg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+/* HERO */
+.hero{
+  min-height:85vh;
+  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.6)),
+  url("IMG_3117.png") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  padding:20px;
 }
 
-.hero h1 {
-  font-size: 32px;
-  letter-spacing: 3px;
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  letter-spacing:8px;
 }
 
-/* セクション */
-.section {
-  padding: 40px 20px;
+.hero p{
+  margin-top:15px;
+  line-height:2;
 }
 
-/* カード */
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.hero-btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 26px;
+  border:1px solid #fff;
+  color:#fff;
+  text-decoration:none;
 }
 
-.menu a {
-  position: relative;
-  display: block;
+/* SECTION */
+.section{
+  padding:60px 20px;
 }
 
-.menu img {
-  width: 100%;
-  border-radius: 10px;
+.title{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  margin-bottom:30px;
 }
 
-.menu span {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
+/* TEXT */
+.text{
+  line-height:2;
+  text-align:center;
 }
 
-/* ギャラリー */
-.gallery {
-  padding: 40px 20px;
+/* GALLERY */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
 }
 
-.gallery h2 {
-  text-align: center;
-  margin-bottom: 30px;
+.grid img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:8px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+/* PRICE */
+.price-card{
+  background:#fff;
+  padding:20px;
+  margin-bottom:15px;
+  border-radius:8px;
 }
 
-.grid img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 10px;
+/* REVIEW */
+.review{
+  background:#fff;
+  padding:20px;
+  margin-bottom:15px;
+  border-radius:8px;
+  font-size:14px;
 }
 
-/* ボタン */
-.btn {
-  display: block;
-  margin: 40px auto;
-  padding: 15px;
-  background: #a1846b;
-  color: white;
-  text-align: center;
-  border-radius: 30px;
-  width: 80%;
+/* LINE */
+.line{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  right:20px;
+  background:#8a6b55;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  border-radius:50px;
+  text-decoration:none;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- ヒーロー -->
+<!-- HERO -->
 <section class="hero">
-  <h1>BRIDAL<br>PHOTO WEDDING</h1>
-</section>
-
-<!-- メニュー -->
-<section class="section menu">
-
-  <a href="#">
-    <img src="IMG_3077.jpeg">
-    <span>BRIDAL</span>
-  </a>
-
-  <a href="#">
-    <img src="IMG_2931.jpeg">
-    <span>SEIJIN</span>
-  </a>
-
-  <a href="#">
-    <img src="IMG_3106.png">
-    <span>753</span>
-  </a>
-
-</section>
-
-<!-- ブライダルギャラリー -->
-<section class="gallery">
-  <h2>BRIDAL GALLERY</h2>
-
-  <div class="grid">
-
-    <img src="IMG_3055.jpeg">
-    <img src="IMG_3056.jpeg">
-    <img src="IMG_3057.jpeg">
-    <img src="IMG_3062.jpeg">
-    <img src="IMG_3066.jpeg">
-    <img src="IMG_3067.jpeg">
-    <img src="IMG_3068.jpeg">
-    <img src="IMG_3069.jpeg">
-    <img src="IMG_3071.jpeg">
-    <img src="IMG_3075.png">
-    <img src="IMG_3077.jpeg">
-    <img src="IMG_3078.jpeg">
-    <img src="IMG_3079.jpeg">
-    <img src="IMG_3080.jpeg">
-    <img src="IMG_3082.jpeg">
-    <img src="IMG_3083.jpeg">
-
+  <div>
+    <h1>BRIDAL</h1>
+    <p>
+      ただ撮るだけじゃない。<br>
+      人生で一番美しい瞬間を残す。
+    </p>
+    <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">LINEで相談</a>
   </div>
 </section>
 
-<!-- ボタン -->
-<a href="#" class="btn">LINEで予約・相談</a>
+<!-- 共感 -->
+<section class="section">
+  <div class="title">こんなお悩みありませんか？</div>
+  <p class="text">
+    結婚式はしないけど写真は残したい。<br>
+    自然でおしゃれな写真を撮りたい。<br>
+    ヘアメイクも妥協したくない。<br><br>
+    その想い、すべて叶えます。
+  </p>
+</section>
+
+<!-- 強み -->
+<section class="section">
+  <div class="title">選ばれる理由</div>
+  <p class="text">
+    BELL WELLではヘアメイクを最も大切にしています。<br><br>
+    ただ撮るだけの写真ではなく、<br>
+    「自分史上最高に美しい状態」を創り上げてから撮影することで、<br>
+    仕上がりが圧倒的に変わります。<br><br>
+    経験豊富なスタッフが一日を通して丁寧にサポートします。
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <div class="title">GALLERY</div>
+
+  <div class="grid">
+    <img src="IMG_3117.png">
+    <img src="IMG_3120.png">
+    <img src="IMG_3113.png">
+    <img src="IMG_3118.png">
+    <img src="IMG_3116.png">
+    <img src="IMG_3115.png">
+    <img src="IMG_3114.png">
+    <img src="IMG_3119.png">
+  </div>
+</section>
+
+<!-- 料金 -->
+<section class="section">
+  <div class="title">PLAN</div>
+
+  <div class="price-card">¥98,000〜 持ち込み衣装プラン</div>
+  <div class="price-card">¥250,000〜 衣装付きプラン</div>
+  <div class="price-card">¥265,000〜 インポートドレス</div>
+  <div class="price-card">¥297,000〜 和装プラン</div>
+
+</section>
+
+<!-- お客様の声 -->
+<section class="section">
+  <div class="title">お客様の声</div>
+
+  <div class="review">想像以上に綺麗にしていただいて感動しました。</div>
+  <div class="review">ヘアメイクが本当に上手で安心して任せられました。</div>
+  <div class="review">一生の思い出になりました。</div>
+
+</section>
+
+<!-- FLOW -->
+<section class="section">
+  <div class="title">FLOW</div>
+  <p class="text">
+    ① LINEで相談<br>
+    ② カウンセリング<br>
+    ③ ヘアメイク・お支度<br>
+    ④ 撮影<br>
+    ⑤ データお渡し
+  </p>
+</section>
+
+<a href="https://line.me/R/ti/p/@944xywjv" class="line">
+LINEで予約・相談
+</a>
 
 </body>
 </html>
