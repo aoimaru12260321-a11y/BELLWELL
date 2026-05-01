@@ -18,6 +18,7 @@ html, body{
   font-family:'Noto Serif JP',serif;
 }
 
+/* HERO */
 .hero{
   position:relative;
   width:100%;
@@ -40,14 +41,14 @@ html, body{
   min-height:100%;
   transform:translate(-50%,-50%) scale(1.6);
   object-fit:cover;
-  filter:brightness(.78);
+  filter:brightness(.8);
 }
 
 .hero::after{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.35));
+  background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.35));
   z-index:1;
 }
 
@@ -86,6 +87,7 @@ html, body{
   text-decoration:none;
 }
 
+/* SECTION */
 .section{
   padding:65px 22px;
 }
@@ -104,6 +106,7 @@ html, body{
   font-size:15px;
 }
 
+/* SERVICE */
 .menu-card{
   position:relative;
   display:block;
@@ -119,7 +122,7 @@ html, body{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.72);
+  filter:brightness(.7);
 }
 
 .card-sub{
@@ -146,6 +149,7 @@ html, body{
   font-size:12px;
 }
 
+/* WHY */
 .reason{
   background:#eee6dd;
 }
@@ -158,6 +162,7 @@ html, body{
   line-height:2;
 }
 
+/* BUTTON */
 .btn{
   display:block;
   max-width:340px;
@@ -169,6 +174,7 @@ html, body{
   text-decoration:none;
 }
 
+/* LINE固定 */
 .fixed-line{
   position:fixed;
   bottom:20px;
@@ -189,8 +195,9 @@ html, body{
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
-  <img src="IMG_3057.png" class="hero-bg">
+  <img src="IMG_3057.jpeg" class="hero-bg">
 
   <div class="hero-content">
     <div class="logo">BELL<br>WELL</div>
@@ -207,6 +214,7 @@ html, body{
   </div>
 </section>
 
+<!-- ABOUT -->
 <section class="section">
   <div class="title">ABOUT</div>
   <p class="text">
@@ -218,11 +226,12 @@ html, body{
   </p>
 </section>
 
+<!-- SERVICE -->
 <section class="section">
   <div class="title">SERVICE</div>
 
   <a href="bridal.html" class="menu-card">
-    <img src="IMG_3113.png">
+    <img src="IMG_3057.jpeg">
     <div class="card-sub">PHOTO WEDDING</div>
     <div class="card-title">BRIDAL</div>
     <div class="card-text">フォトウェディング・ドレス・和装撮影</div>
@@ -243,6 +252,7 @@ html, body{
   </a>
 </section>
 
+<!-- WHY -->
 <section class="section reason">
   <div class="title">WHY BELL WELL</div>
 
@@ -262,6 +272,7 @@ html, body{
   </div>
 </section>
 
+<!-- FLOW -->
 <section class="section">
   <div class="title">FLOW</div>
   <p class="text">
@@ -273,6 +284,7 @@ html, body{
   </p>
 </section>
 
+<!-- CONTACT -->
 <section class="section">
   <div class="title">CONTACT</div>
   <p class="text">
