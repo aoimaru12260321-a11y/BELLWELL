@@ -9,139 +9,115 @@
 body{
   margin:0;
   background:#f6f2eb;
-  color:#3e2f27;
   font-family:serif;
 }
 
+/* HERO */
 .hero{
   height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.48)),
+    linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),
     url("IMG_3057.jpeg") center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
-  text-align:center;
   color:#fff;
+  text-align:center;
 }
 
 .logo{
-  font-size:44px;
-  letter-spacing:12px;
-  line-height:1.4;
+  font-size:40px;
+  letter-spacing:10px;
 }
 
 .catch{
-  margin-top:35px;
-  line-height:2.2;
-  font-size:18px;
-  letter-spacing:1px;
+  margin-top:20px;
+  line-height:2;
 }
 
+/* SECTION */
 .section{
-  padding:85px 22px;
+  padding:80px 20px;
 }
 
 .title{
   text-align:center;
-  font-size:30px;
+  font-size:28px;
   margin-bottom:40px;
-  letter-spacing:5px;
+  letter-spacing:4px;
 }
 
 .text{
   text-align:center;
-  line-height:2.2;
-  font-size:15px;
+  line-height:2;
 }
 
+/* SERVICE */
 .menu{
   display:grid;
-  gap:28px;
+  gap:20px;
 }
 
-.menu-card{
+.card{
   position:relative;
-  display:block;
-  height:290px;
+  height:260px;
+  border-radius:16px;
   overflow:hidden;
-  border-radius:18px;
   text-decoration:none;
   color:#fff;
-  box-shadow:0 18px 38px rgba(0,0,0,.16);
 }
 
-.menu-card img{
+.card img{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
-  filter:brightness(.62);
-  transition:transform 1s ease, filter 1s ease;
+  filter:brightness(.65);
 }
 
-.menu-card:hover img{
-  transform:scale(1.08);
-  filter:brightness(.72);
-}
-
-.menu-content{
+/* TEXT */
+.card-content{
   position:absolute;
-  left:26px;
-  bottom:28px;
-  z-index:2;
+  bottom:20px;
+  left:20px;
 }
 
-.menu-sub{
-  font-size:12px;
-  letter-spacing:4px;
-  margin-bottom:10px;
+.card-title{
+  font-size:28px;
 }
 
-.menu-title{
-  font-size:34px;
-  letter-spacing:5px;
-}
-
-.menu-text{
-  margin-top:10px;
-  font-size:13px;
-  line-height:1.7;
-}
-
+/* BOX */
 .box{
-  background:#fffaf4;
-  padding:26px;
-  border-radius:16px;
-  margin-bottom:20px;
-  line-height:2;
-  border:1px solid #d8c8b8;
-  box-shadow:0 10px 24px rgba(80,60,40,.06);
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:15px;
+  line-height:1.8;
 }
 
+/* BTN */
 .btn{
   display:block;
-  margin:25px auto 110px;
-  padding:17px;
-  width:82%;
-  max-width:420px;
+  margin:30px auto 100px;
+  padding:15px;
+  width:80%;
+  max-width:400px;
   text-align:center;
   background:#9b7b63;
   color:#fff;
-  border-radius:999px;
+  border-radius:30px;
   text-decoration:none;
-  box-shadow:0 10px 24px rgba(0,0,0,.18);
 }
 
+/* FADE */
 .fade{
   opacity:0;
-  transform:translateY(35px);
-  transition:all .9s ease;
+  transform:translateY(30px);
+  transition:.8s;
 }
 
 .fade.show{
   opacity:1;
-  transform:translateY(0);
+  transform:none;
 }
 </style>
 </head>
@@ -161,11 +137,8 @@ body{
 <section class="section fade">
   <div class="title">ABOUT</div>
   <p class="text">
-    BELL WELLは、ヘアメイクがプロデュースする<br>
-    フォトウェディング・成人式・七五三の撮影サービスです。<br><br>
-    写真を残すだけではなく、<br>
-    その人らしい美しさを引き出し、<br>
-    心まで満たされる一日をプロデュースします。
+    ヘアメイクがプロデュースするフォトサービス。<br>
+    その人らしい美しさを引き出します。
   </p>
 </section>
 
@@ -173,68 +146,40 @@ body{
   <div class="title">SERVICE</div>
 
   <div class="menu">
-    <a href="bridal.html" class="menu-card">
+
+    <a href="bridal.html" class="card">
       <img src="IMG_3069.jpeg">
-      <div class="menu-content">
-        <div class="menu-sub">PHOTO WEDDING</div>
-        <div class="menu-title">BRIDAL</div>
-        <div class="menu-text">フォトウェディング・ドレス・和装撮影</div>
+      <div class="card-content">
+        <div class="card-title">BRIDAL</div>
       </div>
     </a>
 
-    <a href="seijin.html" class="menu-card">
+    <a href="seijin.html" class="card">
       <img src="IMG_3092.jpeg">
-      <div class="menu-content">
-        <div class="menu-sub">COMING OF AGE</div>
-        <div class="menu-title">成人式</div>
-        <div class="menu-text">成人式前撮り・当日お支度</div>
+      <div class="card-content">
+        <div class="card-title">成人式</div>
       </div>
     </a>
 
-    <a href="753.html" class="menu-card">
+    <a href="753.html" class="card">
       <img src="IMG_3041.jpeg">
-      <div class="menu-content">
-        <div class="menu-sub">SHICHIGOSAN PHOTO</div>
-        <div class="menu-title">七五三</div>
-        <div class="menu-text">七五三・家族写真・記念撮影</div>
+      <div class="card-content">
+        <div class="card-title">七五三</div>
       </div>
     </a>
+
   </div>
 </section>
 
 <section class="section fade">
-  <div class="title">WHY BELL WELL</div>
+  <div class="title">WHY</div>
 
   <div class="box">
-    BELL WELLが大切にしているのは、ただ写真を残すことではなく、
-    その人らしい美しさを引き出すこと。
+    ただ撮るだけではなく、その人らしい美しさを引き出します。
   </div>
 
   <div class="box">
-    ヘアメイク・着付け・撮影まで一日を通してサポートし、
-    初めての撮影でも安心してお任せいただけます。
-  </div>
-</section>
-
-<section class="section fade">
-  <div class="title">FLOW</div>
-
-  <div class="box">
-    ① LINE相談<br>
-    ② 日程・内容決定<br>
-    ③ お支度<br>
-    ④ 撮影<br>
-    ⑤ データお渡し
-  </div>
-</section>
-
-<section class="section fade">
-  <div class="title">MESSAGE</div>
-
-  <div class="box">
-    「どのプランが合うかわからない」<br>
-    「まずは相談だけしたい」<br><br>
-    そんな方もお気軽にLINEからご相談ください。
+    ヘアメイク・撮影までトータルサポート。
   </div>
 </section>
 
@@ -243,19 +188,14 @@ LINEで予約・相談
 </a>
 
 <script>
-const fades = document.querySelectorAll('.fade');
-
-function showFade(){
-  fades.forEach(el => {
-    const rect = el.getBoundingClientRect().top;
-    if(rect < window.innerHeight - 100){
+const fades=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+  fades.forEach(el=>{
+    if(el.getBoundingClientRect().top<window.innerHeight-100){
       el.classList.add('show');
     }
   });
-}
-
-window.addEventListener('scroll', showFade);
-window.addEventListener('load', showFade);
+});
 </script>
 
 </body>
