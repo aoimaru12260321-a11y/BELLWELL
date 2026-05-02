@@ -6,127 +6,24 @@
 <title>BRIDAL | BELL WELL</title>
 
 <style>
-body{
-  margin:0;
-  background:#f6f2eb;
-  color:#3e2f27;
-  font-family:serif;
-}
-
-/* ロゴ */
-.logo{
-  display:block;
-  text-align:center;
-  padding:25px 0;
-  text-decoration:none;
-  color:#3e2f27;
-  font-size:26px;
-  letter-spacing:5px;
-}
-
-/* HERO */
-.hero{
-  min-height:70vh;
-  background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url("IMG_3069.jpeg") center/cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-}
-
-/* 共通 */
+body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
+.logo{display:block;text-align:center;padding:25px 0;text-decoration:none;color:#3e2f27;font-size:26px;letter-spacing:5px;}
+.hero{min-height:70vh;background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url("IMG_3069.jpeg") center/cover;display:flex;align-items:center;justify-content:center;color:#fff;}
 .section{padding:50px 20px;}
 .title{text-align:center;font-size:26px;margin-bottom:25px;}
 .text{text-align:center;line-height:2;}
-
-/* GALLERY */
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-}
-
-.grid img{
-  width:100%;
-  aspect-ratio:1/1;
-  object-fit:cover;
-  border-radius:10px;
-  cursor:pointer;
-}
-
-/* ボックス */
-.box{
-  background:#fff;
-  padding:20px;
-  border-radius:10px;
-  margin-bottom:15px;
-  line-height:1.8;
-}
-
-/* ボタン */
-.home-btn,.btn{
-  display:block;
-  margin:20px auto;
-  padding:15px;
-  width:80%;
-  text-align:center;
-  border-radius:30px;
-  text-decoration:none;
-}
-
-.home-btn{
-  border:1px solid #9b7b63;
-  color:#9b7b63;
-}
-
-.btn{
-  background:#9b7b63;
-  color:#fff;
-}
-
-/* Q&A */
-.qa{
-  background:#fff;
-  border:1px solid #d3c2b3;
-  border-radius:10px;
-  margin-bottom:12px;
-  padding:16px;
-}
-
-.qa summary{
-  cursor:pointer;
-  font-weight:bold;
-}
-
-.qa p{
-  margin-top:12px;
-  color:#5f5148;
-}
-
-/* lightbox */
-.lightbox{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.9);
-  z-index:9999;
-  align-items:center;
-  justify-content:center;
-}
-
-.lightbox img{
-  max-width:85%;
-  max-height:80%;
-  border-radius:10px;
-}
-
-.lightbox span{
-  position:absolute;
-  top:20px;
-  right:25px;
-  color:#fff;
-  font-size:34px;
-}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;cursor:pointer;}
+.box{background:#fff;padding:20px;border-radius:10px;margin-bottom:15px;line-height:1.9;border:1px solid #d8c8b8;}
+.home-btn,.btn{display:block;margin:20px auto;padding:15px;width:80%;text-align:center;border-radius:30px;text-decoration:none;}
+.home-btn{border:1px solid #9b7b63;color:#9b7b63;}
+.btn{background:#9b7b63;color:#fff;}
+.qa{background:#fff;border:1px solid #d3c2b3;border-radius:10px;margin-bottom:12px;padding:16px;line-height:1.8;}
+.qa summary{cursor:pointer;font-weight:bold;}
+.qa p{margin-top:12px;color:#5f5148;}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;}
+.lightbox img{max-width:85%;max-height:80%;border-radius:10px;}
+.lightbox span{position:absolute;top:20px;right:25px;color:#fff;font-size:34px;}
 </style>
 </head>
 
@@ -160,61 +57,85 @@ body{
   </div>
 </section>
 
-<!-- 後悔させない導線 -->
+<section class="section">
+  <div class="title">DRESS</div>
+
+  <div class="box">
+    フォトウェディングで一番多い後悔が、<br>
+    「ドレスで妥協してしまった」という声です。
+  </div>
+
+  <div class="box">
+    プラン内では選べる衣装が少なく、<br>
+    気に入ったドレスは追加料金……<br>
+    そんな不安を感じる方も少なくありません。
+  </div>
+
+  <div class="box">
+    BELL WELLでは提携ドレスショップにて、<br>
+    実際に衣装を見て、試着して、<br>
+    好みに合わせてお選びいただけます。<br><br>
+    写真のためのドレスではなく、<br>
+    「本当に着たい一着」で撮影する。<br>
+    それを大切にしています。
+  </div>
+
+  <div class="box">
+    一生に一度の撮影だからこそ、<br>
+    妥協のないドレス選びを。
+  </div>
+
+  <a href="https://www.foursis-co.com/" target="_blank" class="btn">
+    提携ドレスショップを見る
+  </a>
+</section>
+
 <section class="section">
   <div class="title">後悔しないために</div>
 
   <div class="box">
-    フォトウェディングでは「思っていたより費用が高くなった」
-    「イメージと違った」などの後悔の声も少なくありません。
+    フォトウェディングでは、費用・衣装・ヘアメイク・撮影イメージのすれ違いで
+    「もっと確認しておけばよかった」と感じる方もいます。
   </div>
 
   <div class="box">
-    BELL WELLでは事前にしっかりとご希望やご予算を共有し、
-    納得した状態で当日を迎えていただけるようサポートします。
+    BELL WELLでは、事前にご予算・衣装・ヘアメイク・撮影イメージを共有し、
+    納得した状態で当日を迎えられるようサポートします。
   </div>
 </section>
 
-<!-- Q&A -->
 <section class="section">
   <div class="title">Q&A</div>
 
   <details class="qa">
-    <summary>料金はどれくらい追加でかかりますか？</summary>
-    <p>衣装・データ・撮影日などにより追加料金が発生する場合がありますが、事前に総額の目安をご説明します。</p>
+    <summary>料金は追加でかかりますか？</summary>
+    <p>衣装・撮影日・ロケーションなどにより追加料金が発生する場合があります。事前に総額の目安をご説明します。</p>
   </details>
 
   <details class="qa">
-    <summary>全データはもらえますか？</summary>
-    <p>プランによって異なります。ご希望に合わせてご提案可能です。</p>
+    <summary>ドレスは選べますか？</summary>
+    <p>提携ドレスショップにて、実際に試着しながらお選びいただけます。</p>
   </details>
 
   <details class="qa">
-    <summary>衣装は選べますか？</summary>
-    <p>事前にご相談いただき、イメージに合う衣装をご提案します。</p>
+    <summary>ヘアメイクの希望は伝えられますか？</summary>
+    <p>可能です。参考画像などを事前に共有いただくことで、理想に近づけます。</p>
   </details>
 
   <details class="qa">
-    <summary>ヘアメイクが不安です</summary>
-    <p>参考画像の共有でイメージをすり合わせながら進めます。</p>
+    <summary>撮りたい雰囲気をお願いできますか？</summary>
+    <p>もちろん可能です。ポーズや雰囲気の参考画像がある場合は事前にお送りください。</p>
   </details>
 
   <details class="qa">
-    <summary>後悔しないために必要なことは？</summary>
-    <p>イメージ写真（指示書）の共有がおすすめです。</p>
+    <summary>当日はサポートしてもらえますか？</summary>
+    <p>ヘアメイクや衣装の調整を行いながら、安心して撮影できるようサポートします。</p>
   </details>
-
-  <details class="qa">
-    <summary>当日のサポートはありますか？</summary>
-    <p>ヘアメイクや衣装の調整を行いながら撮影をサポートします。</p>
-  </details>
-
 </section>
 
 <a href="index.html" class="home-btn">トップページへ戻る</a>
 <a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで予約・相談</a>
 
-<!-- lightbox -->
 <div class="lightbox" id="lightbox">
   <span onclick="closeLightbox()">×</span>
   <img id="lightbox-img">
