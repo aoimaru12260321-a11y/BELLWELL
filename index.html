@@ -3,68 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BELL WELL</title>
+<title>BELL WELL | 鹿児島フォトウェディング・成人式・七五三</title>
 
 <style>
 body{
   margin:0;
   background:#f6f2eb;
+  color:#3e2f27;
   font-family:serif;
 }
 
-/* HERO */
 .hero{
   height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.28)),
+    linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.35)),
     url("IMG_3057.jpeg") center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#fff;
   text-align:center;
+  color:#fff;
+  padding:20px;
 }
 
 .logo{
-  font-size:40px;
+  font-size:42px;
   letter-spacing:10px;
 }
 
-.catch{
-  margin-top:20px;
+.hero-copy{
+  margin-top:35px;
+  font-size:22px;
   line-height:2;
+  letter-spacing:2px;
 }
 
-/* SECTION */
+.hero-sub{
+  margin-top:20px;
+  line-height:2;
+  font-size:14px;
+}
+
 .section{
-  padding:80px 20px;
+  padding:75px 22px;
 }
 
 .title{
   text-align:center;
   font-size:28px;
-  margin-bottom:40px;
   letter-spacing:4px;
+  margin-bottom:35px;
 }
 
 .text{
   text-align:center;
-  line-height:2;
+  line-height:2.2;
+  font-size:15px;
 }
 
-/* SERVICE */
+.box{
+  background:#fff;
+  padding:24px;
+  border-radius:16px;
+  margin-bottom:18px;
+  line-height:2;
+  border:1px solid #e5d5c6;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
 .menu{
   display:grid;
-  gap:20px;
+  gap:22px;
 }
 
 .card{
   position:relative;
-  height:260px;
-  border-radius:16px;
+  height:280px;
   overflow:hidden;
+  border-radius:18px;
   text-decoration:none;
   color:#fff;
+  box-shadow:0 14px 34px rgba(0,0,0,.16);
 }
 
 .card img{
@@ -76,48 +95,81 @@ body{
 
 .card-content{
   position:absolute;
-  bottom:20px;
-  left:20px;
+  left:24px;
+  bottom:24px;
+}
+
+.card-sub{
+  font-size:12px;
+  letter-spacing:4px;
+  margin-bottom:8px;
 }
 
 .card-title{
-  font-size:28px;
+  font-size:32px;
+  letter-spacing:4px;
 }
 
-/* BOX */
-.box{
+.card-text{
+  margin-top:8px;
+  font-size:13px;
+}
+
+.plan{
+  font-size:20px;
+  color:#9b7b63;
+  margin-top:10px;
+}
+
+.qa{
   background:#fff;
-  padding:20px;
-  border-radius:12px;
-  margin-bottom:15px;
-  line-height:1.8;
-  border:1px solid #e5d5c6;
-
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-  transition:all .35s ease;
+  border:1px solid #ddd0c3;
+  border-radius:14px;
+  margin-bottom:14px;
+  padding:18px;
+  line-height:1.9;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
 
-.box:hover{
-  transform:translateY(-4px);
-  box-shadow:0 18px 40px rgba(0,0,0,.12);
+.qa summary{
+  cursor:pointer;
+  font-weight:bold;
 }
 
-/* BTN */
+.qa p{
+  color:#5f5148;
+}
+
 .btn{
   display:block;
-  margin:30px auto 100px;
-  padding:15px;
-  width:80%;
-  max-width:400px;
+  margin:25px auto;
+  padding:16px;
+  width:82%;
+  max-width:420px;
   text-align:center;
   background:#9b7b63;
   color:#fff;
-  border-radius:30px;
+  border-radius:999px;
   text-decoration:none;
+  box-shadow:0 10px 24px rgba(0,0,0,.14);
 }
 
-/* FADE */
+.fixed-line{
+  position:fixed;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  width:86%;
+  max-width:420px;
+  background:#9b7b63;
+  color:#fff;
+  text-align:center;
+  padding:16px 0;
+  border-radius:999px;
+  text-decoration:none;
+  z-index:999;
+}
+
 .fade{
   opacity:0;
   transform:translateY(30px);
@@ -136,18 +188,30 @@ body{
 <section class="hero">
   <div>
     <div class="logo">BELL WELL</div>
-    <div class="catch">
-      一生に一度を、<br>
-      ただの写真で終わらせない。
+
+    <div class="hero-copy">
+      価格を超える感動を。
     </div>
+
+    <div class="hero-sub">
+      ヘアメイクがプロデュースする<br>
+      鹿児島フォトウェディング・成人式・七五三
+    </div>
+
+    <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+      LINEで無料相談
+    </a>
   </div>
 </section>
 
 <section class="section fade">
   <div class="title">ABOUT</div>
   <p class="text">
-    ヘアメイクがプロデュースするフォトサービス。<br>
-    その人らしい美しさを引き出します。
+    BELL WELLは、ヘアメイクを大切にした<br>
+    フォトサービスです。<br><br>
+    写真を残すだけではなく、<br>
+    その人らしい美しさを引き出し、<br>
+    心まで満たされる一日をプロデュースします。
   </p>
 </section>
 
@@ -155,44 +219,122 @@ body{
   <div class="title">SERVICE</div>
 
   <div class="menu">
-
     <a href="bridal.html" class="card">
       <img src="IMG_3069.jpeg">
       <div class="card-content">
+        <div class="card-sub">PHOTO WEDDING</div>
         <div class="card-title">BRIDAL</div>
+        <div class="card-text">フォトウェディング・ドレス・和装撮影</div>
       </div>
     </a>
 
     <a href="seijin.html" class="card">
       <img src="IMG_3092.jpeg">
       <div class="card-content">
+        <div class="card-sub">COMING OF AGE</div>
         <div class="card-title">成人式</div>
+        <div class="card-text">成人式前撮り・当日お支度</div>
       </div>
     </a>
 
     <a href="753.html" class="card">
       <img src="IMG_3041.jpeg">
       <div class="card-content">
+        <div class="card-sub">SHICHIGOSAN PHOTO</div>
         <div class="card-title">七五三</div>
+        <div class="card-text">七五三・家族写真・記念撮影</div>
       </div>
     </a>
-
   </div>
 </section>
 
 <section class="section fade">
-  <div class="title">WHY</div>
+  <div class="title">WHY BELL WELL</div>
 
   <div class="box">
-    ただ撮るだけではなく、その人らしい美しさを引き出します。
+    <strong>01 ヘアメイク監修</strong><br>
+    写真に写る美しさは、お支度で大きく変わります。
   </div>
 
   <div class="box">
-    ヘアメイク・撮影までトータルサポート。
+    <strong>02 衣装選びも安心</strong><br>
+    提携ドレスショップで、実際に試着してお選びいただけます。
+  </div>
+
+  <div class="box">
+    <strong>03 初めてでも安心</strong><br>
+    ポーズ・表情・撮影中の空気感まで丁寧にサポートします。
   </div>
 </section>
 
-<a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+<section class="section fade">
+  <div class="title">PLAN</div>
+
+  <div class="box">
+    <strong>フォトウェディング</strong>
+    <div class="plan">¥98,000 +tax〜</div>
+    お持ち込み衣装・提携ドレス・和装撮影まで対応。
+  </div>
+
+  <div class="box">
+    <strong>成人式</strong>
+    <div class="plan">¥66,000〜</div>
+    前撮り・当日お支度まで対応。
+  </div>
+
+  <div class="box">
+    <strong>七五三</strong>
+    <div class="plan">¥66,000〜</div>
+    お子様の成長を、ご家族の思い出として美しく残します。
+  </div>
+</section>
+
+<section class="section fade">
+  <div class="title">FLOW</div>
+
+  <div class="box">
+    ① LINEでご相談<br>
+    ② 日程・内容のご相談<br>
+    ③ 衣装・ヘアメイクイメージ共有<br>
+    ④ お支度・撮影<br>
+    ⑤ データお渡し
+  </div>
+</section>
+
+<section class="section fade">
+  <div class="title">Q&A</div>
+
+  <details class="qa">
+    <summary>相談だけでも大丈夫ですか？</summary>
+    <p>もちろん大丈夫です。プランが決まっていない方もLINEよりお気軽にご相談ください。</p>
+  </details>
+
+  <details class="qa">
+    <summary>衣装は選べますか？</summary>
+    <p>フォトウェディングでは、提携ドレスショップにて試着しながら衣装をお選びいただけます。</p>
+  </details>
+
+  <details class="qa">
+    <summary>ヘアメイクの希望は伝えられますか？</summary>
+    <p>可能です。参考画像などを事前に共有いただくことで、理想の雰囲気に近づけます。</p>
+  </details>
+</section>
+
+<section class="section fade">
+  <div class="title">CONTACT</div>
+
+  <div class="box">
+    「どのプランが合うかわからない」<br>
+    「まずは相談だけしたい」<br><br>
+    そんな方もお気軽にLINEからご相談ください。
+  </div>
+
+  <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+    LINEで予約・相談
+  </a>
+</section>
+
+<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
 LINEで予約・相談
 </a>
 
