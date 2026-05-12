@@ -3,473 +3,559 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>BELL WELL | 鹿児島フォトウェディング・成人式・七五三</title>
 
 <style>
-body{
+
+*{
   margin:0;
-  background:#f6f2eb;
-  color:#3e2f27;
-  font-family:serif;
+  padding:0;
+  box-sizing:border-box;
 }
+
+body{
+  font-family:serif;
+  background:#f8f5f1;
+  color:#222;
+  overflow-x:hidden;
+}
+
+/* HERO */
 
 .hero{
-  height:100vh;
-  background:
-    linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.35)),
-    url("IMG_3057.jpeg") center/cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  padding:20px;
-}
-
-.logo{
-  font-size:42px;
-  letter-spacing:10px;
-}
-
-.hero-copy{
-  margin-top:35px;
-  font-size:22px;
-  line-height:2;
-  letter-spacing:2px;
-}
-
-.hero-sub{
-  margin-top:20px;
-  line-height:2;
-  font-size:14px;
-}
-
-.section{
-  padding:75px 22px;
-}
-
-.title{
-  text-align:center;
-  font-size:28px;
-  letter-spacing:4px;
-  margin-bottom:35px;
-}
-
-.text{
-  text-align:center;
-  line-height:2.2;
-  font-size:15px;
-}
-
-.box{
-  background:#fff;
-  padding:24px;
-  border-radius:16px;
-  margin-bottom:18px;
-  line-height:2;
-  border:1px solid #e5d5c6;
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.menu{
-  display:grid;
-  gap:22px;
-}
-
-.card{
   position:relative;
-  height:280px;
+  height:100vh;
   overflow:hidden;
-  border-radius:18px;
-  text-decoration:none;
-  color:#fff;
-  box-shadow:0 14px 34px rgba(0,0,0,.16);
 }
 
-.card img{
+.hero-image{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.82);
 }
 
-.card-content{
+.hero-overlay{
   position:absolute;
-  left:24px;
-  bottom:24px;
+  inset:0;
+  background:rgba(0,0,0,0.38);
 }
 
-.card-sub{
-  font-size:12px;
-  letter-spacing:4px;
-  margin-bottom:8px;
-}
-
-.card-title{
-  font-size:32px;
-  letter-spacing:4px;
-}
-
-.card-text{
-  margin-top:8px;
-  font-size:13px;
-}
-
-.plan{
-  font-size:20px;
-  color:#9b7b63;
-  margin-top:10px;
-}
-
-.qa{
-  background:#fff;
-  border:1px solid #ddd0c3;
-  border-radius:14px;
-  margin-bottom:14px;
-  padding:18px;
-  line-height:1.9;
-  box-shadow:0 8px 24px rgba(0,0,0,.06);
-}
-
-.qa summary{
-  cursor:pointer;
-  font-weight:bold;
-}
-
-.qa p{
-  color:#5f5148;
-}
-
-.btn{
-  display:block;
-  margin:25px auto;
-  padding:16px;
-  width:82%;
-  max-width:420px;
+.hero-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
   text-align:center;
-  background:#9b7b63;
   color:#fff;
-  border-radius:999px;
-  text-decoration:none;
-  box-shadow:0 10px 24px rgba(0,0,0,.14);
+  z-index:2;
+  width:90%;
 }
+
+.hero-subtitle{
+  letter-spacing:5px;
+  font-size:12px;
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-size:42px;
+  line-height:1.6;
+  font-weight:300;
+  margin-bottom:24px;
+}
+
+.hero-text{
+  line-height:2.1;
+  font-size:15px;
+  margin-bottom:34px;
+}
+
+.hero-btn{
+  display:inline-block;
+  padding:15px 36px;
+  border-radius:100px;
+  background:#fff;
+  color:#222;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+/* SECTION */
+
+.section{
+  padding:100px 8%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:60px;
+  letter-spacing:3px;
+  font-weight:300;
+}
+
+/* TRUST */
+
+.trust-box{
+  display:flex;
+  align-items:center;
+  gap:60px;
+  margin-bottom:120px;
+}
+
+.trust-box.reverse{
+  flex-direction:row-reverse;
+}
+
+.trust-box img{
+  width:55%;
+  border-radius:10px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.trust-text{
+  width:45%;
+}
+
+.trust-text h2{
+  font-size:30px;
+  letter-spacing:2px;
+  margin-bottom:24px;
+  font-weight:300;
+}
+
+.trust-text p{
+  line-height:2.2;
+  color:#555;
+}
+
+/* SERVICE */
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.service-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  height:420px;
+  text-decoration:none;
+  color:#fff;
+}
+
+.service-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.78);
+  transition:.4s;
+}
+
+.service-card:hover img{
+  transform:scale(1.05);
+}
+
+.service-content{
+  position:absolute;
+  bottom:30px;
+  left:30px;
+}
+
+.service-content h3{
+  font-size:32px;
+  margin-bottom:10px;
+  font-weight:300;
+}
+
+.service-content p{
+  font-size:13px;
+  letter-spacing:2px;
+}
+
+/* VOICE */
+
+.voice-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.voice-box{
+  background:#fff;
+  padding:34px;
+  border-radius:12px;
+  line-height:2;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* FLOW */
+
+.flow-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:18px;
+}
+
+.flow-box{
+  background:#fff;
+  padding:30px 20px;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.flow-step{
+  color:#9b7b63;
+  font-size:13px;
+  letter-spacing:2px;
+  margin-bottom:12px;
+}
+
+/* CONTACT */
+
+.contact-box{
+  text-align:center;
+  background:#fff;
+  padding:70px 30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-box p{
+  line-height:2.2;
+  margin-bottom:35px;
+}
+
+.contact-btn{
+  display:inline-block;
+  padding:16px 40px;
+  border-radius:100px;
+  background:#222;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* FIXED BTN */
 
 .fixed-line{
   position:fixed;
-  bottom:18px;
-  left:50%;
-  transform:translateX(-50%);
-  width:86%;
-  max-width:420px;
-  background:#9b7b63;
-  color:#fff;
-  text-align:center;
-  padding:16px 0;
-  border-radius:999px;
-  text-decoration:none;
+  bottom:20px;
+  right:20px;
   z-index:999;
+  background:#222;
+  color:#fff;
+  padding:16px 26px;
+  border-radius:100px;
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:2px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.18);
 }
 
-.fade{
-  opacity:0;
-  transform:translateY(30px);
-  transition:.8s;
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+  font-size:30px;
 }
 
-.fade.show{
-  opacity:1;
-  transform:none;
+.section{
+  padding:80px 6%;
 }
+
+.trust-box,
+.trust-box.reverse{
+  flex-direction:column;
+  gap:40px;
+  margin-bottom:80px;
+}
+
+.trust-box img,
+.trust-text{
+  width:100%;
+}
+
+.service-grid{
+  grid-template-columns:1fr;
+}
+
+.voice-grid{
+  grid-template-columns:1fr;
+}
+
+.flow-grid{
+  grid-template-columns:1fr;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
-  <div>
-    <div class="logo">BELL WELL</div>
 
-    <div class="hero-copy">
-      価格を超える感動を。
-    </div>
+  <img src="bridal-makeup.jpg" class="hero-image">
 
-    <div class="hero-sub">
-      ヘアメイクがプロデュースする<br>
-      鹿児島フォトウェディング・成人式・七五三
-    </div>
+  <div class="hero-overlay"></div>
 
-    <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
-      LINEで無料相談
+  <div class="hero-content">
+
+    <p class="hero-subtitle">
+      HAIR & MAKEUP TEAM
+    </p>
+
+    <h1>
+      価格を超える感動を。<br>
+      ヘアメイクが監修する<br>
+      フォトウェディング
+    </h1>
+
+    <p class="hero-text">
+      花嫁様一人一人に寄り添い、<br>
+      “今日の自分が好きになる”<br>
+      ヘアメイクをご提案します。
+    </p>
+
+    <a href="https://line.me/R/ti/p/@944xywjv"
+       class="hero-btn">
+       LINEで無料相談
     </a>
+
   </div>
+
 </section>
 
-<section class="section fade">
-  <div class="title">ABOUT</div>
+<!-- TRUST -->
 
-  <p class="text">
-    BELL WELLは、ヘアメイクを大切にした
-    フォトサービスです。<br><br>
+<section class="section">
 
-    写真を残すだけではなく、
-    その人らしい美しさを引き出し、
-    心まで満たされる一日をプロデュースします。
-  </p>
+  <h2 class="section-title">
+    WHY BELL WELL
+  </h2>
+
+  <div class="trust-box">
+
+    <img src="team-support-01.jpg">
+
+    <div class="trust-text">
+
+      <h2>
+        TEAM SUPPORT
+      </h2>
+
+      <p>
+        成人式・ブライダル・前撮りなど、<br>
+        多人数対応も可能なヘアメイクチーム。<br><br>
+
+        経験豊富なスタッフが、<br>
+        大切な一日を丁寧にサポートします。
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="trust-box reverse">
+
+    <img src="team-support-02.jpg">
+
+    <div class="trust-text">
+
+      <h2>
+        PROFESSIONAL WORK
+      </h2>
+
+      <p>
+        ヘアメイク・着付・撮影まで、<br>
+        “その人らしさ”を大切にご提案。<br><br>
+
+        美容室が母体だからこそ、<br>
+        本当に似合うスタイルを追求しています。
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="trust-box">
+
+    <img src="kimono-support.jpg">
+
+    <div class="trust-text">
+
+      <h2>
+        KIMONO SUPPORT
+      </h2>
+
+      <p>
+        和装のお支度や着付も、<br>
+        経験豊富なスタッフが対応。<br><br>
+
+        撮影中の細かなサポートまで、<br>
+        安心してお任せいただけます。
+      </p>
+
+    </div>
+
+  </div>
+
 </section>
 
-<section class="section fade">
-  <div class="title">SERVICE</div>
+<!-- SERVICE -->
 
-  <div class="menu">
+<section class="section">
 
-    <a href="bridal.html" class="card">
+  <h2 class="section-title">
+    SERVICE
+  </h2>
+
+  <div class="service-grid">
+
+    <a href="bridal.html" class="service-card">
+
       <img src="IMG_3069.jpeg">
 
-      <div class="card-content">
-        <div class="card-sub">PHOTO WEDDING</div>
-        <div class="card-title">BRIDAL</div>
-        <div class="card-text">
-          フォトウェディング・ドレス・和装撮影
-        </div>
+      <div class="service-content">
+        <h3>BRIDAL</h3>
+        <p>PHOTO WEDDING</p>
       </div>
+
     </a>
 
-    <a href="seijin.html" class="card">
+    <a href="seijin.html" class="service-card">
+
       <img src="IMG_3092.jpeg">
 
-      <div class="card-content">
-        <div class="card-sub">COMING OF AGE</div>
-        <div class="card-title">成人式</div>
-        <div class="card-text">
-          成人式前撮り・当日お支度
-        </div>
+      <div class="service-content">
+        <h3>成人式</h3>
+        <p>COMING OF AGE</p>
       </div>
+
     </a>
 
-    <a href="753.html" class="card">
+    <a href="753.html" class="service-card">
+
       <img src="IMG_3041.jpeg">
 
-      <div class="card-content">
-        <div class="card-sub">SHICHIGOSAN PHOTO</div>
-        <div class="card-title">七五三</div>
-        <div class="card-text">
-          七五三・家族写真・記念撮影
-        </div>
+      <div class="service-content">
+        <h3>七五三</h3>
+        <p>SHICHIGOSAN</p>
       </div>
+
     </a>
 
   </div>
+
 </section>
 
-<section class="section fade">
-  <div class="title">WHY BELL WELL</div>
+<!-- VOICE -->
 
-  <div class="box">
-    <strong>01 ヘアメイク監修</strong><br><br>
+<section class="section">
 
-    写真に写る美しさは、お支度で大きく変わります。
-  </div>
+  <h2 class="section-title">
+    VOICE
+  </h2>
 
-  <div class="box">
-    <strong>02 衣装選びも安心</strong><br><br>
+  <div class="voice-grid">
 
-    提携ドレスショップで、
-    実際に試着してお選びいただけます。
-  </div>
-
-  <div class="box">
-    <strong>03 初めてでも安心</strong><br><br>
-
-    ポーズ・表情・撮影の流れまで、
-    経験豊富なスタッフが丁寧にサポートします。
-  </div>
-</section>
-
-<section class="section fade">
-  <div class="title">PLAN</div>
-
-  <div class="box">
-    <strong>フォトウェディング</strong>
-
-    <div class="plan">
-      ¥98,000 +tax〜
+    <div class="voice-box">
+      ヘアメイクが本当に理想通りで、
+      “今日の自分が好き”と思える一日でした。
     </div>
 
-    お持ち込み衣装・提携ドレス・和装撮影まで対応。
-  </div>
-
-  <div class="box">
-    <strong>成人式</strong>
-
-    <div class="plan">
-      ¥66,000〜
+    <div class="voice-box">
+      初めての撮影でしたが、
+      丁寧にサポートしていただき安心できました。
     </div>
 
-    前撮り・当日お支度まで対応。
-  </div>
-
-  <div class="box">
-    <strong>七五三</strong>
-
-    <div class="plan">
-      ¥66,000〜
+    <div class="voice-box">
+      ドレス選びから撮影まで、
+      全てが特別な思い出になりました。
     </div>
 
-    お子様の成長を、
-    ご家族の思い出として美しく残します。
   </div>
+
 </section>
 
-<section class="section fade">
-  <div class="title">VOICE</div>
+<!-- FLOW -->
 
-  <div class="box">
-    <strong>鹿児島県 / 20代花嫁様</strong><br><br>
+<section class="section">
 
-    ドレス選びから当日まで本当に丁寧で、
-    初めての撮影でも安心してお任せできました。<br><br>
+  <h2 class="section-title">
+    FLOW
+  </h2>
 
-    ヘアメイクが理想以上で、
-    写真を見るたび嬉しくなります。
+  <div class="flow-grid">
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 01</div>
+      LINE相談
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 02</div>
+      お打ち合わせ
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 03</div>
+      衣装合わせ
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 04</div>
+      撮影当日
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 05</div>
+      データ納品
+    </div>
+
   </div>
 
-  <div class="box">
-    <strong>福岡県 / フォトウェディングご利用</strong><br><br>
-
-    遠方からだったので不安もありましたが、
-    LINEで細かく相談できて安心でした。<br><br>
-
-    撮影中も自然に笑顔を引き出してくださり、
-    一生の思い出になりました。
-  </div>
-
-  <div class="box">
-    <strong>成人式 前撮りご利用</strong><br><br>
-
-    ヘアセットもメイクも本当に可愛くて、
-    “今日の自分が好き”と思える一日でした。
-  </div>
 </section>
 
-<section class="section fade">
-  <div class="title">FLOW</div>
+<!-- CONTACT -->
 
-  <div class="box">
-    <strong>STEP 01</strong><br>
-    LINE無料相談
-  </div>
+<section class="section">
 
-  <div class="box">
-    <strong>STEP 02</strong><br>
-    日程・撮影内容のお打ち合わせ
-  </div>
+  <div class="contact-box">
 
-  <div class="box">
-    <strong>STEP 03</strong><br>
-    衣装合わせ・ヘアメイクイメージ共有
-  </div>
-
-  <div class="box">
-    <strong>STEP 04</strong><br>
-    撮影当日
-  </div>
-
-  <div class="box">
-    <strong>STEP 05</strong><br>
-    データお渡し
-  </div>
-</section>
-
-<section class="section fade">
-  <div class="title">MESSAGE</div>
-
-  <div class="box">
-    「今日の自分が好き」<br><br>
-
-    そう思っていただけるような
-    ヘアメイク・撮影を大切にしています。<br><br>
-
-    写真を残すだけではなく、
-    その日その瞬間が
-    “自信になる時間”になるように。<br><br>
-
-    BELL WELLは、
-    お一人おひとりに寄り添いながら
-    特別な一日をプロデュースします。
-  </div>
-</section>
-
-<section class="section fade">
-  <div class="title">Q&A</div>
-
-  <details class="qa">
-    <summary>
-      相談だけでも大丈夫ですか？
-    </summary>
+    <h2 class="section-title">
+      CONTACT
+    </h2>
 
     <p>
-      もちろん大丈夫です。
-      プランが決まっていない方もLINEよりお気軽にご相談ください。
+      「どのプランが合うかわからない」<br>
+      「まずは相談だけしたい」<br><br>
+
+      そんな方もお気軽にご相談ください。
     </p>
-  </details>
 
-  <details class="qa">
-    <summary>
-      衣装は選べますか？
-    </summary>
+    <a href="https://line.me/R/ti/p/@944xywjv"
+       class="contact-btn">
+       LINEで相談する
+    </a>
 
-    <p>
-      フォトウェディングでは、
-      提携ドレスショップにて試着しながら衣装をお選びいただけます。
-    </p>
-  </details>
-
-  <details class="qa">
-    <summary>
-      ヘアメイクの希望は伝えられますか？
-    </summary>
-
-    <p>
-      可能です。
-      参考画像などを事前に共有いただくことで、
-      理想の雰囲気に近づけます。
-    </p>
-  </details>
-</section>
-
-<section class="section fade">
-  <div class="title">CONTACT</div>
-
-  <div class="box">
-    「どのプランが合うかわからない」<br>
-    「まずは相談だけしたい」<br><br>
-
-    そんな方もお気軽にLINEからご相談ください。
   </div>
 
-  <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
-    LINEで予約・相談
-  </a>
 </section>
 
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
-LINEで予約・相談
+<a href="https://line.me/R/ti/p/@944xywjv"
+   class="fixed-line">
+   LINEで相談
 </a>
-
-<script>
-const fades=document.querySelectorAll('.fade');
-
-function showFade(){
-  fades.forEach(el=>{
-    if(el.getBoundingClientRect().top<window.innerHeight-100){
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('scroll',showFade);
-window.addEventListener('load',showFade);
-</script>
 
 </body>
 </html>
