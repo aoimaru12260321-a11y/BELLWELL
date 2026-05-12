@@ -3,400 +3,595 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRIDAL | BELL WELL</title>
+
+<title>BELL WELL BRIDAL | 鹿児島フォトウェディング</title>
 
 <style>
-body{
+
+*{
   margin:0;
-  background:#f6f2eb;
-  color:#3e2f27;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
   font-family:serif;
+  background:#f8f5f1;
+  color:#222;
+  overflow-x:hidden;
 }
 
-/* logo */
-.logo{
-  display:block;
-  text-align:center;
-  padding:25px 0;
-  text-decoration:none;
-  color:#3e2f27;
-  font-size:26px;
-  letter-spacing:5px;
-}
+/* HERO */
 
-/* hero */
 .hero{
-  min-height:75vh;
-  background:
-    linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.28)),
-    url("IMG_3069.jpeg") center/cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+
+.hero-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.38);
+}
+
+.hero-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
   color:#fff;
+  width:90%;
+  z-index:2;
+}
+
+.hero-subtitle{
+  letter-spacing:5px;
+  font-size:12px;
+  margin-bottom:24px;
 }
 
 .hero h1{
-  font-size:42px;
-  letter-spacing:8px;
+  font-size:44px;
+  line-height:1.6;
+  font-weight:300;
+  margin-bottom:24px;
 }
 
-/* section */
+.hero-text{
+  line-height:2.1;
+  font-size:15px;
+  margin-bottom:34px;
+}
+
+.hero-btn{
+  display:inline-block;
+  padding:15px 36px;
+  border-radius:100px;
+  background:#b89b84;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+/* SECTION */
+
 .section{
-  padding:60px 20px;
+  padding:100px 8%;
 }
 
-.title{
+.section-title{
   text-align:center;
-  font-size:28px;
-  margin-bottom:30px;
+  font-size:34px;
   letter-spacing:4px;
+  margin-bottom:60px;
+  font-weight:300;
 }
 
-.text{
+/* MESSAGE */
+
+.message-box{
+  max-width:900px;
+  margin:auto;
   text-align:center;
-  line-height:2;
+  line-height:2.4;
+  color:#555;
+  font-size:16px;
 }
 
-/* gallery */
-.grid{
+/* TRUST */
+
+.trust-box{
+  display:flex;
+  align-items:center;
+  gap:60px;
+  margin-bottom:120px;
+}
+
+.trust-box.reverse{
+  flex-direction:row-reverse;
+}
+
+.trust-box img{
+  width:55%;
+  border-radius:10px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.trust-text{
+  width:45%;
+}
+
+.trust-text h2{
+  font-size:30px;
+  margin-bottom:24px;
+  letter-spacing:2px;
+  font-weight:300;
+}
+
+.trust-text p{
+  line-height:2.2;
+  color:#555;
+}
+
+/* PLAN */
+
+.plan-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
 }
 
-.grid img{
-  width:100%;
-  aspect-ratio:1/1;
-  object-fit:cover;
-  border-radius:14px;
-  cursor:pointer;
-
-  filter:brightness(1.04);
-
-  box-shadow:0 8px 22px rgba(0,0,0,.10);
-
-  transition:all .4s ease;
-}
-
-.grid img:hover{
-  transform:translateY(-4px) scale(1.01);
-  box-shadow:0 16px 36px rgba(0,0,0,.16);
-}
-
-/* box */
-.box{
+.plan-box{
   background:#fff;
-  padding:22px;
   border-radius:14px;
-  margin-bottom:18px;
-  line-height:1.9;
-  border:1px solid #e5d5c6;
+  padding:40px 30px;
+  box-shadow:0 12px 35px rgba(0,0,0,0.08);
+}
 
+.plan-box h3{
+  font-size:28px;
+  margin-bottom:20px;
+  font-weight:300;
+}
+
+.plan-price{
+  color:#b89b84;
+  font-size:34px;
+  margin-bottom:24px;
+}
+
+.plan-box p{
+  line-height:2;
+  color:#555;
+}
+
+/* VOICE */
+
+.voice-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.voice-box{
+  background:#fff;
+  padding:34px;
+  border-radius:14px;
+  line-height:2;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
-
-  transition:all .35s ease;
 }
 
-.box:hover{
-  transform:translateY(-4px);
-  box-shadow:0 18px 40px rgba(0,0,0,0.12);
+/* FLOW */
+
+.flow-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
 }
 
-/* buttons */
-.home-btn,.btn{
-  display:block;
-  margin:22px auto;
-  padding:16px;
-  width:82%;
-  max-width:420px;
+.flow-box{
+  background:#fff;
+  padding:30px 20px;
+  border-radius:14px;
   text-align:center;
-  border-radius:999px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.flow-step{
+  color:#b89b84;
+  font-size:13px;
+  letter-spacing:2px;
+  margin-bottom:12px;
+}
+
+/* CONTACT */
+
+.contact-box{
+  background:#fff;
+  padding:70px 30px;
+  text-align:center;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-box p{
+  line-height:2.2;
+  margin-bottom:34px;
+}
+
+.contact-btn{
+  display:inline-block;
+  padding:16px 40px;
+  border-radius:100px;
+  background:#b89b84;
+  color:#fff;
   text-decoration:none;
 }
 
-.home-btn{
-  border:1px solid #9b7b63;
-  color:#9b7b63;
-}
+/* FIXED */
 
-.btn{
-  background:#9b7b63;
-  color:#fff;
-  box-shadow:0 10px 24px rgba(0,0,0,.14);
-}
-
-/* qa */
-.qa{
-  background:#fff;
-  border:1px solid #ddd0c3;
-  border-radius:14px;
-  margin-bottom:14px;
-  padding:18px;
-  line-height:1.9;
-
-  box-shadow:0 8px 24px rgba(0,0,0,.06);
-
-  transition:all .35s ease;
-}
-
-.qa:hover{
-  transform:translateY(-3px);
-  box-shadow:0 16px 36px rgba(0,0,0,.10);
-}
-
-.qa summary{
-  cursor:pointer;
-  font-weight:bold;
-}
-
-.qa p{
-  margin-top:12px;
-  color:#5f5148;
-}
-
-/* lightbox */
-.lightbox{
-  display:none;
+.fixed-line{
   position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.92);
-  z-index:9999;
-  align-items:center;
-  justify-content:center;
-}
-
-.lightbox img{
-  max-width:85%;
-  max-height:80%;
-  border-radius:12px;
-}
-
-.lightbox span{
-  position:absolute;
-  top:20px;
-  right:25px;
+  bottom:20px;
+  right:20px;
+  background:#b89b84;
   color:#fff;
-  font-size:34px;
+  text-decoration:none;
+  padding:16px 26px;
+  border-radius:100px;
+  z-index:999;
+  box-shadow:0 10px 25px rgba(0,0,0,0.16);
+  letter-spacing:2px;
+  font-size:13px;
 }
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+  font-size:30px;
+}
+
+.section{
+  padding:80px 6%;
+}
+
+.trust-box,
+.trust-box.reverse{
+  flex-direction:column;
+  gap:40px;
+  margin-bottom:80px;
+}
+
+.trust-box img,
+.trust-text{
+  width:100%;
+}
+
+.plan-grid,
+.voice-grid,
+.flow-grid{
+  grid-template-columns:1fr;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<a href="index.html" class="logo">BELL WELL</a>
+<!-- HERO -->
 
 <section class="hero">
-  <h1>BRIDAL</h1>
-</section>
 
-<section class="section">
-  <div class="title">CONCEPT</div>
+  <img src="IMG_3057.jpeg" class="hero-image">
 
-  <p class="text">
-    ただ撮るだけじゃない。<br>
-    一生に一度を、最高の美しさで残す。
-  </p>
-</section>
+  <div class="hero-overlay"></div>
 
-<section class="section">
-  <div class="title">GALLERY</div>
+  <div class="hero-content">
 
-  <div class="grid">
-    <img src="IMG_3069.jpeg">
-    <img src="IMG_3077.jpeg">
+    <p class="hero-subtitle">
+      PHOTO WEDDING
+    </p>
 
-    <img src="IMG_3057.jpeg">
-    <img src="IMG_2945.jpeg">
-
-    <img src="IMG_3051.jpeg">
-    <img src="IMG_3052.jpeg">
-
-    <img src="IMG_3062.jpeg">
-    <img src="IMG_3056.jpeg">
-  </div>
-</section>
-
-<section class="section">
-  <div class="title">PRICE</div>
-
-  <div class="box">
-    <strong>
+    <h1>
       価格を超える感動を。<br>
-      有名ドレスメーカーの上質な衣装を、<br>
-      安心のプランで自由にセレクト。
-    </strong>
+      ヘアメイクが監修する<br>
+      フォトウェディング
+    </h1>
+
+    <p class="hero-text">
+      ただ撮るだけではなく、<br>
+      “今日の自分が好きになる”<br>
+      特別な一日をプロデュースします。
+    </p>
+
+    <a href="https://line.me/R/ti/p/@944xywjv"
+       class="hero-btn">
+       LINEで無料相談
+    </a>
+
   </div>
 
-  <div class="box">
-    <strong>
-      ① お持ち込み衣装<br>
-      ロケーションフォトプラン
-    </strong><br><br>
-
-    ¥98,000 +tax<br><br>
-
-    お持ち込みのお衣装で撮影できるプラン。<br>
-    ヘアメイク・撮影・アテンドまで、<br>
-    大切な一日を丁寧にサポートいたします。<br><br>
-
-    ・新婦ヘアメイク<br>
-    ・スタイリストアテンド<br>
-    ・カメラマン撮影<br>
-    ・撮影データ全渡し<br>
-    ・プロデュース料込み<br><br>
-
-    ※ロケ地が市外の場合 +¥22,000<br>
-    ※土日祝撮影 +¥22,000
-  </div>
-
-  <div class="box">
-    <strong>
-      ② 特別なドレスでの<br>
-      ロケーションフォトプラン
-    </strong><br><br>
-
-    ¥250,000 +tax<br><br>
-
-    ドレスショップの格式高いドレスをお選びいただくプラン。<br>
-    ドレス選びからお支度、フィッティング、ロケーション撮影まで、<br>
-    約6時間かけて丁寧に撮影いたします。<br><br>
-
-    ・ウェディングドレス or カラードレス<br>
-    ・タキシード<br>
-    ・衣装小物<br>
-    ・新婦ヘアメイク<br>
-    ・フィッティング<br>
-    ・ロケーション撮影<br>
-    ・撮影データ全渡し
-  </div>
-
-  <div class="box">
-    <strong>
-      ③ 白無垢・打掛での<br>
-      ロケーションフォトプラン
-    </strong><br><br>
-
-    ¥297,000 +tax<br><br>
-
-    白無垢・打掛のお着付けからお支度、<br>
-    ロケーション撮影までトータルでサポート。<br><br>
-
-    数々のブライダルシーンで活躍してきた経験豊富なスタッフが、<br>
-    お二人の想いに寄り添いながら、<br>
-    多くのご要望にも柔軟に対応いたします。<br><br>
-
-    ・白無垢 or 打掛<br>
-    ・お着付け<br>
-    ・お支度<br>
-    ・ヘアメイク<br>
-    ・ロケーション撮影<br>
-    ・撮影データ全渡し
-  </div>
-
-  <div class="box">
-    提携ドレスショップにて、<br>
-    実際に試着をしながらお選びいただけます。<br><br>
-
-    “写真のための衣装”ではなく、<br>
-    「本当に着たい一着」で撮影することを大切にしています。
-  </div>
-
-  <a href="https://www.foursis-co.com/" target="_blank" class="btn">
-    提携ドレスショップを見る
-  </a>
 </section>
+
+<!-- MESSAGE -->
 
 <section class="section">
-  <div class="title">後悔しないために</div>
 
-  <div class="box">
-    フォトウェディングでは、費用・衣装・ヘアメイク・撮影イメージのすれ違いで
-    「もっと確認しておけばよかった」と感じる方もいます。
+  <h2 class="section-title">
+    MESSAGE
+  </h2>
+
+  <div class="message-box">
+
+    BELL WELLは、ヘアメイクを大切にした
+    フォトウェディングブランドです。<br><br>
+
+    その人らしい美しさを引き出し、
+    “今日の自分が好きになる”
+    そんな一日をご提案しています。
+
   </div>
 
-  <div class="box">
-    BELL WELLでは、事前にご予算・衣装・ヘアメイク・撮影イメージを共有し、
-    納得した状態で当日を迎えられるようサポートします。
-  </div>
 </section>
+
+<!-- TRUST -->
 
 <section class="section">
-  <div class="title">Q&A</div>
 
-  <details class="qa">
-    <summary>料金は追加でかかりますか？</summary>
-    <p>
-      衣装・撮影日・ロケーションなどにより追加料金が発生する場合があります。
-      事前に総額の目安をご説明します。
-    </p>
-  </details>
+  <h2 class="section-title">
+    WHY BELL WELL
+  </h2>
 
-  <details class="qa">
-    <summary>ドレスは選べますか？</summary>
-    <p>
-      提携ドレスショップにて、実際に試着しながらお選びいただけます。
-    </p>
-  </details>
+  <div class="trust-box">
 
-  <details class="qa">
-    <summary>ヘアメイクの希望は伝えられますか？</summary>
-    <p>
-      可能です。参考画像などを事前に共有いただくことで、理想に近づけます。
-    </p>
-  </details>
+    <img src="IMG_3240.jpeg">
 
-  <details class="qa">
-    <summary>撮りたい雰囲気をお願いできますか？</summary>
-    <p>
-      もちろん可能です。ポーズや雰囲気の参考画像がある場合は事前にお送りください。
-    </p>
-  </details>
+    <div class="trust-text">
 
-  <details class="qa">
-    <summary>当日はサポートしてもらえますか？</summary>
-    <p>
-      ヘアメイクや衣装の調整を行いながら、
-      安心して撮影できるようサポートします。
-    </p>
-  </details>
+      <h2>
+        TEAM SUPPORT
+      </h2>
+
+      <p>
+        経験豊富なヘアメイクチームが、
+        大切な一日を丁寧にサポート。<br><br>
+
+        ブライダル・成人式・前撮りなど、
+        多数の現場経験を活かし、
+        安心して撮影を迎えていただけます。
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="trust-box reverse">
+
+    <img src="IMG_3238.jpeg">
+
+    <div class="trust-text">
+
+      <h2>
+        PROFESSIONAL BEAUTY
+      </h2>
+
+      <p>
+        美容室が母体だからこそ、
+        “本当に似合う”ヘアメイクをご提案。<br><br>
+
+        写真映えだけではなく、
+        花嫁様らしさを大切にしています。
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="trust-box">
+
+    <img src="IMG_3237.jpeg">
+
+    <div class="trust-text">
+
+      <h2>
+        KIMONO SUPPORT
+      </h2>
+
+      <p>
+        和装のお支度・着付も
+        経験豊富なスタッフが対応。<br><br>
+
+        撮影中の細かなサポートまで、
+        安心してお任せいただけます。
+      </p>
+
+    </div>
+
+  </div>
+
 </section>
 
-<a href="index.html" class="home-btn">
-トップページへ戻る
+<!-- PLAN -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    PLAN
+  </h2>
+
+  <div class="plan-grid">
+
+    <div class="plan-box">
+
+      <h3>
+        持ち込み衣装プラン
+      </h3>
+
+      <div class="plan-price">
+        ¥98,000〜
+      </div>
+
+      <p>
+        お持ち込み衣装での
+        ロケーションフォトプラン。<br><br>
+
+        ヘアメイク・撮影・データ込み。
+      </p>
+
+    </div>
+
+    <div class="plan-box">
+
+      <h3>
+        ドレスプラン
+      </h3>
+
+      <div class="plan-price">
+        ¥250,000
+      </div>
+
+      <p>
+        有名ドレスメーカー提携。<br><br>
+
+        衣装選び・フィッティング・
+        ヘアメイク・撮影データ込み。
+      </p>
+
+    </div>
+
+    <div class="plan-box">
+
+      <h3>
+        和装プラン
+      </h3>
+
+      <div class="plan-price">
+        ¥297,000
+      </div>
+
+      <p>
+        白無垢・打掛対応。<br><br>
+
+        着付・ヘアメイク・撮影データ込み。
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- VOICE -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    VOICE
+  </h2>
+
+  <div class="voice-grid">
+
+    <div class="voice-box">
+      ヘアメイクが理想以上で、
+      本当に特別な一日になりました。
+    </div>
+
+    <div class="voice-box">
+      初めての撮影でしたが、
+      丁寧なサポートで安心できました。
+    </div>
+
+    <div class="voice-box">
+      ドレス選びから撮影まで、
+      全てが思い出になりました。
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FLOW -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    FLOW
+  </h2>
+
+  <div class="flow-grid">
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 01</div>
+      LINE相談
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 02</div>
+      お打ち合わせ
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 03</div>
+      衣装合わせ
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 04</div>
+      撮影当日
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 05</div>
+      データ納品
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section">
+
+  <div class="contact-box">
+
+    <h2 class="section-title">
+      CONTACT
+    </h2>
+
+    <p>
+      「まずは相談だけしたい」<br>
+      「自分に合うプランを知りたい」<br><br>
+
+      そんな方もお気軽にご相談ください。
+    </p>
+
+    <a href="https://line.me/R/ti/p/@944xywjv"
+       class="contact-btn">
+       LINEで相談する
+    </a>
+
+  </div>
+
+</section>
+
+<a href="https://line.me/R/ti/p/@944xywjv"
+   class="fixed-line">
+   LINEで相談
 </a>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="btn">
-LINEで予約・相談
-</a>
-
-<div class="lightbox" id="lightbox">
-  <span onclick="closeLightbox()">×</span>
-  <img id="lightbox-img">
-</div>
-
-<script>
-const images=document.querySelectorAll(".grid img");
-const lightbox=document.getElementById("lightbox");
-const lightboxImg=document.getElementById("lightbox-img");
-
-images.forEach(img=>{
-  img.addEventListener("click",()=>{
-    lightboxImg.src=img.src;
-    lightbox.style.display="flex";
-  });
-});
-
-function closeLightbox(){
-  lightbox.style.display="none";
-}
-
-lightbox.addEventListener("click",function(e){
-  if(e.target===lightbox){
-    closeLightbox();
-  }
-});
-</script>
 
 </body>
 </html>
