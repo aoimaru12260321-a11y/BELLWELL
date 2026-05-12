@@ -3,122 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>七五三 | BELL WELL</title>
+
+<title>BELL WELL 七五三 | 鹿児島 七五三前撮り・記念撮影</title>
 
 <style>
-body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
+*{margin:0;padding:0;box-sizing:border-box;}
 
-.logo{
-  display:block;
-  text-align:center;
-  padding:25px 0;
-  text-decoration:none;
-  color:#3e2f27;
-  font-size:26px;
-  letter-spacing:5px;
+body{
+  font-family:serif;
+  background:#f8f5f1;
+  color:#222;
+  overflow-x:hidden;
 }
 
 .hero{
-  min-height:70vh;
-  background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url("IMG_3041.jpeg") center/cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+
+.hero-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+
+.hero-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
   color:#fff;
+  width:90%;
+  z-index:2;
 }
 
-.section{padding:50px 20px;}
-.title{text-align:center;font-size:26px;margin-bottom:25px;}
-.text{text-align:center;line-height:2;}
+.hero-subtitle{
+  letter-spacing:5px;
+  font-size:12px;
+  margin-bottom:24px;
+}
 
-.grid{
+.hero h1{
+  font-size:44px;
+  line-height:1.6;
+  font-weight:300;
+  margin-bottom:24px;
+}
+
+.hero-text{
+  line-height:2.1;
+  font-size:15px;
+  margin-bottom:34px;
+}
+
+.btn,.hero-btn{
+  display:inline-block;
+  padding:16px 38px;
+  border-radius:100px;
+  background:#c7ab93;
+  color:#fff;
+  text-decoration:none;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+.section{
+  padding:100px 8%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:34px;
+  letter-spacing:4px;
+  margin-bottom:60px;
+  font-weight:300;
+}
+
+.info-box{
+  background:#fff;
+  padding:50px 30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  line-height:2.2;
+  color:#555;
+  text-align:center;
+}
+
+.gallery-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
 }
 
-.grid img{
+.gallery-grid img{
   width:100%;
   aspect-ratio:1/1;
   object-fit:cover;
-  border-radius:10px;
-  cursor:pointer;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.10);
 }
 
-.box{
+.plan-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px;
+}
+
+.plan-box{
   background:#fff;
-  padding:20px;
-  border-radius:10px;
-  margin-bottom:15px;
-  line-height:1.8;
+  border-radius:14px;
+  padding:40px 30px;
+  box-shadow:0 12px 35px rgba(0,0,0,0.08);
 }
 
-.home-btn,.btn{
-  display:block;
-  margin:20px auto;
-  padding:15px;
-  width:80%;
+.plan-title{
+  font-size:23px;
+  line-height:1.7;
+  margin-bottom:14px;
+}
+
+.plan-price{
+  font-size:23px;
+  color:#c7ab93;
+  margin-bottom:24px;
+}
+
+.plan-box p{
+  line-height:2;
+  color:#555;
+}
+
+.flow-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+}
+
+.flow-box{
+  background:#fff;
+  padding:30px 20px;
+  border-radius:14px;
   text-align:center;
-  border-radius:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.flow-step{
+  color:#c7ab93;
+  font-size:13px;
+  letter-spacing:2px;
+  margin-bottom:12px;
+}
+
+.qa{
+  background:#fff;
+  border:1px solid #ddd0c3;
+  border-radius:14px;
+  margin-bottom:14px;
+  padding:18px;
+  line-height:1.9;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+.qa summary{
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.qa p{
+  color:#555;
+  margin-top:12px;
+}
+
+.top-btn{
+  display:inline-block;
+  padding:16px 38px;
+  border:1px solid #c7ab93;
+  border-radius:100px;
   text-decoration:none;
+  color:#c7ab93;
+  letter-spacing:3px;
+  font-size:13px;
 }
 
-.home-btn{
-  border:1px solid #9b7b63;
-  color:#9b7b63;
-}
-
-.btn{
-  background:#9b7b63;
-  color:#fff;
-}
-
-.lightbox{
-  display:none;
+.fixed-line{
   position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.9);
-  z-index:9999;
-  align-items:center;
-  justify-content:center;
-}
-
-.lightbox img{
-  max-width:85%;
-  max-height:80%;
-  border-radius:10px;
-}
-
-.lightbox span{
-  position:absolute;
-  top:20px;
-  right:25px;
+  bottom:20px;
+  right:20px;
+  background:#c7ab93;
   color:#fff;
-  font-size:34px;
+  text-decoration:none;
+  padding:16px 26px;
+  border-radius:100px;
+  z-index:999;
+  box-shadow:0 10px 25px rgba(0,0,0,0.16);
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+@media(max-width:768px){
+  .hero{height:85vh;}
+  .hero h1{font-size:30px;}
+  .section{padding:80px 6%;}
+  .gallery-grid,.plan-grid,.flow-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
 
 <body>
 
-<a href="index.html" class="logo">BELL WELL</a>
-
 <section class="hero">
-  <h1>七五三</h1>
+  <img src="IMG_3041.jpeg" class="hero-image">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-subtitle">SHICHIGOSAN PHOTO</p>
+
+    <h1>
+      お子様の大切な節目を、<br>
+      美しく思い出に。
+    </h1>
+
+    <p class="hero-text">
+      ヘアメイク・着付け・撮影まで、<br>
+      ご家族の特別な一日をサポートします。
+    </p>
+
+    <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">
+      LINEで無料相談
+    </a>
+  </div>
 </section>
 
 <section class="section">
-  <div class="title">CONCEPT</div>
-  <p class="text">
-    お子様の大切な成長の節目を、<br>
-    ご家族の思い出として美しく残します。
-  </p>
+  <h2 class="section-title">CONCEPT</h2>
+
+  <div class="info-box">
+    七五三は、お子様の成長を祝う大切な記念日。<br><br>
+    BELL WELLでは、お子様のペースに合わせながら、<br>
+    ヘアメイク・着付け・撮影まで丁寧にサポートします。
+  </div>
 </section>
 
 <section class="section">
-  <div class="title">GALLERY</div>
+  <h2 class="section-title">GALLERY</h2>
 
-  <div class="grid">
+  <div class="gallery-grid">
     <img src="IMG_2967.jpeg">
     <img src="IMG_3041.jpeg">
     <img src="IMG_3042.jpeg">
@@ -128,72 +265,126 @@ body{margin:0;background:#f6f2eb;color:#3e2f27;font-family:serif;}
   </div>
 </section>
 
-<!-- ★追加ここから -->
 <section class="section">
-  <div class="title">選ばれる理由</div>
+  <h2 class="section-title">PLAN</h2>
 
-  <div class="box">
-    ヘアメイク・着付け・撮影まで一日をトータルサポート。<br>
-    初めての七五三撮影でも、お子様のペースに合わせて丁寧に進めます。
-  </div>
+  <div class="plan-grid">
+    <div class="plan-box">
+      <div class="plan-title">七五三 前撮り</div>
+      <div class="plan-price">66,000円</div>
+      <p>
+        ヘアアレンジ・メイク・着付け・プロカメラマン撮影込み。<br><br>
+        お子様の大切な成長の節目を、ご家族の思い出として美しく残します。
+      </p>
+    </div>
 
-  <div class="box">
-    人見知りや緊張しやすいお子様もご安心ください。<br>
-    自然な笑顔が出るよう、無理なく撮影します。
+    <div class="plan-box">
+      <div class="plan-title">アルバム</div>
+      <div class="plan-price">12,600円〜</div>
+      <p>
+        撮影したお写真を形に残したい方におすすめです。<br><br>
+        ご家族で何度も見返せる、大切な記念になります。
+      </p>
+    </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="title">FLOW</div>
-  <div class="box">
-    LINE相談 → 日程決定 → お支度 → 撮影 → データお渡し
+  <h2 class="section-title">INSTAGRAM</h2>
+
+  <div class="info-box">
+    七五三や記念撮影、ヘアメイク作品を更新しています。<br><br>
+
+    <a href="https://www.instagram.com/belle_well_" target="_blank" class="btn">
+      Instagramを見る
+    </a>
   </div>
 </section>
-<!-- ★追加ここまで -->
 
 <section class="section">
-  <div class="title">PRICE</div>
+  <h2 class="section-title">FLOW</h2>
 
-  <div class="box">
-    七五三 前撮り 66,000円<br>
-    ヘアアレンジ・メイク・着付け・プロカメラマン撮影
-  </div>
+  <div class="flow-grid">
+    <div class="flow-box">
+      <div class="flow-step">STEP 01</div>
+      LINE相談
+    </div>
 
-  <div class="box">
-    アルバム 12,600円〜
+    <div class="flow-box">
+      <div class="flow-step">STEP 02</div>
+      日程決定
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 03</div>
+      イメージ共有
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 04</div>
+      お支度・撮影
+    </div>
+
+    <div class="flow-box">
+      <div class="flow-step">STEP 05</div>
+      データお渡し
+    </div>
   </div>
 </section>
 
-<a href="index.html" class="home-btn">トップページへ戻る</a>
-<a href="https://line.me/R/ti/p/@944xywjv" class="btn">LINEで予約・相談</a>
+<section class="section">
+  <h2 class="section-title">Q&A</h2>
 
-<div class="lightbox" id="lightbox">
-  <span onclick="closeLightbox()">×</span>
-  <img id="lightbox-img">
+  <details class="qa">
+    <summary>子どもが人見知りでも大丈夫ですか？</summary>
+    <p>大丈夫です。お子様のペースに合わせて、無理なく進めていきます。</p>
+  </details>
+
+  <details class="qa">
+    <summary>ヘアメイク・着付けも含まれていますか？</summary>
+    <p>はい。七五三前撮りプランには、ヘアアレンジ・メイク・着付け・撮影が含まれています。</p>
+  </details>
+
+  <details class="qa">
+    <summary>家族写真も撮れますか？</summary>
+    <p>ご希望の場合はご相談ください。お子様だけでなく、ご家族の記念としても残せます。</p>
+  </details>
+</section>
+
+<section class="section">
+  <h2 class="section-title">SALON INFO</h2>
+
+  <div class="info-box">
+    鹿児島を中心に、七五三前撮り・記念撮影に対応しております。<br><br>
+
+    <a href="https://maps.app.goo.gl/vS4kAaS31bQTh2Vj8?g_st=com.openai.chat.ShareExtension" target="_blank" class="btn">
+      Google Mapを見る
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="info-box">
+    「七五三の撮影を相談したい」<br>
+    「日程や内容を先に聞きたい」<br><br>
+
+    そんな方もお気軽にご相談ください。<br><br>
+
+    <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+      LINEで相談する
+    </a>
+  </div>
+</section>
+
+<div style="text-align:center; padding:30px 0 120px;">
+  <a href="index.html" class="top-btn">
+    TOPへ戻る
+  </a>
 </div>
 
-<script>
-const images = document.querySelectorAll(".grid img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    lightboxImg.src = img.src;
-    lightbox.style.display = "flex";
-  });
-});
-
-function closeLightbox(){
-  lightbox.style.display = "none";
-}
-
-lightbox.addEventListener("click", function(e){
-  if(e.target === lightbox){
-    closeLightbox();
-  }
-});
-</script>
+<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
+  LINEで相談
+</a>
 
 </body>
 </html>
