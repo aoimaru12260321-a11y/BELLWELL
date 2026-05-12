@@ -7,7 +7,6 @@
 <title>BELL WELL BRIDAL | 鹿児島フォトウェディング</title>
 
 <style>
-
 *{
   margin:0;
   padding:0;
@@ -20,8 +19,6 @@ body{
   color:#222;
   overflow-x:hidden;
 }
-
-/* HERO */
 
 .hero{
   position:relative;
@@ -71,18 +68,16 @@ body{
   margin-bottom:34px;
 }
 
-.hero-btn{
+.btn,.hero-btn,.contact-btn{
   display:inline-block;
-  padding:15px 36px;
+  padding:16px 38px;
   border-radius:100px;
   background:#c7ab93;
   color:#fff;
   text-decoration:none;
-  font-size:14px;
   letter-spacing:2px;
+  font-size:14px;
 }
-
-/* SECTION */
 
 .section{
   padding:100px 8%;
@@ -96,18 +91,29 @@ body{
   font-weight:300;
 }
 
-/* MESSAGE */
-
-.message-box{
-  max-width:900px;
-  margin:auto;
-  text-align:center;
-  line-height:2.4;
+.message-box,.info-box{
+  background:#fff;
+  padding:50px 30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  line-height:2.2;
   color:#555;
-  font-size:16px;
+  text-align:center;
 }
 
-/* TRUST */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.gallery-grid img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.10);
+}
 
 .trust-box{
   display:flex;
@@ -124,7 +130,6 @@ body{
   width:55%;
   height:auto;
   display:block;
-  object-fit:cover;
   border-radius:12px;
   box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
@@ -145,8 +150,6 @@ body{
   color:#555;
 }
 
-/* PLAN */
-
 .plan-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -160,15 +163,15 @@ body{
   box-shadow:0 12px 35px rgba(0,0,0,0.08);
 }
 
-.plan-box h3{
-  font-size:28px;
-  margin-bottom:20px;
-  font-weight:300;
+.plan-title{
+  font-size:23px;
+  line-height:1.7;
+  margin-bottom:14px;
 }
 
 .plan-price{
+  font-size:23px;
   color:#c7ab93;
-  font-size:34px;
   margin-bottom:24px;
 }
 
@@ -176,24 +179,6 @@ body{
   line-height:2;
   color:#555;
 }
-
-/* VOICE */
-
-.voice-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-
-.voice-box{
-  background:#fff;
-  padding:34px;
-  border-radius:14px;
-  line-height:2;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* FLOW */
 
 .flow-grid{
   display:grid;
@@ -216,31 +201,36 @@ body{
   margin-bottom:12px;
 }
 
-/* CONTACT */
-
-.contact-box{
+.qa{
   background:#fff;
-  padding:70px 30px;
-  text-align:center;
+  border:1px solid #ddd0c3;
   border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom:14px;
+  padding:18px;
+  line-height:1.9;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
 
-.contact-box p{
-  line-height:2.2;
-  margin-bottom:34px;
+.qa summary{
+  cursor:pointer;
+  font-weight:bold;
 }
 
-.contact-btn{
+.qa p{
+  color:#555;
+  margin-top:12px;
+}
+
+.top-btn{
   display:inline-block;
-  padding:16px 40px;
+  padding:16px 38px;
+  border:1px solid #c7ab93;
   border-radius:100px;
-  background:#c7ab93;
-  color:#fff;
   text-decoration:none;
+  color:#c7ab93;
+  letter-spacing:3px;
+  font-size:13px;
 }
-
-/* FIXED */
 
 .fixed-line{
   position:fixed;
@@ -257,64 +247,48 @@ body{
   font-size:13px;
 }
 
-/* MOBILE */
-
 @media(max-width:768px){
+  .hero{
+    height:85vh;
+  }
 
-.hero{
-  height:85vh;
+  .hero h1{
+    font-size:30px;
+  }
+
+  .section{
+    padding:80px 6%;
+  }
+
+  .gallery-grid,
+  .plan-grid,
+  .flow-grid{
+    grid-template-columns:1fr;
+  }
+
+  .trust-box,
+  .trust-box.reverse{
+    flex-direction:column;
+    gap:40px;
+    margin-bottom:80px;
+  }
+
+  .trust-box img,
+  .trust-text{
+    width:100%;
+  }
 }
-
-.hero h1{
-  font-size:30px;
-}
-
-.section{
-  padding:80px 6%;
-}
-
-.trust-box,
-.trust-box.reverse{
-  flex-direction:column;
-  gap:40px;
-  margin-bottom:80px;
-}
-
-.trust-box img,
-.trust-text{
-  width:100%;
-}
-
-.trust-box img{
-  height:auto;
-}
-
-.plan-grid,
-.voice-grid,
-.flow-grid{
-  grid-template-columns:1fr;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-
 <section class="hero">
-
   <img src="IMG_3057.jpeg" class="hero-image">
-
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-
-    <p class="hero-subtitle">
-      PHOTO WEDDING
-    </p>
+    <p class="hero-subtitle">PHOTO WEDDING</p>
 
     <h1>
       価格を超える感動を。<br>
@@ -327,222 +301,156 @@ body{
       特別な一日をプロデュースします。
     </p>
 
-    <a href="https://line.me/R/ti/p/@944xywjv"
-       class="hero-btn">
-       LINEで無料相談
+    <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">
+      LINEで無料相談
     </a>
-
   </div>
-
 </section>
 
-<!-- MESSAGE -->
-
 <section class="section">
-
-  <h2 class="section-title">
-    MESSAGE
-  </h2>
+  <h2 class="section-title">CONCEPT</h2>
 
   <div class="message-box">
-
-    BELL WELLは、ヘアメイクを大切にした
-    フォトウェディングブランドです。<br><br>
-
-    その人らしい美しさを引き出し、
-    “今日の自分が好きになる”
-    そんな一日をご提案しています。
-
+    BELL WELLは、ヘアメイクを大切にしたフォトウェディングブランドです。<br><br>
+    ただ写真を残すだけではなく、<br>
+    その人らしい美しさを引き出し、<br>
+    “今日の自分が好きになる”一日をご提案します。
   </div>
-
 </section>
 
-<!-- TRUST -->
+<section class="section">
+  <h2 class="section-title">GALLERY</h2>
+
+  <div class="gallery-grid">
+    <img src="IMG_3069.jpeg">
+    <img src="IMG_3077.jpeg">
+    <img src="IMG_3057.jpeg">
+    <img src="IMG_2945.jpeg">
+    <img src="IMG_3051.jpeg">
+    <img src="IMG_3052.jpeg">
+    <img src="IMG_3062.jpeg">
+    <img src="IMG_3056.jpeg">
+  </div>
+</section>
 
 <section class="section">
-
-  <h2 class="section-title">
-    WHY BELL WELL
-  </h2>
+  <h2 class="section-title">WHY BELL WELL</h2>
 
   <div class="trust-box">
-
     <img src="IMG_3240.jpeg">
-
     <div class="trust-text">
-
-      <h2>
-        TEAM SUPPORT
-      </h2>
-
+      <h2>TEAM SUPPORT</h2>
       <p>
-        経験豊富なヘアメイクチームが、
-        大切な一日を丁寧にサポート。<br><br>
-
-        成人式・ブライダル・前撮りなど、
-        多数の現場経験を活かし、
+        経験豊富なヘアメイクチームが、大切な一日を丁寧にサポート。<br><br>
+        成人式・ブライダル・前撮りなど、多数の現場経験を活かし、
         安心して撮影を迎えていただけます。
       </p>
-
     </div>
-
   </div>
 
   <div class="trust-box reverse">
-
     <img src="IMG_3238.jpeg">
-
     <div class="trust-text">
-
-      <h2>
-        PROFESSIONAL BEAUTY
-      </h2>
-
+      <h2>PROFESSIONAL BEAUTY</h2>
       <p>
-        美容室が母体だからこそ、
-        “本当に似合う”ヘアメイクをご提案。<br><br>
-
-        写真映えだけではなく、
-        花嫁様らしさを大切にしています。
+        美容室が母体だからこそ、“本当に似合う”ヘアメイクをご提案。<br><br>
+        写真映えだけではなく、花嫁様らしさを大切にしています。
       </p>
-
     </div>
-
   </div>
 
   <div class="trust-box">
-
     <img src="IMG_3237.jpeg">
-
     <div class="trust-text">
-
-      <h2>
-        KIMONO SUPPORT
-      </h2>
-
+      <h2>KIMONO SUPPORT</h2>
       <p>
-        和装のお支度・着付も
-        経験豊富なスタッフが対応。<br><br>
-
-        撮影中の細かなサポートまで、
-        安心してお任せいただけます。
+        和装のお支度・着付も経験豊富なスタッフが対応。<br><br>
+        撮影中の細かなサポートまで、安心してお任せいただけます。
       </p>
-
     </div>
-
   </div>
-
 </section>
 
-<!-- PLAN -->
-
 <section class="section">
-
-  <h2 class="section-title">
-    PLAN
-  </h2>
+  <h2 class="section-title">PLAN</h2>
 
   <div class="plan-grid">
-
     <div class="plan-box">
-
-      <h3>
-        持ち込み衣装プラン
-      </h3>
-
-      <div class="plan-price">
-        ¥98,000〜
-      </div>
-
+      <div class="plan-title">① お持ち込み衣装<br>ロケーションフォトプラン</div>
+      <div class="plan-price">¥98,000〜 +tax</div>
       <p>
-        お持ち込み衣装での
-        ロケーションフォトプラン。<br><br>
-
-        ヘアメイク・撮影・データ込み。
+        お持ち込みのお衣装で撮影できるプラン。<br><br>
+        ・新婦ヘアメイク<br>
+        ・スタイリストアテンド<br>
+        ・カメラマン撮影<br>
+        ・撮影データ全渡し<br>
+        ・プロデュース料込み<br><br>
+        ※ロケ地が市外の場合 +¥22,000<br>
+        ※土日祝撮影 +¥22,000
       </p>
-
     </div>
 
     <div class="plan-box">
-
-      <h3>
-        ドレスプラン
-      </h3>
-
-      <div class="plan-price">
-        ¥250,000
-      </div>
-
+      <div class="plan-title">② 特別なドレスでの<br>ロケーションフォトプラン</div>
+      <div class="plan-price">¥250,000 +tax</div>
       <p>
-        有名ドレスメーカー提携。<br><br>
-
-        衣装選び・フィッティング・
-        ヘアメイク・撮影データ込み。
+        有名ドレスメーカーの上質な衣装を、安心のプランで自由にセレクト。<br><br>
+        ・ウェディングドレス or カラードレス<br>
+        ・タキシード<br>
+        ・衣装小物<br>
+        ・新婦ヘアメイク<br>
+        ・フィッティング<br>
+        ・ロケーション撮影<br>
+        ・撮影データ全渡し
       </p>
-
     </div>
 
     <div class="plan-box">
-
-      <h3>
-        和装プラン
-      </h3>
-
-      <div class="plan-price">
-        ¥297,000
-      </div>
-
+      <div class="plan-title">③ 白無垢・打掛での<br>ロケーションフォトプラン</div>
+      <div class="plan-price">¥297,000 +tax</div>
       <p>
-        白無垢・打掛対応。<br><br>
-
-        着付・ヘアメイク・撮影データ込み。
+        白無垢・打掛のお着付けからお支度、ロケーション撮影までトータルサポート。<br><br>
+        ・白無垢 or 打掛<br>
+        ・お着付け<br>
+        ・お支度<br>
+        ・ヘアメイク<br>
+        ・ロケーション撮影<br>
+        ・撮影データ全渡し
       </p>
-
     </div>
-
   </div>
-
 </section>
 
-<!-- VOICE -->
-
 <section class="section">
+  <h2 class="section-title">DRESS</h2>
 
-  <h2 class="section-title">
-    VOICE
-  </h2>
+  <div class="info-box">
+    提携ドレスショップにて、実際に試着をしながらお選びいただけます。<br><br>
+    “写真のための衣装”ではなく、<br>
+    「本当に着たい一着」で撮影することを大切にしています。<br><br>
 
-  <div class="voice-grid">
-
-    <div class="voice-box">
-      ヘアメイクが理想以上で、
-      本当に特別な一日になりました。
-    </div>
-
-    <div class="voice-box">
-      初めての撮影でしたが、
-      丁寧なサポートで安心できました。
-    </div>
-
-    <div class="voice-box">
-      ドレス選びから撮影まで、
-      全てが思い出になりました。
-    </div>
-
+    <a href="https://www.foursis-co.com/" target="_blank" class="btn">
+      提携ドレスショップを見る
+    </a>
   </div>
-
 </section>
 
-<!-- FLOW -->
+<section class="section">
+  <h2 class="section-title">INSTAGRAM</h2>
+
+  <div class="info-box">
+    最新のフォトウェディングやヘアメイク作品を更新しています。<br><br>
+
+    <a href="https://www.instagram.com/belle_well_" target="_blank" class="btn">
+      Instagramを見る
+    </a>
+  </div>
+</section>
 
 <section class="section">
-
-  <h2 class="section-title">
-    FLOW
-  </h2>
+  <h2 class="section-title">FLOW</h2>
 
   <div class="flow-grid">
-
     <div class="flow-box">
       <div class="flow-step">STEP 01</div>
       LINE相談
@@ -567,65 +475,66 @@ body{
       <div class="flow-step">STEP 05</div>
       データ納品
     </div>
-
   </div>
-
 </section>
-
-<!-- CONTACT -->
 
 <section class="section">
+  <h2 class="section-title">Q&A</h2>
 
-  <div class="contact-box">
+  <details class="qa">
+    <summary>料金は追加でかかりますか？</summary>
+    <p>衣装・撮影日・ロケーションなどにより追加料金が発生する場合があります。事前に総額の目安をご説明します。</p>
+  </details>
 
-    <h2 class="section-title">
-      CONTACT
-    </h2>
+  <details class="qa">
+    <summary>ドレスは選べますか？</summary>
+    <p>提携ドレスショップにて、実際に試着しながらお選びいただけます。</p>
+  </details>
 
-    <p>
-      「まずは相談だけしたい」<br>
-      「自分に合うプランを知りたい」<br><br>
+  <details class="qa">
+    <summary>ヘアメイクの希望は伝えられますか？</summary>
+    <p>可能です。参考画像などを事前に共有いただくことで、理想に近づけます。</p>
+  </details>
 
-      そんな方もお気軽にご相談ください。
-    </p>
-
-    <a href="https://line.me/R/ti/p/@944xywjv"
-       class="contact-btn">
-       LINEで相談する
-    </a>
-
-  </div>
-
+  <details class="qa">
+    <summary>当日はサポートしてもらえますか？</summary>
+    <p>ヘアメイクや衣装の調整を行いながら、安心して撮影できるようサポートします。</p>
+  </details>
 </section>
 
-<!-- TOPへ戻る -->
+<section class="section">
+  <h2 class="section-title">SALON INFO</h2>
 
-<div style="
-  text-align:center;
-  padding:30px 0 120px;
-">
+  <div class="info-box">
+    鹿児島を中心に、フォトウェディング・成人式・七五三など幅広くご対応しております。<br><br>
 
-  <a href="index.html"
-     style="
-      display:inline-block;
-      padding:16px 38px;
-      border:1px solid #c7ab93;
-      border-radius:100px;
-      text-decoration:none;
-      color:#c7ab93;
-      letter-spacing:3px;
-      font-size:13px;
-     ">
+    <a href="https://maps.app.goo.gl/vS4kAaS31bQTh2Vj8?g_st=com.openai.chat.ShareExtension" target="_blank" class="btn">
+      Google Mapを見る
+    </a>
+  </div>
+</section>
 
-     TOPへ戻る
+<section class="section">
+  <div class="info-box">
+    「まずは相談だけしたい」<br>
+    「自分に合うプランを知りたい」<br><br>
 
+    そんな方もお気軽にご相談ください。<br><br>
+
+    <a href="https://line.me/R/ti/p/@944xywjv" class="btn">
+      LINEで相談する
+    </a>
+  </div>
+</section>
+
+<div style="text-align:center; padding:30px 0 120px;">
+  <a href="index.html" class="top-btn">
+    TOPへ戻る
   </a>
-
 </div>
 
-<a href="https://line.me/R/ti/p/@944xywjv"
-   class="fixed-line">
-   LINEで相談
+<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
+  LINEで相談
 </a>
 
 </body>
