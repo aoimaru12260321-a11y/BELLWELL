@@ -2,10 +2,14 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+
 <link rel="icon" type="image/png" href="logo.png.PNG">
+<link rel="shortcut icon" type="image/png" href="logo.png.PNG">
 <link rel="apple-touch-icon" href="logo.png.PNG">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="鹿児島のフォトウェディング・成人式前撮り・七五三撮影ならBELL WELL。ヘアメイク監修で特別な1日を美しく残します。">
+
+<meta name="description" content="鹿児島のフォトウェディング・成人式前撮り・七五三撮影ならBELL WELL。ヘアメイク監修で特別な1日を美しく残します。">
 
 <title>BELL WELL（ベルウェル）| 鹿児島フォトウェディング・成人式・七五三</title>
 
@@ -36,6 +40,20 @@ body{
   background:#f8f5f1;
   color:#222;
   overflow-x:hidden;
+}
+
+/* LOGO */
+
+.site-logo{
+  position:fixed;
+  top:20px;
+  left:20px;
+  z-index:999;
+}
+
+.site-logo img{
+  width:160px;
+  height:auto;
 }
 
 /* HERO */
@@ -83,32 +101,32 @@ body{
 }
 
 .hero-text{
-  line-height:2.1;
-  font-size:15px;
-  margin-bottom:34px;
+  line-height:2;
+  font-size:14px;
+  margin-bottom:18px;
 }
 
 .hero-btn{
   display:inline-block;
-  padding:15px 36px;
+  padding:14px 32px;
   border-radius:100px;
   background:#b89b84;
   color:#fff;
   text-decoration:none;
-  font-size:14px;
+  font-size:13px;
   letter-spacing:2px;
 }
 
 /* SECTION */
 
 .section{
-  padding:100px 8%;
+  padding:60px 6%;
 }
 
 .section-title{
   text-align:center;
-  font-size:32px;
-  margin-bottom:60px;
+  font-size:24px;
+  margin-bottom:35px;
   letter-spacing:3px;
   font-weight:300;
 }
@@ -118,8 +136,8 @@ body{
 .trust-box{
   display:flex;
   align-items:center;
-  gap:60px;
-  margin-bottom:120px;
+  gap:30px;
+  margin-bottom:60px;
 }
 
 .trust-box.reverse{
@@ -127,7 +145,7 @@ body{
 }
 
 .trust-box img{
-  width:55%;
+  width:50%;
   border-radius:10px;
   box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
@@ -137,15 +155,15 @@ body{
 }
 
 .trust-text h2{
-  font-size:30px;
-  letter-spacing:2px;
-  margin-bottom:24px;
+  font-size:22px;
+  margin-bottom:14px;
   font-weight:300;
 }
 
 .trust-text p{
-  line-height:2.2;
+  line-height:1.9;
   color:#555;
+  font-size:14px;
 }
 
 /* SERVICE */
@@ -153,14 +171,14 @@ body{
 .service-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:30px;
+  gap:18px;
 }
 
 .service-card{
   position:relative;
   overflow:hidden;
   border-radius:12px;
-  height:420px;
+  height:300px;
   text-decoration:none;
   color:#fff;
 }
@@ -179,18 +197,18 @@ body{
 
 .service-content{
   position:absolute;
-  bottom:30px;
-  left:30px;
+  bottom:22px;
+  left:22px;
 }
 
 .service-content h3{
-  font-size:32px;
-  margin-bottom:10px;
+  font-size:24px;
+  margin-bottom:8px;
   font-weight:300;
 }
 
 .service-content p{
-  font-size:13px;
+  font-size:12px;
   letter-spacing:2px;
 }
 
@@ -199,14 +217,15 @@ body{
 .voice-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:24px;
+  gap:16px;
 }
 
 .voice-box{
   background:#fff;
-  padding:34px;
+  padding:20px;
   border-radius:12px;
-  line-height:2;
+  line-height:1.8;
+  font-size:13px;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
@@ -215,22 +234,23 @@ body{
 .flow-grid{
   display:grid;
   grid-template-columns:repeat(5,1fr);
-  gap:18px;
+  gap:10px;
 }
 
 .flow-box{
   background:#fff;
-  padding:30px 20px;
+  padding:18px 10px;
   text-align:center;
   border-radius:12px;
+  font-size:13px;
   box-shadow:0 10px 30px rgba(0,0,0,0.06);
 }
 
 .flow-step{
   color:#9b7b63;
-  font-size:13px;
+  font-size:11px;
   letter-spacing:2px;
-  margin-bottom:12px;
+  margin-bottom:8px;
 }
 
 /* CONTACT */
@@ -238,23 +258,26 @@ body{
 .contact-box{
   text-align:center;
   background:#fff;
-  padding:70px 30px;
+  padding:45px 20px;
   border-radius:14px;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .contact-box p{
-  line-height:2.2;
-  margin-bottom:35px;
+  line-height:1.9;
+  margin-bottom:20px;
+  font-size:14px;
 }
 
 .contact-btn{
   display:inline-block;
-  padding:16px 40px;
+  padding:14px 32px;
   border-radius:100px;
   background:#b89b84;
   color:#fff;
   text-decoration:none;
+  font-size:13px;
+  letter-spacing:2px;
 }
 
 /* FIXED BTN */
@@ -266,10 +289,10 @@ body{
   z-index:999;
   background:#b89b84;
   color:#fff;
-  padding:16px 26px;
+  padding:14px 22px;
   border-radius:100px;
   text-decoration:none;
-  font-size:13px;
+  font-size:12px;
   letter-spacing:2px;
   box-shadow:0 10px 25px rgba(0,0,0,0.18);
 }
@@ -283,14 +306,14 @@ body{
 }
 
 .section{
-  padding:80px 6%;
+  padding:45px 5%;
 }
 
 .trust-box,
 .trust-box.reverse{
   flex-direction:column;
-  gap:40px;
-  margin-bottom:80px;
+  gap:24px;
+  margin-bottom:45px;
 }
 
 .trust-box img,
@@ -302,6 +325,10 @@ body{
   grid-template-columns:1fr;
 }
 
+.service-card{
+  height:240px;
+}
+
 .voice-grid{
   grid-template-columns:1fr;
 }
@@ -310,20 +337,28 @@ body{
   grid-template-columns:1fr;
 }
 
+.contact-box{
+  padding:35px 18px;
+}
+
+.site-logo img{
+  width:120px;
+}
+
 }
 
 </style>
 </head>
 
 <body>
-<header style="position:fixed;top:20px;left:20px;z-index:999;">
- <img src="logo.png.PNG" alt="BELL WELL ロゴ" style="width:160px;height:auto;"> 
+
+<header class="site-logo">
+  <img src="logo.png.PNG" alt="BELL WELL ロゴ">
 </header>
-<!-- HERO -->
 
 <section class="hero">
 
-<img src="kagoshima-photo-wedding-bellwell.jpg.JPG" 
+<img src="kagoshima-photo-wedding-bellwell.jpg.JPG"
 class="hero-image"
 alt="鹿児島フォトウェディング BELL WELL">
 
@@ -346,9 +381,13 @@ HAIR & MAKEUP TEAM
 “今日の自分が好きになる”<br>
 ヘアメイクをご提案します。
 </p>
-<p>
-BELL WELL（ベルウェル）は、鹿児島のフォトウェディング・成人式前撮り・七五三撮影を行うヘアメイク監修のフォトブランドです。
+
+<p class="hero-text">
+BELL WELL（ベルウェル）は、
+鹿児島のフォトウェディング・成人式前撮り・
+七五三撮影を行うヘアメイク監修ブランドです。
 </p>
+
 <a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">
 LINEで無料相談
 </a>
@@ -356,226 +395,6 @@ LINEで無料相談
 </div>
 
 </section>
-
-<!-- TRUST -->
-
-<section class="section">
-
-<h2 class="section-title">
-WHY BELL WELL
-</h2>
-
-<div class="trust-box">
-
-<img src="IMG_3240.jpeg"
-alt="鹿児島 ブライダルヘアメイク">
-
-<div class="trust-text">
-
-<h2>TEAM SUPPORT</h2>
-
-<p>
-成人式・ブライダル・前撮りなど、<br>
-多人数対応も可能なヘアメイクチーム。<br><br>
-
-経験豊富なスタッフが、<br>
-大切な一日を丁寧にサポートします。
-</p>
-
-</div>
-
-</div>
-
-<div class="trust-box reverse">
-
-<img src="IMG_3238.jpeg"
-alt="鹿児島 フォトウェディング">
-
-<div class="trust-text">
-
-<h2>PROFESSIONAL WORK</h2>
-
-<p>
-ヘアメイク・着付・撮影まで、<br>
-“その人らしさ”を大切にご提案。<br><br>
-
-美容室が母体だからこそ、<br>
-本当に似合うスタイルを追求しています。
-</p>
-
-</div>
-
-</div>
-
-<div class="trust-box">
-
-<img src="IMG_3237.jpeg"
-alt="鹿児島 和装前撮り">
-
-<div class="trust-text">
-
-<h2>KIMONO SUPPORT</h2>
-
-<p>
-和装のお支度や着付も、<br>
-経験豊富なスタッフが対応。<br><br>
-
-撮影中の細かなサポートまで、<br>
-安心してお任せいただけます。
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SERVICE -->
-
-<section class="section">
-
-<h2 class="section-title">
-SERVICE
-</h2>
-
-<div class="service-grid">
-
-<a href="bridal.html" class="service-card">
-
-<img src="kagoshima-bridal-hairmake.jpg.JPG"
-alt="鹿児島フォトウェディング">
-
-<div class="service-content">
-<h3>BRIDAL</h3>
-<p>PHOTO WEDDING</p>
-</div>
-
-</a>
-
-<a href="seijin.html" class="service-card">
-
-<img src="kagoshima-seijin-maedori.jpg.jpg"
-alt="鹿児島 成人式前撮り">
-
-<div class="service-content">
-<h3>成人式</h3>
-<p>COMING OF AGE</p>
-</div>
-
-</a>
-
-<a href="753.html" class="service-card">
-
-<img src="kagoshima-753-photo.jpg.JPG"
-alt="鹿児島 七五三">
-
-<div class="service-content">
-<h3>七五三</h3>
-<p>SHICHIGOSAN</p>
-</div>
-
-</a>
-
-</div>
-
-</section>
-
-<!-- VOICE -->
-
-<section class="section">
-
-<h2 class="section-title">
-VOICE
-</h2>
-
-<div class="voice-grid">
-
-<div class="voice-box">
-ヘアメイクが本当に理想通りで、
-“今日の自分が好き”と思える一日でした。
-</div>
-
-<div class="voice-box">
-初めての撮影でしたが、
-丁寧にサポートしていただき安心できました。
-</div>
-
-<div class="voice-box">
-ドレス選びから撮影まで、
-全てが特別な思い出になりました。
-</div>
-
-</div>
-
-</section>
-
-<!-- FLOW -->
-
-<section class="section">
-
-<h2 class="section-title">
-FLOW
-</h2>
-
-<div class="flow-grid">
-
-<div class="flow-box">
-<div class="flow-step">STEP 01</div>
-LINE相談
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 02</div>
-お打ち合わせ
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 03</div>
-衣装合わせ
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 04</div>
-撮影当日
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 05</div>
-データ納品
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section">
-
-<div class="contact-box">
-
-<h2 class="section-title">
-CONTACT
-</h2>
-
-<p>
-「どのプランが合うかわからない」<br>
-「まずは相談だけしたい」<br><br>
-
-そんな方もお気軽にご相談ください。
-</p>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="contact-btn">
-LINEで相談する
-</a>
-
-</div>
-
-</section>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
-LINEで相談
-</a>
 
 </body>
 </html>
