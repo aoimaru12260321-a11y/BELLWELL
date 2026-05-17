@@ -67,15 +67,31 @@ body{
   overflow:hidden;
 }
 
-.hero-image{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
 .hero-video{
+  position:absolute;
+  inset:0;
   width:100%;
   height:100%;
   object-fit:cover;
+  z-index:1;
+  animation:fadeOutVideo 1.5s ease forwards;
+  animation-delay:3s;
+}
+
+.hero-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:0;
+}
+
+@keyframes fadeOutVideo{
+  to{
+    opacity:0;
+    filter:blur(10px);
+  }
 }
 .hero-overlay{
   position:absolute;
@@ -407,7 +423,9 @@ body{
 <video class="hero-video" autoplay muted loop playsinline>
   <source src="bellwell-top.mp4.MP4" type="video/mp4">
 </video>
-
+<img src="kagoshima-photo-wedding-bellwell.jpg.JPG"
+class="hero-image"
+alt="鹿児島フォトウェディング BELL WELL">
 <div class="hero-overlay"></div>
 
 <div class="hero-content">
