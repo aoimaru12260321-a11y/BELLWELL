@@ -133,16 +133,24 @@ body{
 .hero-btn,
 .contact-btn{
   display:inline-block;
-  padding:14px 30px;
+  padding:16px 42px;
   border-radius:100px;
-  background:#b89b84;
+  background:#cbb19a;
   color:#fff;
   text-decoration:none;
-  font-size:13px;
-  letter-spacing:2px;
-  box-shadow:0 8px 22px rgba(0,0,0,0.16);
+  letter-spacing:4px;
+  font-size:12px;
+  font-weight:300;
+  transition:0.3s;
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+　backdrop-filter:blur(6px);
 }
-
+.hero-btn:hover,
+.contact-btn:hover{
+  transform:translateY(-2px);
+  opacity:0.92;
+}
 /* SECTION */
 
 .section{
