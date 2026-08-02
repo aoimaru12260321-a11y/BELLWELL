@@ -49,10 +49,13 @@
 </head>
 <body class="font-sans text-textMain bg-primary antialiased pb-16 md:pb-0">
 
-    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+    <header class="absolute inset-x-0 top-0 z-50 text-white">
         <div class="max-w-7xl mx-auto px-4 h-20 md:h-16 flex items-center justify-between">
-            <h1 class="text-2xl md:text-xl font-serif tracking-widest">BELL WELL</h1>
-            <nav class="hidden md:flex space-x-4" aria-label="メインナビゲーション">
+            <a href="#" class="flex items-center gap-2.5 drop-shadow-md" aria-label="BELL WELL ホーム">
+                <img src="./logo-mark.png" alt="" width="28" height="32" class="h-8 w-7 object-contain" aria-hidden="true">
+                <span class="text-2xl md:text-xl font-serif tracking-widest">BELL WELL</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 text-sm tracking-wide drop-shadow-md" aria-label="メインナビゲーション">
                 <a href="#concept" class="hover:text-accent transition">コンセプト</a>
                 <a href="#menu" class="hover:text-accent transition">プラン・料金</a>
                 <a href="#access" class="hover:text-accent transition">アクセス</a>
@@ -539,9 +542,6 @@
                 </figure>
             </div>
 
-            <div class="text-center mt-10">
-                <a href="#reserve" class="inline-block px-8 py-3 border border-textMain hover:bg-textMain hover:text-white transition duration-300 text-sm tracking-wider">写真について相談する</a>
-            </div>
         </section>
 
         <section id="flow" class="mb-24 md:mb-32 scroll-mt-24">
