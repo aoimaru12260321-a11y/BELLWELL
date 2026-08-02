@@ -1,735 +1,721 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-
-<link rel="icon" type="image/png" href="favicon.png.PNG">
-<link rel="shortcut icon" type="image/png" href="favicon.png.PNG">
-<link rel="apple-touch-icon" href="favicon.png.PNG">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="鹿児島のフォトウェディング・成人式前撮り・七五三撮影ならBELL WELL。ヘアメイク監修で特別な1日を美しく残します。">
-
-<title>BELL WELL（ベルウェル）｜鹿児島フォトウェディング・成人式・七五三</title>
-
-<meta property="og:site_name" content="BELL WELL">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-
-<meta property="og:title" content="BELL WELL｜鹿児島フォトウェディング・成人式・七五三">
-<meta property="og:description" content="鹿児島のフォトウェディング・成人式前撮り・七五三撮影ならBELL WELL。">
-<meta property="og:url" content="https://bellwell-photo.com/">
-<meta property="og:image" content="https://bellwell-photo.com/kagoshima-photo-wedding-bellwell.jpg.JPG">
-
-<style>
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:serif;
-  background:#fbf8f4;
-  color:#222;
-  overflow-x:hidden;
-}
-
-/* LOGO */
-
-.site-logo{
-  position:fixed;
-  top:18px;
-  left:18px;
-  z-index:999;
-  background:transparent;
-  padding:0;
-  border-radius:0;
-  box-shadow:none;
-}
-
-.site-logo img{
-  width:110px;
-  height:auto;
-  display:block;
-}
-
-/* HERO */
-
-.hero{
-  position:relative;
-  height:72vh;
-  min-height:620px;
-  overflow:hidden;
-}
-
-.hero-video{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  z-index:1;
-  animation:fadeOutVideo 2s ease forwards;
-  animation-delay:5s;
-}
-
-.hero-image{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  z-index:0;
-}
-
-@keyframes fadeOutVideo{
-  to{
-    opacity:0;
-    filter:blur(10px);
-  }
-}
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.22);
-}
-
-.hero-content{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  text-align:center;
-  color:#fff;
-  z-index:2;
-  width:90%;
-}
-
-.hero-subtitle{
-  letter-spacing:5px;
-  font-size:12px;
-  margin-bottom:20px;
-}
-
-.hero h1{
-  font-size:42px;
-  line-height:1.6;
-  font-weight:300;
-  margin-bottom:20px;
-  text-shadow:0 2px 14px rgba(0,0,0,0.22);
-}
-
-.hero-text{
-  line-height:2;
-  font-size:14px;
-  margin-bottom:18px;
-  text-shadow:0 2px 12px rgba(0,0,0,0.20);
-}
-
-.btn,
-.hero-btn,
-.contact-btn{
-  display:inline-block;
-  padding:16px 42px;
-  border-radius:100px;
-  background:#cbb19a;
-  color:#fff;
-  text-decoration:none;
-  letter-spacing:4px;
-  font-size:12px;
-  font-weight:300;
-  transition:0.3s;
-  border:1px solid rgba(255,255,255,0.15);
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  backdrop-filter:blur(6px);
-}
-
-.btn:hover,
-.hero-btn:hover,
-.contact-btn:hover{
-  transform:translateY(-2px);
-  opacity:0.92;
-}
-/* SECTION */
-
-.section{
-  padding:58px 6%;
-}
-
-.section-title{
-  text-align:center;
-  font-size:24px;
-  margin-bottom:32px;
-  letter-spacing:3px;
-  font-weight:300;
-  color:#3f2f2a;
-}
-
-/* TRUST */
-
-.trust-box{
-  display:flex;
-  align-items:center;
-  gap:18px;
-  margin-bottom:24px;
-  background:#fff;
-  padding:18px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.06);
-}
-
-.trust-box.reverse{
-  flex-direction:row-reverse;
-}
-
-.trust-box img{
-  width:38%;
-  height:180px;
-  object-fit:cover;
-  object-position:center 25%;
-  border-radius:12px;
-  box-shadow:none;
-}
-
-.trust-text{
-  width:62%;
-}
-
-.trust-text h2{
-  font-size:17px;
-  margin-bottom:8px;
-  font-weight:300;
-  letter-spacing:2px;
-  color:#3f2f2a;
-}
-
-.trust-text p{
-  line-height:1.7;
-  color:#555;
-  font-size:12px;
-}
-
-/* SERVICE */
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.service-card{
-  position:relative;
-  overflow:hidden;
-  border-radius:16px;
-  height:260px;
-  text-decoration:none;
-  color:#fff;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.service-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  filter:brightness(.86);
-  transition:.4s;
-}
-
-.service-bridal{
-  object-position:center 35%;
-}
-
-.service-seijin{
-  object-position:center 35%;
-}
-
-.service-753{
-  object-position:center 30%;
-}
-
-.service-card:hover img{
-  transform:scale(1.05);
-}
-
-.service-content{
-  position:absolute;
-  bottom:22px;
-  left:22px;
-  text-shadow:0 2px 12px rgba(0,0,0,0.35);
-}
-
-.service-content h3{
-  font-size:24px;
-  margin-bottom:8px;
-  font-weight:300;
-}
-
-.service-content p{
-  font-size:12px;
-  letter-spacing:2px;
-}
-
-/* VOICE */
-
-.voice-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
-
-.voice-box{
-  background:#fff;
-  padding:20px;
-  border-radius:14px;
-  line-height:1.8;
-  font-size:13px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.06);
-  color:#555;
-}
-
-/* FLOW */
-
-.flow-grid{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:10px;
-}
-
-.flow-box{
-  background:#fff;
-  padding:18px 10px;
-  text-align:center;
-  border-radius:14px;
-  font-size:13px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.06);
-}
-
-.flow-step{
-  color:#9b7b63;
-  font-size:11px;
-  letter-spacing:2px;
-  margin-bottom:8px;
-}
-
-/* CONTACT */
-
-.contact-box{
-  text-align:center;
-  background:#fff;
-  padding:45px 20px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.06);
-}
-
-.contact-box p{
-  line-height:1.9;
-  margin-bottom:20px;
-  font-size:14px;
-  color:#555;
-}
-
-/* FIXED BTN */
-
-.fixed-line{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  z-index:999;
-  background:#b89b84;
-  color:#fff;
-  padding:14px 22px;
-  border-radius:100px;
-  text-decoration:none;
-  font-size:12px;
-  letter-spacing:2px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.18);
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-.hero{
-  height:100vh;
-  min-height:auto;
-}
-.hero h1{
-  font-size:30px;
-}
-
-.hero-text{
-  font-size:13px;
-}
-
-.section{
-  padding:45px 5%;
-}
-
-.section-title{
-  font-size:22px;
-  margin-bottom:28px;
-}
-
-.trust-box,
-.trust-box.reverse{
-  flex-direction:column;
-  gap:14px;
-  margin-bottom:22px;
-  padding:14px;
-}
-
-.trust-box img,
-.trust-text{
-  width:100%;
-}
-
-.trust-box img{
-  height:180px;
-  object-fit:cover;
-}
-
-.service-grid,
-.voice-grid,
-.flow-grid{
-  grid-template-columns:1fr;
-}
-
-.service-card{
-  height:240px;
-}
-
-.contact-box{
-  padding:35px 18px;
-}
-
-.site-logo{
-  top:14px;
-  left:14px;
-  padding:7px 10px;
-}
-
-.site-logo img{
-  width:92px;
-}
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前撮りならBELL WELL | 鹿児島のフォトウェディング・前撮り</title>
+    <meta name="description" content="美容・ヘアメイクのプロが監修。鹿児島でのフォトウェディング、成人式前撮り、七五三など、BELL WELL（ベルウェル）へ。持ち込み無料、有名ブランド衣装提携。">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FDFBF9',
+                        textMain: '#3E3A39',
+                        accent: '#806C4F',
+                        line: '#047A36',
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif JP"', 'serif'],
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "BELL WELL（ベルウェル）",
+      "image": "https://bellwell-photo.com/logo.png.PNG",
+      "@id": "https://bellwell-photo.com/",
+      "url": "https://bellwell-photo.com/",
+      "telephone": "080-3944-6775",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "千日町9-29 田良島ビル1F",
+        "addressLocality": "鹿児島市",
+        "addressRegion": "鹿児島県",
+        "postalCode": "892-0843",
+        "addressCountry": "JP"
+      },
+      "description": "鹿児島のフォトウェディング、成人式前撮り、七五三撮影"
+    }
+    </script>
 </head>
-
-<body>
-
-<header class="site-logo">
-<img src="logo.png.PNG" alt="BELL WELL ロゴ">
-</header>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<video class="hero-video" autoplay muted loop playsinline>
-  <source src="bellwell-top.mp4.MP4" type="video/mp4">
-</video>
-<img src="kagoshima-photo-wedding-bellwell.jpg.JPG"
-class="hero-image"
-alt="鹿児島フォトウェディング BELL WELL">
-<div class="hero-overlay"></div>
-
-<div class="hero-content">
-
-<p class="hero-subtitle">
-HAIR & MAKEUP TEAM
-</p>
-
-<h1>
-価格を超える感動を。<br>
-ヘアメイクが監修する<br>
-フォトウェディング
-</h1>
-
-<p class="hero-text">
-花嫁様一人一人に寄り添い、<br>
-“今日の自分が好きになる”<br>
-ヘアメイクをご提案します。
-</p>
-
-<p class="hero-text">
-BELL WELL（ベルウェル）は、鹿児島のフォトウェディング・成人式前撮り・七五三撮影を行うヘアメイク監修ブランドです。
-</p>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="hero-btn">
-LINEで無料相談
-</a>
-
-</div>
-</section>
-
-<!-- TRUST -->
-
-<section class="section">
-
-<h2 class="section-title">
-WHY BELL WELL
-</h2>
-
-<div class="trust-box">
-
-<img src="IMG_3240.jpeg" alt="鹿児島 ブライダルヘアメイク">
-
-<div class="trust-text">
-
-<h2>TEAM SUPPORT</h2>
-
-<p>
-成人式・ブライダル・前撮りなど<br>
-幅広く対応するヘアメイクチーム。<br><br>
-
-経験豊富なスタッフが
-大切な一日を丁寧にサポートします。
-</p>
-
-</div>
-</div>
-
-<div class="trust-box reverse">
-
-<img src="IMG_3238.jpeg" alt="鹿児島 フォトウェディング">
-
-<div class="trust-text">
-
-<h2>PROFESSIONAL WORK</h2>
-
-<p>
-ヘアメイク・着付・撮影まで、<br>
-その人らしさを大切にご提案。<br><br>
-
-本当に似合うスタイルを追求しています。
-</p>
-
-</div>
-</div>
-
-<div class="trust-box">
-
-<img src="IMG_3237.jpeg" alt="鹿児島 和装前撮り">
-
-<div class="trust-text">
-
-<h2>KIMONO SUPPORT</h2>
-
-<p>
-和装着付や撮影サポートも対応。<br><br>
-
-安心して撮影いただけます。
-</p>
-
-</div>
-</div>
-
-</section>
-
-<!-- SERVICE -->
-
-<section class="section">
-
-<h2 class="section-title">
-SERVICE
-</h2>
-
-<div class="service-grid">
-
-<a href="bridal.html" class="service-card">
-
-<img src="kagoshima-bridal-hairmake.jpg.JPG"
-class="service-bridal"
-alt="鹿児島フォトウェディング">
-
-<div class="service-content">
-<h3>BRIDAL</h3>
-<p>PHOTO WEDDING</p>
-</div>
-
-</a>
-
-<a href="seijin.html" class="service-card">
-
-<img src="kagoshima-seijin-maedori.jpg.jpg"
-class="service-seijin"
-alt="鹿児島 成人式前撮り">
-
-<div class="service-content">
-<h3>成人式</h3>
-<p>COMING OF AGE</p>
-</div>
-
-</a>
-
-<a href="753.html" class="service-card">
-
-<img src="kagoshima-753-photo.jpg.JPG"
-class="service-753"
-alt="鹿児島 七五三">
-
-<div class="service-content">
-<h3>七五三</h3>
-<p>SHICHIGOSAN</p>
-</div>
-
-</a>
-
-</div>
-
-</section>
-
-<!-- VOICE -->
-
-<section class="section">
-
-<h2 class="section-title">
-VOICE
-</h2>
-
-<div class="voice-grid">
-
-<div class="voice-box">
-ヘアメイクが本当に理想通りで、
-“今日の自分が好き”と思える一日でした。
-</div>
-
-<div class="voice-box">
-初めての撮影でしたが、
-丁寧にサポートしていただき安心できました。
-</div>
-
-<div class="voice-box">
-ドレス選びから撮影まで、
-全てが特別な思い出になりました。
-</div>
-
-</div>
-
-</section>
-
-<!-- FLOW -->
-
-<section class="section">
-
-<h2 class="section-title">
-FLOW
-</h2>
-
-<div class="flow-grid">
-
-<div class="flow-box">
-<div class="flow-step">STEP 01</div>
-LINE相談
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 02</div>
-お打ち合わせ
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 03</div>
-衣装合わせ
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 04</div>
-撮影当日
-</div>
-
-<div class="flow-box">
-<div class="flow-step">STEP 05</div>
-データ納品
-</div>
-
-</div>
-
-</section>
-<!-- SALON INFO -->
-
-
-</section>
-
-<section class="section">
-<h2 class="section-title">
-INSTAGRAM
-</h2>
-
-<div class="info-box">
-最新のフォトウェディングやヘアメイク作品を更新しています。<br><br>
-
-<a href="https://www.instagram.com/belle_well_"
-target="_blank"
-class="btn">
-Instagramを見る
-</a>
-
-</div>
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-SALON INFO
-</h2>
-
-<div class="info-box">
-
-鹿児島を中心に、フォトウェディング・成人式・七五三など幅広くご対応しております。<br><br>
-
-<iframe
-src="https://www.google.com/maps?q=鹿児島県鹿児島市千日町9-29&output=embed"
-width="100%"
-height="320"
-style="border:0; border-radius:14px; margin-top:20px; margin-bottom:24px;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-<a href="https://maps.app.goo.gl/vS4kAaS31bQTh2Vj8?g_st=com.openai.chat.ShareExtension"
-target="_blank"
-class="btn">
-Google Mapを見る
-</a>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section">
-
-<div class="contact-box">
-
-<h2 class="section-title">
-CONTACT
-</h2>
-
-<p>
-「どのプランが合うかわからない」<br>
-「まずは相談だけしたい」<br><br>
-
-そんな方もお気軽にご相談ください。
-</p>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="contact-btn">
-LINEで相談する
-</a>
-
-</div>
-
-</section>
-
-<a href="https://line.me/R/ti/p/@944xywjv" class="fixed-line">
-LINEで相談
-</a>
+<body class="font-sans text-textMain bg-primary antialiased pb-16 md:pb-0">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 h-20 md:h-16 flex items-center justify-between">
+            <h1 class="text-2xl md:text-xl font-serif tracking-widest">BELL WELL</h1>
+            <nav class="hidden md:flex space-x-4" aria-label="メインナビゲーション">
+                <a href="#concept" class="hover:text-accent transition">コンセプト</a>
+                <a href="#menu" class="hover:text-accent transition">プラン・料金</a>
+                <a href="#access" class="hover:text-accent transition">アクセス</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center bg-gray-200">
+        <div class="absolute inset-0 bg-[url('./kagoshima-photo-wedding-bellwell.jpg.JPG')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight drop-shadow-md">
+                「いちばん綺麗な私」を、<br>鹿児島で。
+            </h2>
+            <p class="text-white text-sm md:text-base mb-10 tracking-widest drop-shadow-md">
+                プロの美容・ヘアメイクチームがプロデュースする<br>特別なフォトウェディング
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#reserve" class="bg-white text-textMain px-8 py-4 rounded-sm hover:bg-gray-50 transition tracking-wider text-sm">
+                    WEB予約をする
+                </a>
+                <a href="https://line.me/R/ti/p/@944xywjv" target="_blank" rel="noopener noreferrer" class="bg-line text-white px-8 py-4 rounded-sm hover:opacity-90 transition tracking-wider text-sm flex items-center justify-center gap-2">
+                    LINEで空き状況・見積もりを相談
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-5xl mx-auto px-4 py-20">
+        <section id="concept" class="text-center mb-24 md:mb-32">
+            <h3 class="text-2xl font-serif mb-8 text-accent">ただ撮るだけじゃない。<br>「美しさ」からつくるフォトウェディング。</h3>
+            <p class="leading-relaxed text-gray-600">
+                どんなに素敵なドレスやロケーションでも、<br class="hidden md:block">
+                ヘアメイクが自分に合っていなければ、心からの笑顔は作れません。<br>
+                BELL WELLは、美容とヘアメイクのプロフェッショナルが監修。<br>
+                「写真映え」と「あなたらしさ」を両立するスタイルをご提案します。
+            </p>
+        </section>
+
+        <section id="features" class="mb-24 md:mb-32 scroll-mt-24">
+            <h3 class="text-3xl font-serif text-center mb-16 text-accent">Why Choose Us<br><span class="text-base text-textMain tracking-widest mt-2 block">選ばれる理由</span></h3>
+
+            <div class="space-y-20">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="w-full md:w-1/2">
+                        <div class="aspect-[4/3] bg-gray-200 rounded-tl-[3rem] overflow-hidden">
+                            <img src="./kagoshima-bridal-hairmake.jpg.JPG" alt="プロのヘアメイクによる施術風景" loading="lazy" decoding="async" class="object-cover w-full h-full object-center">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <span class="text-accent font-bold text-lg mb-2 block">01</span>
+                        <h4 class="text-xl font-serif mb-4 leading-relaxed">美容のプロが引き出す<br>あなただけの「似合わせ」</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">事前の丁寧なカウンセリングから、撮影中の細かなメイク直しまで、美容のプロフェッショナルが徹底サポート。「写真映え」と「あなたらしさ」が最も際立つスタイルをご提案し、一番美しく見える状態をキープします。</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <span class="text-accent font-bold text-lg mb-2 block">02</span>
+                        <h4 class="text-xl font-serif mb-4 leading-relaxed">有名ブランドドレス提携＆<br>お持ち込みも「完全無料」</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">大人気の提携ドレスショップ「FOUR SIS &amp; CO.（フォーシス）」の豊富なラインナップからお選びいただけます。さらに、思い出のドレスやこだわりの和装などの<strong class="font-bold text-textMain">お持ち込み料は一切無料</strong>。あなたの着たい衣装を妥協せず選べます。</p>
+                    </div>
+                    <div class="w-full md:w-1/2 order-1 md:order-2">
+                        <div class="aspect-[4/3] bg-gray-200 rounded-tr-[3rem] overflow-hidden">
+                            <img src="./IMG_3240.jpeg" alt="美容室内で着付けとヘアメイクを行う様子" loading="lazy" decoding="async" class="object-cover w-full h-full object-center">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="w-full md:w-1/2">
+                        <div class="aspect-[4/3] bg-gray-200 rounded-bl-[3rem] overflow-hidden">
+                            <img src="./IMG_3078.jpeg" alt="桜島を背景にした鹿児島でのロケーション撮影" loading="lazy" decoding="async" class="object-cover w-full h-full object-center">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <span class="text-accent font-bold text-lg mb-2 block">03</span>
+                        <h4 class="text-xl font-serif mb-4 leading-relaxed">鹿児島の絶景ロケーション×<br>天候に左右されないスタジオ</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">雄大な桜島や美しいビーチ、自然豊かな公園など、鹿児島ならではの魅力的なロケーションでの撮影。また、天候を気にせずリラックスして撮影できるスタジオプランもご用意しています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="mb-24 md:mb-32 bg-[#F9F8F6] -mx-4 px-4 py-16 md:px-8 md:mx-0 md:rounded-lg scroll-mt-24">
+            <h3 class="text-3xl font-serif text-center mb-4 text-accent">Plans<br><span class="text-base text-textMain tracking-widest mt-2 block">撮影プラン</span></h3>
+            <p class="text-center text-sm text-gray-600 mb-12">BELL WELL公式ホームページ掲載の料金・プラン内容です。</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="relative bg-white p-6 rounded shadow-md border-2 border-accent flex flex-col">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs tracking-widest px-4 py-1">人気プラン</span>
+                    <h4 class="text-lg font-serif border-b border-gray-100 pb-4 mb-4 text-center">特別なドレスでの<br>ロケーションフォトプラン</h4>
+                    <p class="text-3xl font-bold text-center mb-6 text-accent">¥250,000<span class="text-sm text-gray-500 font-normal"> +tax</span></p>
+                    <ul class="text-sm text-gray-600 space-y-3 mb-8 flex-grow">
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>ウェディングドレスまたはカラードレス</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>タキシード・衣装小物</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>新婦ヘアメイク・フィッティング</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>ロケーション撮影・撮影データ全渡し</li>
+                    </ul>
+                    <a href="#detail-dress" class="block w-full py-3 text-center bg-accent text-white hover:opacity-90 transition duration-300 text-sm tracking-wider">詳細を見る</a>
+                </article>
+
+                <article class="bg-white p-6 rounded shadow-sm border border-gray-100 flex flex-col">
+                    <h4 class="text-lg font-serif border-b border-gray-100 pb-4 mb-4 text-center">白無垢・打掛での<br>ロケーションフォトプラン</h4>
+                    <p class="text-3xl font-bold text-center mb-6 text-accent">¥297,000<span class="text-sm text-gray-500 font-normal"> +tax</span></p>
+                    <ul class="text-sm text-gray-600 space-y-3 mb-8 flex-grow">
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>白無垢または打掛</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>お着付け・お支度</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>ヘアメイク</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>ロケーション撮影・撮影データ全渡し</li>
+                    </ul>
+                    <a href="#detail-kimono" class="block w-full py-3 text-center border border-textMain text-textMain hover:bg-textMain hover:text-white transition duration-300 text-sm tracking-wider">詳細を見る</a>
+                </article>
+
+                <article class="bg-white p-6 rounded shadow-sm border border-gray-100 flex flex-col">
+                    <h4 class="text-lg font-serif border-b border-gray-100 pb-4 mb-4 text-center">スタジオ撮影プラン</h4>
+                    <p class="text-2xl font-bold text-center mb-6 text-accent">料金はお問い合わせ</p>
+                    <p class="text-xs text-gray-500 text-center mb-5">公式サイトに単独料金の記載はありません</p>
+                    <ul class="text-sm text-gray-600 space-y-3 mb-8 flex-grow">
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>衣装（洋装または和装）</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>新婦ヘアメイク</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>スタジオ撮影費</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span>七五三・成人式などの記念撮影</li>
+                    </ul>
+                    <a href="#reserve" class="block w-full py-3 text-center border border-textMain text-textMain hover:bg-textMain hover:text-white transition duration-300 text-sm tracking-wider">詳細を見る</a>
+                </article>
+            </div>
+
+            <div class="mt-10 bg-white border border-gray-100 rounded p-6 md:p-8">
+                <h4 class="text-xl font-serif text-center mb-6">その他の公式掲載料金</h4>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                    <div class="border-b sm:border border-gray-100 p-4">
+                        <p class="font-bold mb-1">お持ち込み衣装 ロケーションフォト</p>
+                        <p class="text-xl text-accent font-bold">¥98,000〜 <span class="text-xs text-gray-500 font-normal">+tax</span></p>
+                        <p class="text-xs text-gray-500 mt-2">市外ロケ・土日祝撮影は各 +¥22,000</p>
+                    </div>
+                    <div class="border-b sm:border border-gray-100 p-4">
+                        <p class="font-bold mb-1">成人式前撮りプラン</p>
+                        <p class="text-xl text-accent font-bold">¥66,000〜</p>
+                    </div>
+                    <div class="border-b sm:border border-gray-100 p-4">
+                        <p class="font-bold mb-1">成人式当日プラン</p>
+                        <p class="text-xl text-accent font-bold">¥33,000〜</p>
+                    </div>
+                    <div class="border-b sm:border border-gray-100 p-4">
+                        <p class="font-bold mb-1">七五三前撮りプラン</p>
+                        <p class="text-xl text-accent font-bold">¥66,000〜</p>
+                    </div>
+                    <div class="sm:border border-gray-100 p-4">
+                        <p class="font-bold mb-1">七五三 家族撮影プラン</p>
+                        <p class="text-xl text-accent font-bold">ご相談ください</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 text-center mt-6">料金・プラン内容は変更される場合があります。ご予約前に最新情報をご確認ください。</p>
+            </div>
+        </section>
+
+        <section id="plan-details" class="mb-24 md:mb-32 scroll-mt-24">
+            <h3 class="text-2xl font-serif text-center mb-12 text-accent">Plan Details<br><span class="text-base text-textMain tracking-widest mt-2 block">プラン詳細</span></h3>
+
+            <div class="space-y-12 max-w-4xl mx-auto">
+                <article id="detail-dress" class="bg-white border border-gray-200 rounded-sm p-6 md:p-10 shadow-sm scroll-mt-24">
+                    <div class="border-b border-gray-200 pb-6 mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                        <h4 class="text-xl font-serif font-bold text-textMain">特別なドレスでの<br class="md:hidden">ロケーションフォトプラン</h4>
+                        <p class="text-3xl font-bold text-accent whitespace-nowrap">¥250,000<span class="text-sm text-gray-500 font-normal"> +tax</span></p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="font-bold mb-4 text-accent border-l-4 border-accent pl-2">プランに含まれるもの</h5>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                                <li>・ウェディングドレスまたはカラードレス</li>
+                                <li>・タキシード</li>
+                                <li>・衣装小物</li>
+                                <li>・新婦ヘアメイク</li>
+                            </ul>
+
+                            <div class="bg-gray-50 p-4 border border-gray-200 rounded-sm">
+                                <h6 class="font-bold text-sm mb-2 text-textMain">👗 選べる提携衣装について</h6>
+                                <p class="text-xs text-gray-600 mb-3 leading-relaxed">
+                                    大人気の提携ドレスショップ「FOUR SIS &amp; CO.（フォーシス）」の豊富なラインナップからお選びいただけます。<br>
+                                    ※お持ち込みをご希望の場合も、持ち込み料は【完全無料】です。
+                                </p>
+                                <a href="https://www.foursis-co.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold text-accent border-b border-accent pb-0.5 hover:opacity-70 transition">
+                                    フォーシス公式サイトで衣装を見る
+                                    <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="font-bold mb-4 text-accent border-l-4 border-accent pl-2">撮影・サポート</h5>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>・フィッティング</li>
+                                <li>・ロケーション撮影</li>
+                                <li>・撮影データ全渡し</li>
+                                <li>・提携ドレスショップで試着可能</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a href="https://line.me/R/ti/p/@944xywjv" target="_blank" rel="noopener noreferrer" class="inline-block bg-line text-white px-8 py-3 rounded-sm hover:opacity-90 transition tracking-wider text-sm">このプランについてLINEで相談する</a>
+                    </div>
+                </article>
+
+                <article id="detail-kimono" class="bg-white border border-gray-200 rounded-sm p-6 md:p-10 shadow-sm scroll-mt-24">
+                    <div class="border-b border-gray-200 pb-6 mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                        <h4 class="text-xl font-serif font-bold text-textMain">白無垢・打掛での<br class="md:hidden">ロケーションフォトプラン</h4>
+                        <p class="text-3xl font-bold text-accent whitespace-nowrap">¥297,000<span class="text-sm text-gray-500 font-normal"> +tax</span></p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="font-bold mb-4 text-accent border-l-4 border-accent pl-2">プランに含まれるもの</h5>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>・白無垢または打掛</li>
+                                <li>・お着付け</li>
+                                <li>・お支度</li>
+                                <li>・ヘアメイク</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-bold mb-4 text-accent border-l-4 border-accent pl-2">撮影・サポート</h5>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>・ロケーション撮影</li>
+                                <li>・撮影データ全渡し</li>
+                                <li>・着付けから撮影までトータルサポート</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a href="https://line.me/R/ti/p/@944xywjv" target="_blank" rel="noopener noreferrer" class="inline-block bg-line text-white px-8 py-3 rounded-sm hover:opacity-90 transition tracking-wider text-sm">このプランについてLINEで相談する</a>
+                    </div>
+                </article>
+            </div>
+
+            <p class="text-xs text-gray-500 text-center mt-8">料金・プラン内容は変更される場合があります。ご予約前に最新情報をご確認ください。</p>
+        </section>
+
+        <section id="gallery" class="mb-24 md:mb-32 scroll-mt-24">
+            <h3 class="text-3xl font-serif text-center mb-4 text-accent">Gallery<br><span class="text-base text-textMain tracking-widest mt-2 block">フォトギャラリー</span></h3>
+            <p class="text-center text-sm text-gray-500 mb-10">GitHubリポジトリ収録写真・重複を除いた全76枚</p>
+
+            <div class="flex justify-center flex-wrap gap-3 md:gap-4 mb-8" role="group" aria-label="写真カテゴリー">
+                <button type="button" data-gallery-filter="dress" aria-pressed="false" class="px-4 py-2 border border-gray-300 text-gray-500 rounded-full text-sm hover:border-accent hover:text-accent transition">洋装</button>
+                <button type="button" data-gallery-filter="kimono" aria-pressed="false" class="px-4 py-2 border border-gray-300 text-gray-500 rounded-full text-sm hover:border-accent hover:text-accent transition">和装</button>
+                <button type="button" data-gallery-filter="ceremony" aria-pressed="false" class="px-4 py-2 border border-gray-300 text-gray-500 rounded-full text-sm hover:border-accent hover:text-accent transition">成人式・七五三</button>
+                <button type="button" data-gallery-filter="behind" aria-pressed="false" class="px-4 py-2 border border-gray-300 text-gray-500 rounded-full text-sm hover:border-accent hover:text-accent transition">撮影風景</button>
+                <button type="button" data-gallery-filter="all" aria-pressed="true" class="px-4 py-2 border border-accent bg-accent text-white rounded-full text-sm transition">すべて</button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4" aria-live="polite">
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3078.jpeg" alt="洋装フォトウェディング — IMG_3078" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2962.jpeg" alt="和装フォトウェディング — IMG_2962" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3055.jpeg" alt="和装フォトウェディング — IMG_3055" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3042.jpeg" alt="成人式・七五三の記念写真 — IMG_3042" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3105.png" alt="成人式・七五三の記念写真 — IMG_3105" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="behind" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2944.jpeg" alt="撮影・ヘアメイク風景 — IMG_2944" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="behind" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3237.jpeg" alt="撮影・ヘアメイク風景 — IMG_3237" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="behind" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3238.jpeg" alt="撮影・ヘアメイク風景 — IMG_3238" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="behind" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3240.jpeg" alt="撮影・ヘアメイク風景 — IMG_3240" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2931.jpeg" alt="成人式・七五三の記念写真 — IMG_2931" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2942.jpeg" alt="成人式・七五三の記念写真 — IMG_2942" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2963.jpeg" alt="成人式・七五三の記念写真 — IMG_2963" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2964.jpeg" alt="成人式・七五三の記念写真 — IMG_2964" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2965.jpeg" alt="成人式・七五三の記念写真 — IMG_2965" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2966.jpeg" alt="成人式・七五三の記念写真 — IMG_2966" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2967.jpeg" alt="成人式・七五三の記念写真 — IMG_2967" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2968.jpeg" alt="成人式・七五三の記念写真 — IMG_2968" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2969.jpeg" alt="成人式・七五三の記念写真 — IMG_2969" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3043.jpeg" alt="成人式・七五三の記念写真 — IMG_3043" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3085.png" alt="成人式・七五三の記念写真 — IMG_3085" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3086.png" alt="成人式・七五三の記念写真 — IMG_3086" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3087.png" alt="成人式・七五三の記念写真 — IMG_3087" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3088.png" alt="成人式・七五三の記念写真 — IMG_3088" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3089.png" alt="成人式・七五三の記念写真 — IMG_3089" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3090.png" alt="成人式・七五三の記念写真 — IMG_3090" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3091.png" alt="成人式・七五三の記念写真 — IMG_3091" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3092.png" alt="成人式・七五三の記念写真 — IMG_3092" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3093.png" alt="成人式・七五三の記念写真 — IMG_3093" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3094.png" alt="成人式・七五三の記念写真 — IMG_3094" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3165.jpeg" alt="成人式・七五三の記念写真 — IMG_3165" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3166.jpeg" alt="成人式・七五三の記念写真 — IMG_3166" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3170.jpeg" alt="成人式・七五三の記念写真 — IMG_3170" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="ceremony" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3171.jpeg" alt="成人式・七五三の記念写真 — IMG_3171" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2932.jpeg" alt="洋装フォトウェディング — IMG_2932" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2935.jpeg" alt="洋装フォトウェディング — IMG_2935" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2936.jpeg" alt="洋装フォトウェディング — IMG_2936" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2937.jpeg" alt="洋装フォトウェディング — IMG_2937" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2938.jpeg" alt="洋装フォトウェディング — IMG_2938" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2939.jpeg" alt="洋装フォトウェディング — IMG_2939" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2940.jpeg" alt="洋装フォトウェディング — IMG_2940" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2941.jpeg" alt="洋装フォトウェディング — IMG_2941" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2943.jpeg" alt="洋装フォトウェディング — IMG_2943" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2945.jpeg" alt="洋装フォトウェディング — IMG_2945" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2946.jpeg" alt="洋装フォトウェディング — IMG_2946" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2947.jpeg" alt="洋装フォトウェディング — IMG_2947" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2948.jpeg" alt="洋装フォトウェディング — IMG_2948" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2949.jpeg" alt="洋装フォトウェディング — IMG_2949" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2950.jpeg" alt="洋装フォトウェディング — IMG_2950" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2951.jpeg" alt="洋装フォトウェディング — IMG_2951" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2952.jpeg" alt="洋装フォトウェディング — IMG_2952" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2953.jpeg" alt="洋装フォトウェディング — IMG_2953" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2954.jpeg" alt="洋装フォトウェディング — IMG_2954" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2955.jpeg" alt="洋装フォトウェディング — IMG_2955" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2956.jpeg" alt="洋装フォトウェディング — IMG_2956" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3056.jpeg" alt="洋装フォトウェディング — IMG_3056" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3057.jpeg" alt="洋装フォトウェディング — IMG_3057" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3062.jpeg" alt="洋装フォトウェディング — IMG_3062" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3066.jpeg" alt="洋装フォトウェディング — IMG_3066" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3067.jpeg" alt="洋装フォトウェディング — IMG_3067" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3068.jpeg" alt="洋装フォトウェディング — IMG_3068" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3069.jpeg" alt="洋装フォトウェディング — IMG_3069" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3071.jpeg" alt="洋装フォトウェディング — IMG_3071" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3075.png" alt="洋装フォトウェディング — IMG_3075" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3077.jpeg" alt="洋装フォトウェディング — IMG_3077" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3079.jpeg" alt="洋装フォトウェディング — IMG_3079" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3080.jpeg" alt="洋装フォトウェディング — IMG_3080" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3082.jpeg" alt="洋装フォトウェディング — IMG_3082" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3083.jpeg" alt="洋装フォトウェディング — IMG_3083" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="dress" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3115.png" alt="洋装フォトウェディング — IMG_3115" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2934.jpeg" alt="和装フォトウェディング — IMG_2934" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2957.jpeg" alt="和装フォトウェディング — IMG_2957" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2958.jpeg" alt="和装フォトウェディング — IMG_2958" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2959.jpeg" alt="和装フォトウェディング — IMG_2959" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2960.jpeg" alt="和装フォトウェディング — IMG_2960" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_2961.jpeg" alt="和装フォトウェディング — IMG_2961" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+                <figure data-gallery-category="kimono" class="aspect-square overflow-hidden group bg-gray-100">
+                    <img src="./IMG_3052.jpeg" alt="和装フォトウェディング — IMG_3052" loading="lazy" decoding="async" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500">
+                </figure>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#reserve" class="inline-block px-8 py-3 border border-textMain hover:bg-textMain hover:text-white transition duration-300 text-sm tracking-wider">写真について相談する</a>
+            </div>
+        </section>
+
+        <section id="flow" class="mb-24 md:mb-32 scroll-mt-24">
+            <h3 class="text-3xl font-serif text-center mb-16 text-accent">Flow<br><span class="text-base text-textMain tracking-widest mt-2 block">撮影までの流れ</span></h3>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="relative border-l-2 border-accent/30 pl-8 ml-4 md:ml-0 space-y-12">
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-white border-2 border-accent w-8 h-8 rounded-full flex items-center justify-center font-bold text-accent text-sm" aria-hidden="true">1</div>
+                        <h4 class="text-lg font-bold mb-2">お問い合わせ・無料相談（LINE・WEB予約）</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">まずはLINEまたはWEB予約フォームよりお気軽にご連絡ください。空き状況の確認、ご希望のイメージ、料金についてのご相談を承ります。</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-white border-2 border-accent w-8 h-8 rounded-full flex items-center justify-center font-bold text-accent text-sm" aria-hidden="true">2</div>
+                        <h4 class="text-lg font-bold mb-2">プラン・衣装・ロケーションの決定</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">ご希望をお伺いし、最適なプランをご提案します。提携店（フォーシス）での衣装選びや、お持ち込み衣装のご相談もこの段階で行います。</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-white border-2 border-accent w-8 h-8 rounded-full flex items-center justify-center font-bold text-accent text-sm" aria-hidden="true">3</div>
+                        <h4 class="text-lg font-bold mb-2">事前のヘアメイクカウンセリング</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">美容のプロが、骨格や雰囲気に合わせた「似合わせ」スタイルをご提案。ご不安なことやご希望の画像などがございましたらお伝えください。</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-accent w-8 h-8 rounded-full flex items-center justify-center font-bold text-white text-sm" aria-hidden="true">4</div>
+                        <h4 class="text-lg font-bold mb-2">撮影当日</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">リラックスした雰囲気の中、チームでサポートしながら楽しく撮影を行います。撮影中のメイクお直しもお任せください。</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-white border-2 border-accent w-8 h-8 rounded-full flex items-center justify-center font-bold text-accent text-sm" aria-hidden="true">5</div>
+                        <h4 class="text-lg font-bold mb-2">データの納品（30日以内）</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">一枚一枚丁寧に色調補正を行い、撮影日から30日以内にデータをお渡しいたします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="mb-24 md:mb-32 bg-[#F9F8F6] -mx-4 px-4 py-16 md:px-8 md:mx-0 md:rounded-lg scroll-mt-24">
+            <h3 class="text-3xl font-serif text-center mb-12 text-accent">FAQ<br><span class="text-base text-textMain tracking-widest mt-2 block">よくあるご質問</span></h3>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-white rounded-sm border border-gray-100 group">
+                    <summary class="font-bold flex justify-between items-center p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <div class="flex items-start gap-3 pr-4">
+                            <span class="text-accent">Q.</span>
+                            <span>衣装の持ち込みはできますか？持ち込み料はかかりますか？</span>
+                        </div>
+                        <span class="text-gray-400 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="text-gray-600 text-sm md:pl-7 leading-relaxed">はい、可能です。BELL WELLでは衣装のお持ち込み料は一切いただいておりません。思い出のドレスやこだわりの和装で撮影をお楽しみください。</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-sm border border-gray-100 group">
+                    <summary class="font-bold flex justify-between items-center p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <div class="flex items-start gap-3 pr-4">
+                            <span class="text-accent">Q.</span>
+                            <span>衣装はどこで選べますか？</span>
+                        </div>
+                        <span class="text-gray-400 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="text-gray-600 text-sm md:pl-7 leading-relaxed">大人気の提携ドレスショップ「FOUR SIS &amp; CO.（フォーシス アンド カンパニー）」にて、豊富なラインナップからお選びいただけます。</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-sm border border-gray-100 group">
+                    <summary class="font-bold flex justify-between items-center p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <div class="flex items-start gap-3 pr-4">
+                            <span class="text-accent">Q.</span>
+                            <span>撮影データはいつ頃もらえますか？</span>
+                        </div>
+                        <span class="text-gray-400 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="text-gray-600 text-sm md:pl-7 leading-relaxed">一枚ずつ丁寧に色調補正などの編集を行い、撮影後30日以内にお渡ししております。</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-sm border border-gray-100 group">
+                    <summary class="font-bold flex justify-between items-center p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <div class="flex items-start gap-3 pr-4">
+                            <span class="text-accent">Q.</span>
+                            <span>雨天の場合はどうなりますか？</span>
+                        </div>
+                        <span class="text-gray-400 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="text-gray-600 text-sm md:pl-7 leading-relaxed">ロケーション撮影の場合、前日までに天候を判断し、雨天が予想される場合は無料にて日程変更（延期）が可能です。</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-sm border border-gray-100 group">
+                    <summary class="font-bold flex justify-between items-center p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <div class="flex items-start gap-3 pr-4">
+                            <span class="text-accent">Q.</span>
+                            <span>支払方法は何がありますか？</span>
+                        </div>
+                        <span class="text-gray-400 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="text-gray-600 text-sm md:pl-7 leading-relaxed">現金、クレジットカード、事前のお振り込みからお選びいただけます。</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="access" class="mb-24 md:mb-32 scroll-mt-24">
+            <h3 class="text-2xl font-serif text-center mb-12">Access / 店舗情報</h3>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">BELL WELL（ベルウェル）</h4>
+                    <p class="mb-2">〒892-0843 鹿児島県鹿児島市千日町9-29 田良島ビル1F</p>
+                    <p class="mb-6">営業時間：10:00–18:00（定休日なし）</p>
+                    <a href="https://maps.app.goo.gl/vS4kAaS31bQTh2Vj8?g_st=com.openai.chat.ShareExtension" target="_blank" rel="noopener noreferrer" class="inline-block border border-accent text-accent px-6 py-3 hover:bg-accent hover:text-white transition">
+                        Googleマップで開く
+                    </a>
+                </div>
+                <div class="w-full h-64 bg-gray-200">
+                    <iframe title="BELL WELL（鹿児島県鹿児島市千日町9-29 田良島ビル1F）の地図" src="https://www.google.com/maps?q=鹿児島県鹿児島市千日町9-29+田良島ビル1F&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="reserve" class="bg-white border-t border-stone-200 py-10 px-4 text-center scroll-mt-24">
+        <p class="font-serif tracking-widest mb-6">BELL WELL</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
+            <a href="https://line.me/R/ti/p/@944xywjv" target="_blank" rel="noopener noreferrer" class="flex-1 bg-line text-white px-6 py-3 rounded-sm hover:opacity-90 transition text-sm font-bold">LINE無料相談</a>
+            <a href="https://line.me/R/ti/p/@944xywjv" target="_blank" rel="noopener noreferrer" class="flex-1 bg-accent text-white px-6 py-3 rounded-sm hover:opacity-90 transition text-sm font-bold">WEB予約</a>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 w-full md:hidden flex z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]" aria-label="お問い合わせ">
+        <a href="https://line.me/R/ti/p/@944xywjv" target="_blank" rel="noopener noreferrer" class="w-1/2 bg-line text-white text-sm font-bold py-4 text-center">
+            LINE無料相談
+        </a>
+        <a href="https://line.me/R/ti/p/@944xywjv" target="_blank" rel="noopener noreferrer" class="w-1/2 bg-accent text-white text-sm font-bold py-4 text-center">
+            WEB予約
+        </a>
+    </div>
+
+    <script>
+        document.querySelectorAll('[data-gallery-filter]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const selectedCategory = button.dataset.galleryFilter;
+
+                document.querySelectorAll('[data-gallery-filter]').forEach((filterButton) => {
+                    const isActive = filterButton === button;
+                    filterButton.setAttribute('aria-pressed', String(isActive));
+                    filterButton.classList.toggle('bg-accent', isActive);
+                    filterButton.classList.toggle('text-white', isActive);
+                    filterButton.classList.toggle('border-accent', isActive);
+                    filterButton.classList.toggle('text-gray-500', !isActive);
+                    filterButton.classList.toggle('border-gray-300', !isActive);
+                });
+
+                document.querySelectorAll('[data-gallery-category]').forEach((photo) => {
+                    const categories = photo.dataset.galleryCategory.split(' ');
+                    photo.hidden = selectedCategory !== 'all' && !categories.includes(selectedCategory);
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
